@@ -1,0 +1,20 @@
+{
+	"Папка с inc": "D:\soft\7.0\packs\atmel\ATmega_DFP\1.6.364\avrasm\inc",
+
+	"Сайт по командам avr": "https://trolsoft.ru/ru/avr-assembler",
+
+	"регистры": "http://radio-stv.ru/mikrokontrolleri/ustroystvo-i-programmirovanie-mikrokontrollerov-dlya-nachinayushhih/registryi-obshhego-naznacheniya-registryi-vvoda-vyivoda-stek-schetchik-komand",
+
+	"регистр флагов": "http://radio-stv.ru/mikrokontrolleri/ustroystvo-i-programmirovanie-mikrokontrollerov-dlya-nachinayushhih/registr-sostoyaniya-sreg-avr",
+
+	"порты ввода вывода": "http://radio-stv.ru/mikrokontrolleri/ustroystvo-i-programmirovanie-mikrokontrollerov-dlya-nachinayushhih/portyi-vvoda-vyivoda-mikrokontrollera",
+
+	"прерывания": "http://www.atmega8.ru/wiki/view/doc.9.html",
+
+	"загрузка в плату": "-C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -v -patmega328p -c arduino -P COM3 -b 57600 -D -U flash:w:$(TargetName).hex:i",
+
+	"avrdude": "C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude.exe",
+
+	"полезная информация": "http://easyelectronics.ru/avr-uchebnyj-kurs-ispolzovanie-shim.html",
+}
+	
