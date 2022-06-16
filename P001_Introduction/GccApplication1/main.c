@@ -11,14 +11,15 @@
 int main(void)
 {
     /* Replace with your application code */
-	DDRD = 0xFF;
-	
-	DDRB = 0x00;
-	PORTB = 0x00;
+	DDRB = 0xFF;
+	PORTB = 0xFF;
 	
     while (1) 
     {
-		PORTD = PINB;
+		_delay_ms(1000);
+		PORTB = 0x00;
+		_delay_ms(1000);
+		PORTB = 0xFF;
     }
 }
 
