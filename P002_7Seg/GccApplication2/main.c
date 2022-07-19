@@ -6,7 +6,7 @@
  */ 
 
 #include <avr/io.h>
-#define  F_CPU 8000000
+#define  F_CPU 16000000
 #include <util/delay.h>
 #include <avr/interrupt.h>
 
@@ -60,25 +60,21 @@ int main(void)
 
 int main(void)
 {
-	DDRD = 0xFF;
-	DDRB = 0b00001111;
+	DDRD = 0b11111100;
+	DDRB = 0b00000001;
 	
 	unsigned char i = 0;
 	
-	unsigned char dg0,dg1,dg2;
-	unsigned char tmp;
+	uint16_t tmp;
 	while (1)
 	{
-		tmp = i;
-		dg0 = tmp%10;
-		tmp /= 10;
-		dg1 = tmp%10;
-		tmp /= 10;
-		dg2 = tmp%10;
-		
-		PORTD = dg0 | dg1<<4;
-		PORTB =  (PORTB&0b11110000) | dg2;
-		_delay_ms(500);
-		i++;
+		tmp = digit[i] << 2;
+		PORTD = tmp;
+		PORTB = tmp>>8;
+		_delay_ms(1000);
+		if(i == 9)
+			i = 0;
+		else
+			i++;
 	}
 }

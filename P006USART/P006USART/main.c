@@ -76,7 +76,7 @@ void transmit_act(){
 		transmit_process_on = 0;
 	}
 	else{
-		set_port(PORTB,1<<PORTB5,0xFF);
+		set_port(PORTB,1<<PORTB0,0xFF);
 		UDR0 = pop_queue(&input);
 	}
 };
@@ -127,7 +127,7 @@ int main(void)
 	
     while (1) 
     {
-		_delay_ms(5000);
+		_delay_ms(1000);
 		set_port(PORTB,1<<PORTB0,0x00);
     }
 }
