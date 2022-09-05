@@ -1,0 +1,21 @@
+#define static_function_connect(interrupt,function) ISR(interrupt){function();}
+#define static_object_connect(interrupt,object,function) ISR(interrupt){obect.function();}
+
+прерывание
+ISR(...){
+	f();/object.slot();/delegator->call();/
+}
+
+connection:
+static
+dynamic_particular
+dynamic_abstract
+
+
+uart:
+listener:
+	static defined, dynamically defined;
+number of listeners:
+	one, particular, dynamically change;
+
+

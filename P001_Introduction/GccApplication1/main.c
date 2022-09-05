@@ -11,6 +11,7 @@
 int main(void)
 {
     /* Replace with your application code */
+	DDRD = 0x00;
 	DDRB = 0xFF;
 	PORTB = 0xFF;
 	

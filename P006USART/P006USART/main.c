@@ -122,7 +122,7 @@ int main(void)
 	push_queue(&input,'l');
 	push_queue(&input,'l');
 	//push_queue(&input,'o');
-	USART_Init(16);
+	USART_Init(25);
 	enable_transmit_pocess();
 	
     while (1) 

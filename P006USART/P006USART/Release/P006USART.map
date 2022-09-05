@@ -208,7 +208,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x318
+.text           0x00000000      0x30e
  *(.vectors)
  .vectors       0x00000000       0x68 D:/soft/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -295,32 +295,32 @@ END GROUP
                 0x00000090       0x1e main.o
                 0x00000090                USART_Init
  .text.transmit_act
-                0x000000ae       0x34 main.o
+                0x000000ae       0x30 main.o
                 0x000000ae                transmit_act
  .text.enable_transmit_pocess
-                0x000000e2       0x1a main.o
-                0x000000e2                enable_transmit_pocess
+                0x000000de       0x1a main.o
+                0x000000de                enable_transmit_pocess
  .text.__vector_18
-                0x000000fc       0x82 main.o
-                0x000000fc                __vector_18
+                0x000000f8       0x82 main.o
+                0x000000f8                __vector_18
  .text.__vector_20
-                0x0000017e       0x54 main.o
-                0x0000017e                __vector_20
+                0x0000017a       0x50 main.o
+                0x0000017a                __vector_20
  .text.startup.main
-                0x000001d2       0xf2 main.o
-                0x000001d2                main
+                0x000001ca       0xf0 main.o
+                0x000001ca                main
  .text.libgcc.div
-                0x000002c4       0x28 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
-                0x000002c4                _div
-                0x000002c4                __divmodhi4
+                0x000002ba       0x28 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x000002ba                _div
+                0x000002ba                __divmodhi4
  .text.libgcc.div
-                0x000002ec       0x28 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
-                0x000002ec                __udivmodhi4
-                0x00000314                . = ALIGN (0x2)
+                0x000002e2       0x28 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x000002e2                __udivmodhi4
+                0x0000030a                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000314        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x00000314                _exit
-                0x00000314                exit
+ .fini9         0x0000030a        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x0000030a                _exit
+                0x0000030a                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -339,11 +339,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000314        0x4 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000030a        0x4 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000318                _etext = .
+                0x0000030e                _etext = .
 
-.data           0x00800100        0x0 load address 0x00000318
+.data           0x00800100        0x0 load address 0x0000030e
                 [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -366,8 +366,8 @@ END GROUP
  COMMON         0x00800101       0x66 main.o
                 0x00800101                input
                 0x00800167                PROVIDE (__bss_end, .)
-                0x00000318                __data_load_start = LOADADDR (.data)
-                0x00000318                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x0000030e                __data_load_start = LOADADDR (.data)
+                0x0000030e                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800167        0x0
                 [!provide]                PROVIDE (__noinit_start, .)

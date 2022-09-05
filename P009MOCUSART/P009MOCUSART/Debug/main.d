@@ -10,6 +10,9 @@ main.d main.o: .././main.cpp \
  d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h \
  d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
+ d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
+ d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
+ d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
  .././../../framework/uart_process.hpp \
  .././../../framework/io_process.hpp .././../../framework/data.hpp \
  .././../../framework/global.hpp \
@@ -17,7 +20,8 @@ main.d main.o: .././main.cpp \
  d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
  d:\tmp\probs\avr\framework\global.hpp \
  d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
- .././../../framework/seg7.h .././../../framework/ports.h
+ .././../../framework/seg7.h .././../../framework/seg7.h \
+ .././../../framework/ports.h
 
 d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -41,6 +45,12 @@ d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h:
 
 d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h:
 
+d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h:
+
+d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:
+
+d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
+
 .././../../framework/uart_process.hpp:
 
 .././../../framework/io_process.hpp:
@@ -56,6 +66,8 @@ d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h
 d:\tmp\probs\avr\framework\global.hpp:
 
 d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
+
+.././../../framework/seg7.h:
 
 .././../../framework/seg7.h:
 

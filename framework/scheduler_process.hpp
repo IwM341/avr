@@ -1,6 +1,8 @@
 #ifndef SCHEDULER_PROCES_H
 #define SCHEDULER_PROCES_H
 
+
+
 #include "delegator.hpp"
 //#include "resources.hpp"
 #include <avr/interrupt.h>
@@ -12,8 +14,8 @@
 #define difference(a,b) ((a) > (b) ? ( (a) - (b)) : ((b)-(a)))
 
 struct TimerParams{
-	uint8_t bestOCRA;
-	uint8_t bestCS;	
+	uint8_t OCRA;
+	uint8_t CS;	
 };
 
 constexpr TimerParams bestTimerParams(uint32_t f_cpu,uint32_t f_target){
@@ -86,8 +88,8 @@ class scheduler{
 		TIMSK0 |= (1<<OCIE0A);
 		
 		TimerParams TP = bestTimerParams(F_CPU,1000);
-		OCR0A = TP.bestOCRA; //124
-		TCCR0B |= TP.bestCS; //3
+		OCR0A = TP.OCRA; //124
+		TCCR0B |= TP.CS; //3
 	}
 	
 	
@@ -109,7 +111,7 @@ class scheduler{
 		}
 	}
 	uint64_t clock() const{return _clock;}
-	uint64_t data_clock() const{
+	_data data_clock() const{
 		return _data(_clock);
 	}
 	void set_clock(const _data & dat){

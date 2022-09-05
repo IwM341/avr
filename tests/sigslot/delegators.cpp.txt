@@ -1,0 +1,194 @@
+#include <iostream>
+
+//using namespace std;
+
+
+template <typename...Args>
+struct __DefaultClass__{
+	void __defaultFunction__(Args...){}
+};
+
+
+template <typename FuncType>
+void call(const FuncType & F){
+    std::cout << "const FuncType & call" << std::endl;
+    F();
+}
+
+template <typename FuncType>
+void call(FuncType & F){
+    std::cout << "FuncType & call" << std::endl;
+    F();
+}
+
+template <typename FuncType>
+void call(FuncType && F){
+    std::cout << "FuncType && call" << std::endl;
+    F();
+}
+
+template <typename FuncType>
+void SpecialCall(const FuncType & F){
+    std::cout << "const FuncType & call" << std::endl;
+    F.operator()();
+}
+template <typename FuncType>
+void SpecialCall(FuncType & F){
+     std::cout << "FuncType & call" << std::endl;
+    F.operator()();
+}
+template <typename FuncType>
+void SpecialCall(FuncType && F){
+    std::cout << "FuncType && call" << std::endl;
+    F.operator()();
+}
+
+void SpecialCall(void (*F)(void) ){
+    std::cout << "void (*F)(void) " << std::endl;
+    F();
+}
+
+
+
+
+
+
+template <typename...Args>
+struct AnyClassDelegator {
+    
+    __DefaultClass__<Args...> * __Object;
+    void (__DefaultClass__<Args...>::*__Slot)(Args...);
+    
+    
+    template <typename T>
+	AnyClassDelegator(const T & Object, void (T::*Slot)(Args...)):
+	    __Object(reinterpret_cast<decltype(__Object)> (&Object)),
+	    __Slot(reinterpret_cast<decltype(__Slot)>(Slot)){}
+	template <typename T>
+	AnyClassDelegator(T & Object, void (T::*Slot)(Args...)):
+	    __Object(reinterpret_cast<decltype(__Object)> (&Object)),
+	    __Slot(reinterpret_cast<decltype(__Slot)>(Slot)){}
+	template <typename T>
+	AnyClassDelegator(T &&  Object, void (T::*Slot)(Args...)):
+	    __Object(reinterpret_cast<decltype(__Object)> (&Object)),
+	    __Slot(reinterpret_cast<decltype(__Slot)>(Slot)){}
+	
+	
+	template <typename T>
+	AnyClassDelegator(T * Object, void (T::*Slot)(Args...)):
+	    __Object(reinterpret_cast<decltype(__Object)> (Object)),
+	    __Slot(reinterpret_cast<decltype(__Slot)>(Slot)){}
+	
+	
+	template <typename FuncType>
+	AnyClassDelegator(const FuncType & F):__Object(reinterpret_cast<decltype(__Object)> (&F)),
+	    __Slot(reinterpret_cast<decltype(__Slot)>(&FuncType::operator() )){}
+	
+	template <typename FuncType>
+	AnyClassDelegator(FuncType & F):__Object(reinterpret_cast<decltype(__Object)> (&F)),
+	    __Slot(reinterpret_cast<decltype(__Slot)>(&FuncType::operator() )){}
+	
+	template <typename FuncType>
+	AnyClassDelegator(FuncType && F):__Object(reinterpret_cast<decltype(__Object)> (&F)),
+	    __Slot(reinterpret_cast<decltype(__Slot)>(&FuncType::operator() )){}
+	
+	
+	
+	template <typename FuncType>
+	AnyClassDelegator(FuncType * F):__Object(reinterpret_cast<decltype(__Object)> (F)),
+	    __Slot(reinterpret_cast<decltype(__Slot)>(&FuncType::operator() )){}
+	
+	AnyClassDelegator(void (*F)(Args...)):__Object(reinterpret_cast<decltype(__Object)> (0)){
+	    auto p =  reinterpret_cast<void**>( (__DefaultClass__<Args...>**)(this) + 1);
+	    void ** p1 = reinterpret_cast<void**>(this);
+	    
+	    //std::cout <<size_t((char*)p) - size_t((char*)p1) << std::endl;
+	    *p = reinterpret_cast<void *> (F);
+	}
+	
+	
+	
+	void call(Args...args){
+	    if(__Object){
+	        //std::cout << "try to call Object" <<std::endl;
+	        (__Object->*__Slot)(args...);	        
+	    }
+	    else{
+	        //std::cout << "try to call f" <<std::endl;
+	        reinterpret_cast<void(*)(Args...)>( *((__DefaultClass__<Args...>**)(this) + 1) ) (args...);
+	    }
+
+	}
+};
+
+
+struct As{
+    void g(){
+        std::cout << "As g" << std::endl;
+    }
+    void f(){
+        std::cout << "As f" << std::endl;
+    }
+};
+
+
+struct Bs{
+    void g(){
+        std::cout << "Bs g" << std::endl;
+    }
+    void f(){
+        std::cout << "Bs f" << std::endl;
+    }
+};
+
+void print1(){
+    std::cout <<"print1()" <<std::endl; 
+}
+struct Caller{
+    void operator()(){
+        std::cout <<"Caller()" <<std::endl;     
+    }  
+};
+
+int main()
+{
+    
+    As a;
+    Bs b;
+    //FixedSizeDelegator<32> A(f);
+    //A.call();
+    auto A = AnyClassDelegator(&a,&As::f);
+    A.call();
+    A = AnyClassDelegator(&b,&Bs::g);
+    A.call();
+    
+    A = AnyClassDelegator(Caller());
+    A.call();
+    
+    Caller x;
+    A = AnyClassDelegator(x);
+    A.call();
+    
+    A = AnyClassDelegator(print1);
+    A.call();
+    
+    A = AnyClassDelegator([](){std::cout << "lambda()" << std::endl;});
+    A.call();
+    
+    /*
+    call(print1);
+    Caller x;
+    call(x);
+    call(Caller());
+    call([](){std::cout << "lambda()" << std::endl;});
+    */
+    /*
+    SpecialCall(print1);
+    Caller x;
+    SpecialCall(x);
+    SpecialCall(Caller());
+    SpecialCall([](){std::cout << "lambda()" << std::endl;});
+    */
+    
+    return 0;
+}

@@ -1,0 +1,11 @@
+template <template <typename...>  typename InputClass,typename T>
+struct BindTemplateFisrt{
+    template <typename...Args>
+    using ResultType = InputClass<T,Args...>;
+};
+
+template <template <typename...>  typename InputClass,typename T>
+struct BindTemplateLast{
+    template <typename...Args>
+    using ResultType = InputClass<Args...,T>;
+};

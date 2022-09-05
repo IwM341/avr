@@ -2,6 +2,10 @@
 #define DATA_HPP
 
 #include "global.hpp"
+
+#define static_array_len(static_array) (sizeof(static_array)/sizeof(*static_array))
+
+
 #define QSIZE 100
 
 template <typename T,uint8_t _size = QSIZE>
@@ -19,11 +23,15 @@ struct static_queue{
 		return !len;
 	}
 	uint8_t is_full(){
-		return len < _size;
+		return len >= _size;
 	}
 	T pop(){
-		len --;
-		return buff[start++];
+		if(len)
+			len--;
+		T ret = buff[start];
+		start ++;
+		start %= _size;
+		return ret;
 		
 	}
 	void push(T value){

@@ -27,6 +27,7 @@ Discarded input sections
  .bss           0x00000000        0x0 D:/soft/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
  .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
@@ -253,7 +254,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x302
+.text           0x00000000      0x3c6
  *(.vectors)
  .vectors       0x00000000       0x68 D:/soft/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -338,32 +339,38 @@ END GROUP
                 0x000000a2                __vector_16
                 0x000000a6                . = ALIGN (0x2)
  *(.text.*)
- .text.__vector_18
-                0x000000a6      0x13a main.o
-                0x000000a6                __vector_18
+ .text._ZN4uart14uart_process_rEv
+                0x000000a6       0x2c main.o
+                0x000000a6                _ZN4uart14uart_process_rEv
  .text.__vector_20
-                0x000001e0       0xa6 main.o
-                0x000001e0                __vector_20
- .text.main     0x00000286        0xe main.o
-                0x00000286                main
+                0x000000d2       0xa6 main.o
+                0x000000d2                __vector_20
+ .text._Z7set7segh
+                0x00000178       0x24 main.o
+                0x00000178                _Z7set7segh
+ .text.__vector_18
+                0x0000019c      0x162 main.o
+                0x0000019c                __vector_18
+ .text.main     0x000002fe       0x5a main.o
+                0x000002fe                main
  .text.__cxa_guard_acquire
-                0x00000294       0x12 D:\tmp\probs\avr\framework\cppnew\cppnew\Release\libcppnew.a(library.o)
-                0x00000294                __cxa_guard_acquire
+                0x00000358       0x12 D:\tmp\probs\avr\framework\cppnew\cppnew\Release\libcppnew.a(library.o)
+                0x00000358                __cxa_guard_acquire
  .text.__cxa_guard_release
-                0x000002a6        0x8 D:\tmp\probs\avr\framework\cppnew\cppnew\Release\libcppnew.a(library.o)
-                0x000002a6                __cxa_guard_release
+                0x0000036a        0x8 D:\tmp\probs\avr\framework\cppnew\cppnew\Release\libcppnew.a(library.o)
+                0x0000036a                __cxa_guard_release
  .text.libgcc.div
-                0x000002ae       0x28 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
-                0x000002ae                _div
-                0x000002ae                __divmodhi4
+                0x00000372       0x28 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_divmodhi4.o)
+                0x00000372                _div
+                0x00000372                __divmodhi4
  .text.libgcc.div
-                0x000002d6       0x28 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
-                0x000002d6                __udivmodhi4
-                0x000002fe                . = ALIGN (0x2)
+                0x0000039a       0x28 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x0000039a                __udivmodhi4
+                0x000003c2                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000002fe        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x000002fe                _exit
-                0x000002fe                exit
+ .fini9         0x000003c2        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000003c2                _exit
+                0x000003c2                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -382,11 +389,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000002fe        0x4 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x000003c2        0x4 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000302                _etext = .
+                0x000003c6                _etext = .
 
-.data           0x00800100        0xa load address 0x00000302
+.data           0x00800100        0xa load address 0x000003c6
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -400,27 +407,29 @@ END GROUP
                 0x0080010a                _edata = .
                 0x0080010a                PROVIDE (__data_end, .)
 
-.bss            0x0080010a       0x2b
+.bss            0x0080010a       0x2c
                 0x0080010a                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
+ .bss.blink     0x0080010a        0x1 main.o
+                0x0080010a                blink
  .bss._ZGVZN4uart14uart_process_rEvE1U
-                0x0080010a        0x8 main.o
-                0x0080010a                _ZGVZN4uart14uart_process_rEvE1U
+                0x0080010b        0x8 main.o
+                0x0080010b                _ZGVZN4uart14uart_process_rEvE1U
  .bss._ZZN4uart14uart_process_rEvE1U
-                0x00800112       0x23 main.o
-                0x00800112                _ZZN4uart14uart_process_rEvE1U
+                0x00800113       0x23 main.o
+                0x00800113                _ZZN4uart14uart_process_rEvE1U
  *(COMMON)
-                0x00800135                PROVIDE (__bss_end, .)
-                0x00000302                __data_load_start = LOADADDR (.data)
-                0x0000030c                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800136                PROVIDE (__bss_end, .)
+                0x000003c6                __data_load_start = LOADADDR (.data)
+                0x000003d0                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800135        0x0
+.noinit         0x00800136        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800135                _end = .
-                0x00800135                PROVIDE (__heap_start, .)
+                0x00800136                _end = .
+                0x00800136                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -485,42 +494,42 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000       0x30
+.debug_aranges  0x00000000       0x40
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x30 main.o
+                0x00000000       0x40 main.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0xf70
+.debug_info     0x00000000     0x10f7
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 D:/soft/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_info    0x000005f4      0x97c main.o
+ .debug_info    0x000005f4      0xb03 main.o
 
-.debug_abbrev   0x00000000      0x885
+.debug_abbrev   0x00000000      0x904
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 D:/soft/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_abbrev  0x000005a2      0x2e3 main.o
+ .debug_abbrev  0x000005a2      0x362 main.o
 
-.debug_line     0x00000000      0x366
+.debug_line     0x00000000      0x484
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x134 D:/soft/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_line    0x00000134      0x232 main.o
+ .debug_line    0x00000134      0x350 main.o
 
-.debug_frame    0x00000000       0xd8
+.debug_frame    0x00000000       0xf8
  *(.debug_frame)
- .debug_frame   0x00000000       0xd8 main.o
+ .debug_frame   0x00000000       0xf8 main.o
 
-.debug_str      0x00000000      0x78e
+.debug_str      0x00000000      0x7e5
  *(.debug_str)
  .debug_str     0x00000000      0x208 D:/soft/7.0/Packs/atmel/ATmega_DFP/1.6.364/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_str     0x00000208      0x586 main.o
-                                0x5bf (size before relaxing)
+ .debug_str     0x00000208      0x5dd main.o
+                                0x622 (size before relaxing)
 
-.debug_loc      0x00000000      0x22e
+.debug_loc      0x00000000      0x270
  *(.debug_loc)
- .debug_loc     0x00000000      0x22e main.o
+ .debug_loc     0x00000000      0x270 main.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -540,9 +549,9 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000       0x20
+.debug_ranges   0x00000000       0x30
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x20 main.o
+ .debug_ranges  0x00000000       0x30 main.o
 
 .debug_macro
  *(.debug_macro)

@@ -1,6 +1,8 @@
 #ifndef TASK_H
 #define TASK_H
 
+#include "data.hpp"
+
 class AbstractTask{
 	public:
 	virtual void call() = 0;
@@ -144,5 +146,30 @@ AbstractTask * CreateTast(ClassType *Object, void (ClassType::*Slot)(Args...), A
 template <typename FuncType, typename...Args>
 AbstractTask * CreateTast(FuncType F, Args...args){
 	return new FunctionTask<FuncType,Args...>(F,args...);
+}
+
+
+class TaskManager{
+	static_queue<AbstractTask *,16> tasks;
+	
+	public:
+	void CheckList(){
+		while(!tasks.is_empty()){
+			AbstractTask * task = tasks.pop();
+			task->call();
+			delete task;
+		}
+	}
+	template <typename...TaskInfo>
+	bool AddTask(TaskInfo...tifno){
+		if(!Q.is_empty()){
+			Q.push(CreateTast(tifno...));
+			return true;
+		}
+		else{
+			return false;
+		}
+		
+	}
 }
 #endif
