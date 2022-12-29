@@ -14,6 +14,7 @@
 	"загрузка в плату": "-C "C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -v -patmega328p -c arduino -P COM3 -b 57600 -D -U flash:w:$(TargetName).hex:i",
 
 	"avrdude": "C:\Program Files (x86)\Arduino\hardware\tools\avr\bin\avrdude.exe",
+	"папка": $(TargetDir)
 
 	"полезная информация": "http://easyelectronics.ru/avr-uchebnyj-kurs-ispolzovanie-shim.html",
 }
