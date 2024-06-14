@@ -1,0 +1,210 @@
+\hypertarget{port_8c}{}\doxysection{D\+:/\+Tmp/avr/\+Free\+RTOS/port.c File Reference}
+\label{port_8c}\index{D:/Tmp/avr/FreeRTOS/port.c@{D:/Tmp/avr/FreeRTOS/port.c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Free\+RTOS.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}task.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{port_8c_ad05c7a8ee45c5190627f9a49c95e7538}{port\+FLAGS\+\_\+\+INT\+\_\+\+ENABLED}}~( ( \mbox{\hyperlink{portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\+Type\+\_\+t}} ) 0x80 )
+\item 
+\#define \mbox{\hyperlink{port_8c_afebcaa9dc7c6672280d342d9215a79a0}{port\+CLEAR\+\_\+\+COUNTER\+\_\+\+ON\+\_\+\+MATCH}}~( ( uint8\+\_\+t ) (1$<$$<$WGM12) )
+\item 
+\#define \mbox{\hyperlink{port_8c_adaf734e7b28a9b88b6ab6d7c9b2250f8}{port\+PRESCALE\+\_\+64}}~( ( uint8\+\_\+t ) ((1$<$$<$CS11)$\vert$(1$<$$<$CS10)) )
+\item 
+\#define \mbox{\hyperlink{port_8c_a67e4948f41f0ee1e6a27b9fc857ea3fe}{port\+CLOCK\+\_\+\+PRESCALER}}~( ( uint32\+\_\+t ) 64 )
+\item 
+\#define \mbox{\hyperlink{port_8c_af0181ceef46fdd03e26e86625c481d1a}{port\+COMPARE\+\_\+\+MATCH\+\_\+\+A\+\_\+\+INTERRUPT\+\_\+\+ENABLE}}~( ( uint8\+\_\+t ) (1$<$$<$OCIE1A) )
+\item 
+\#define \mbox{\hyperlink{port_8c_a798f37b250502b49763c54a56b3aa4b0}{port\+SAVE\+\_\+\+CONTEXT}}()
+\item 
+\#define \mbox{\hyperlink{port_8c_a8d3a167375b5b57944a57df23d45b39e}{port\+RESTORE\+\_\+\+CONTEXT}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void \mbox{\hyperlink{port_8c_af5b0f7452857787ed70ce2856ca74c4b}{TCB\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\+Type\+\_\+t}} $\ast$ \mbox{\hyperlink{port_8c_aec89de59377079f7dc6a71dfbefd9a6f}{px\+Port\+Initialise\+Stack}} (\mbox{\hyperlink{portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\+Type\+\_\+t}} $\ast$px\+Top\+Of\+Stack, \mbox{\hyperlink{projdefs_8h_a9b32502ff92c255c686dacde53c1cba0}{Task\+Function\+\_\+t}} px\+Code, void $\ast$pv\+Parameters)
+\item 
+\mbox{\hyperlink{portmacro_8h_a84960222057153898d715ce6adf9a2b6}{Base\+Type\+\_\+t}} \mbox{\hyperlink{port_8c_ade5a8c6666e7413a0355cc252029c5c6}{x\+Port\+Start\+Scheduler}} (void)
+\item 
+void \mbox{\hyperlink{port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}{v\+Port\+End\+Scheduler}} (void)
+\item 
+void \mbox{\hyperlink{port_8c_add01c927fb689f7ec170e42d47d27927}{v\+Port\+Yield}} (void)
+\item 
+void \mbox{\hyperlink{port_8c_a130213f2e8a8331aaa6dc715f41b6358}{v\+Port\+Yield\+From\+Tick}} (void)
+\item 
+void \mbox{\hyperlink{port_8c_ae9b180f762f781150187a88c1344e064}{TIMER1\+\_\+\+COMPA\+\_\+vect}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \mbox{\hyperlink{port_8c_af5b0f7452857787ed70ce2856ca74c4b}{TCB\+\_\+t}} $\ast$volatile \mbox{\hyperlink{port_8c_af7b1fc0a36e224b885fb22b9936a03a2}{px\+Current\+TCB}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{port_8c_afebcaa9dc7c6672280d342d9215a79a0}\label{port_8c_afebcaa9dc7c6672280d342d9215a79a0}} 
+\index{port.c@{port.c}!portCLEAR\_COUNTER\_ON\_MATCH@{portCLEAR\_COUNTER\_ON\_MATCH}}
+\index{portCLEAR\_COUNTER\_ON\_MATCH@{portCLEAR\_COUNTER\_ON\_MATCH}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{portCLEAR\_COUNTER\_ON\_MATCH}{portCLEAR\_COUNTER\_ON\_MATCH}}
+{\footnotesize\ttfamily \#define port\+CLEAR\+\_\+\+COUNTER\+\_\+\+ON\+\_\+\+MATCH~( ( uint8\+\_\+t ) (1$<$$<$WGM12) )}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00093}{93}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+\mbox{\Hypertarget{port_8c_a67e4948f41f0ee1e6a27b9fc857ea3fe}\label{port_8c_a67e4948f41f0ee1e6a27b9fc857ea3fe}} 
+\index{port.c@{port.c}!portCLOCK\_PRESCALER@{portCLOCK\_PRESCALER}}
+\index{portCLOCK\_PRESCALER@{portCLOCK\_PRESCALER}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{portCLOCK\_PRESCALER}{portCLOCK\_PRESCALER}}
+{\footnotesize\ttfamily \#define port\+CLOCK\+\_\+\+PRESCALER~( ( uint32\+\_\+t ) 64 )}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00095}{95}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+\mbox{\Hypertarget{port_8c_af0181ceef46fdd03e26e86625c481d1a}\label{port_8c_af0181ceef46fdd03e26e86625c481d1a}} 
+\index{port.c@{port.c}!portCOMPARE\_MATCH\_A\_INTERRUPT\_ENABLE@{portCOMPARE\_MATCH\_A\_INTERRUPT\_ENABLE}}
+\index{portCOMPARE\_MATCH\_A\_INTERRUPT\_ENABLE@{portCOMPARE\_MATCH\_A\_INTERRUPT\_ENABLE}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{portCOMPARE\_MATCH\_A\_INTERRUPT\_ENABLE}{portCOMPARE\_MATCH\_A\_INTERRUPT\_ENABLE}}
+{\footnotesize\ttfamily \#define port\+COMPARE\+\_\+\+MATCH\+\_\+\+A\+\_\+\+INTERRUPT\+\_\+\+ENABLE~( ( uint8\+\_\+t ) (1$<$$<$OCIE1A) )}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00096}{96}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+\mbox{\Hypertarget{port_8c_ad05c7a8ee45c5190627f9a49c95e7538}\label{port_8c_ad05c7a8ee45c5190627f9a49c95e7538}} 
+\index{port.c@{port.c}!portFLAGS\_INT\_ENABLED@{portFLAGS\_INT\_ENABLED}}
+\index{portFLAGS\_INT\_ENABLED@{portFLAGS\_INT\_ENABLED}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{portFLAGS\_INT\_ENABLED}{portFLAGS\_INT\_ENABLED}}
+{\footnotesize\ttfamily \#define port\+FLAGS\+\_\+\+INT\+\_\+\+ENABLED~( ( \mbox{\hyperlink{portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\+Type\+\_\+t}} ) 0x80 )}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00090}{90}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+\mbox{\Hypertarget{port_8c_adaf734e7b28a9b88b6ab6d7c9b2250f8}\label{port_8c_adaf734e7b28a9b88b6ab6d7c9b2250f8}} 
+\index{port.c@{port.c}!portPRESCALE\_64@{portPRESCALE\_64}}
+\index{portPRESCALE\_64@{portPRESCALE\_64}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{portPRESCALE\_64}{portPRESCALE\_64}}
+{\footnotesize\ttfamily \#define port\+PRESCALE\+\_\+64~( ( uint8\+\_\+t ) ((1$<$$<$CS11)$\vert$(1$<$$<$CS10)) )}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00094}{94}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+\mbox{\Hypertarget{port_8c_a8d3a167375b5b57944a57df23d45b39e}\label{port_8c_a8d3a167375b5b57944a57df23d45b39e}} 
+\index{port.c@{port.c}!portRESTORE\_CONTEXT@{portRESTORE\_CONTEXT}}
+\index{portRESTORE\_CONTEXT@{portRESTORE\_CONTEXT}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{portRESTORE\_CONTEXT}{portRESTORE\_CONTEXT}}
+{\footnotesize\ttfamily \#define port\+RESTORE\+\_\+\+CONTEXT(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00173}{173}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+\mbox{\Hypertarget{port_8c_a798f37b250502b49763c54a56b3aa4b0}\label{port_8c_a798f37b250502b49763c54a56b3aa4b0}} 
+\index{port.c@{port.c}!portSAVE\_CONTEXT@{portSAVE\_CONTEXT}}
+\index{portSAVE\_CONTEXT@{portSAVE\_CONTEXT}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{portSAVE\_CONTEXT}{portSAVE\_CONTEXT}}
+{\footnotesize\ttfamily \#define port\+SAVE\+\_\+\+CONTEXT(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00123}{123}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{port_8c_af5b0f7452857787ed70ce2856ca74c4b}\label{port_8c_af5b0f7452857787ed70ce2856ca74c4b}} 
+\index{port.c@{port.c}!TCB\_t@{TCB\_t}}
+\index{TCB\_t@{TCB\_t}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{TCB\_t}{TCB\_t}}
+{\footnotesize\ttfamily typedef void \mbox{\hyperlink{port_8c_af5b0f7452857787ed70ce2856ca74c4b}{TCB\+\_\+t}}}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00102}{102}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{port_8c_aec89de59377079f7dc6a71dfbefd9a6f}\label{port_8c_aec89de59377079f7dc6a71dfbefd9a6f}} 
+\index{port.c@{port.c}!pxPortInitialiseStack@{pxPortInitialiseStack}}
+\index{pxPortInitialiseStack@{pxPortInitialiseStack}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{pxPortInitialiseStack()}{pxPortInitialiseStack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\+Type\+\_\+t}} $\ast$ px\+Port\+Initialise\+Stack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{portmacro_8h_a84e9a8ba132feed0b2401c1f4e2ac63c}{Stack\+Type\+\_\+t}} $\ast$}]{px\+Top\+Of\+Stack,  }\item[{\mbox{\hyperlink{projdefs_8h_a9b32502ff92c255c686dacde53c1cba0}{Task\+Function\+\_\+t}}}]{px\+Code,  }\item[{void $\ast$}]{pv\+Parameters }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00227}{227}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+\mbox{\Hypertarget{port_8c_ae9b180f762f781150187a88c1344e064}\label{port_8c_ae9b180f762f781150187a88c1344e064}} 
+\index{port.c@{port.c}!TIMER1\_COMPA\_vect@{TIMER1\_COMPA\_vect}}
+\index{TIMER1\_COMPA\_vect@{TIMER1\_COMPA\_vect}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{TIMER1\_COMPA\_vect()}{TIMER1\_COMPA\_vect()}}
+{\footnotesize\ttfamily void TIMER1\+\_\+\+COMPA\+\_\+vect (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00446}{446}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+\mbox{\Hypertarget{port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}\label{port_8c_af76f3c0b44c5b5c06fc046a4ee1a6423}} 
+\index{port.c@{port.c}!vPortEndScheduler@{vPortEndScheduler}}
+\index{vPortEndScheduler@{vPortEndScheduler}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{vPortEndScheduler()}{vPortEndScheduler()}}
+{\footnotesize\ttfamily void v\+Port\+End\+Scheduler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00359}{359}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+\mbox{\Hypertarget{port_8c_add01c927fb689f7ec170e42d47d27927}\label{port_8c_add01c927fb689f7ec170e42d47d27927}} 
+\index{port.c@{port.c}!vPortYield@{vPortYield}}
+\index{vPortYield@{vPortYield}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{vPortYield()}{vPortYield()}}
+{\footnotesize\ttfamily void v\+Port\+Yield (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00370}{370}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+\mbox{\Hypertarget{port_8c_a130213f2e8a8331aaa6dc715f41b6358}\label{port_8c_a130213f2e8a8331aaa6dc715f41b6358}} 
+\index{port.c@{port.c}!vPortYieldFromTick@{vPortYieldFromTick}}
+\index{vPortYieldFromTick@{vPortYieldFromTick}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{vPortYieldFromTick()}{vPortYieldFromTick()}}
+{\footnotesize\ttfamily void v\+Port\+Yield\+From\+Tick (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00387}{387}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+\mbox{\Hypertarget{port_8c_ade5a8c6666e7413a0355cc252029c5c6}\label{port_8c_ade5a8c6666e7413a0355cc252029c5c6}} 
+\index{port.c@{port.c}!xPortStartScheduler@{xPortStartScheduler}}
+\index{xPortStartScheduler@{xPortStartScheduler}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{xPortStartScheduler()}{xPortStartScheduler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{portmacro_8h_a84960222057153898d715ce6adf9a2b6}{Base\+Type\+\_\+t}} x\+Port\+Start\+Scheduler (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{port_8c_source_l00342}{342}} of file \mbox{\hyperlink{port_8c_source}{port.\+c}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{port_8c_af7b1fc0a36e224b885fb22b9936a03a2}\label{port_8c_af7b1fc0a36e224b885fb22b9936a03a2}} 
+\index{port.c@{port.c}!pxCurrentTCB@{pxCurrentTCB}}
+\index{pxCurrentTCB@{pxCurrentTCB}!port.c@{port.c}}
+\doxysubsubsection{\texorpdfstring{pxCurrentTCB}{pxCurrentTCB}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{port_8c_af5b0f7452857787ed70ce2856ca74c4b}{TCB\+\_\+t}}$\ast$ volatile px\+Current\+TCB\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line \mbox{\hyperlink{tasks_8c_source_l00371}{371}} of file \mbox{\hyperlink{tasks_8c_source}{tasks.\+c}}.
+

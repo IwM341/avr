@@ -1,0 +1,176 @@
+\hypertarget{structaos_1_1pipe}{}\doxysection{pipe\texorpdfstring{$<$}{<} size\+\_\+type, guard\+\_\+type \texorpdfstring{$>$}{>} Struct Template Reference}
+\label{structaos_1_1pipe}\index{pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}}
+
+
+class i/o for reading and writing bytes  
+
+
+
+
+{\ttfamily \#include $<$pipe.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structaos_1_1pipe_a91f807754724a89c1d98e15884cfe4e2}{pipe}} (char $\ast$\+\_\+data, size\+\_\+type \+\_\+reserved)
+\item 
+bool \mbox{\hyperlink{structaos_1_1pipe_a3f37b042a1e7cd4bd38fc564de81f0da}{empty}} ()
+\item 
+bool \mbox{\hyperlink{structaos_1_1pipe_a8c57a8011d071257b736e69d0b4e8995}{size}} ()
+\item 
+\mbox{\Hypertarget{structaos_1_1pipe_a0af0c6e3920cd67025211889c98807db}\label{structaos_1_1pipe_a0af0c6e3920cd67025211889c98807db}} 
+void {\bfseries lock} () const
+\begin{DoxyCompactList}\small\item\em lock internal guard \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structaos_1_1pipe_abc83498cc8bf3655094e2f4273861680}\label{structaos_1_1pipe_abc83498cc8bf3655094e2f4273861680}} 
+void {\bfseries unlock} () const
+\begin{DoxyCompactList}\small\item\em unlock internal guard \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structaos_1_1pipe_afe74748c9a7e274cf5c816f4b14736cf}{swrite}} (const char $\ast$data, size\+\_\+type len)
+\begin{DoxyCompactList}\small\item\em write bytes using guard \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structaos_1_1pipe_aaa88510889d527a72e0f19c6cdeb58f1}{sread}} (char $\ast$data, size\+\_\+type len)
+\begin{DoxyCompactList}\small\item\em read bytes using guard \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structaos_1_1pipe_a3b3ee4950c0527ba988a9514fa32e643}{write}} (const char $\ast$data, size\+\_\+type len)
+\begin{DoxyCompactList}\small\item\em write bytes without using guard \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structaos_1_1pipe_afba92eee89a45565d9e2b409cdbe28b0}{read}} (char $\ast$data, size\+\_\+type len)
+\begin{DoxyCompactList}\small\item\em read bytes without using guard \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename size\+\_\+type, typename guard\+\_\+type = no\+\_\+guard$>$\newline
+struct aos\+::pipe$<$ size\+\_\+type, guard\+\_\+type $>$}
+class i/o for reading and writing bytes 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em size\+\_\+type} & Type of buffer size\+: uint8\+\_\+t if buffer length \texorpdfstring{$<$}{<} 256 and short otherwise \\
+\hline
+{\em guard\+\_\+type} & type to preserve pipe from race condition, should have functions \mbox{\hyperlink{structaos_1_1pipe_a0af0c6e3920cd67025211889c98807db}{lock()}} and \mbox{\hyperlink{structaos_1_1pipe_abc83498cc8bf3655094e2f4273861680}{unlock()}} \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structaos_1_1pipe_a91f807754724a89c1d98e15884cfe4e2}\label{structaos_1_1pipe_a91f807754724a89c1d98e15884cfe4e2}} 
+\index{pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}!pipe@{pipe}}
+\index{pipe@{pipe}!pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}}
+\doxysubsubsection{\texorpdfstring{pipe()}{pipe()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structaos_1_1pipe}{pipe}} (\begin{DoxyParamCaption}\item[{char $\ast$}]{\+\_\+data,  }\item[{size\+\_\+type}]{\+\_\+reserved }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em \+\_\+data} & pointer to allocated bytes, where the pipe should go \\
+\hline
+\mbox{\texttt{ in}}  & {\em \+\_\+reserved} & the size of memory in \+\_\+data, which can be used by pipe\\
+\hline
+\end{DoxyParams}
+example of usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{char}\ mem[240];}
+\DoxyCodeLine{pipe<uint8\_t>(mem,240);}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structaos_1_1pipe_a3f37b042a1e7cd4bd38fc564de81f0da}\label{structaos_1_1pipe_a3f37b042a1e7cd4bd38fc564de81f0da}} 
+\index{pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}!empty@{empty}}
+\index{empty@{empty}!pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+if the queue is empty 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structaos_1_1pipe_afba92eee89a45565d9e2b409cdbe28b0}\label{structaos_1_1pipe_afba92eee89a45565d9e2b409cdbe28b0}} 
+\index{pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}!read@{read}}
+\index{read@{read}!pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily bool read (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{size\+\_\+type}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+read bytes without using guard 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em data} & destination \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & number of bytes to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if read succeed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structaos_1_1pipe_a8c57a8011d071257b736e69d0b4e8995}\label{structaos_1_1pipe_a8c57a8011d071257b736e69d0b4e8995}} 
+\index{pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}!size@{size}}
+\index{size@{size}!pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily bool size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+temporary queue length 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structaos_1_1pipe_aaa88510889d527a72e0f19c6cdeb58f1}\label{structaos_1_1pipe_aaa88510889d527a72e0f19c6cdeb58f1}} 
+\index{pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}!sread@{sread}}
+\index{sread@{sread}!pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}}
+\doxysubsubsection{\texorpdfstring{sread()}{sread()}}
+{\footnotesize\ttfamily bool sread (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{size\+\_\+type}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+read bytes using guard 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em data} & destination \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & number of bytes to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if read succeed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structaos_1_1pipe_afe74748c9a7e274cf5c816f4b14736cf}\label{structaos_1_1pipe_afe74748c9a7e274cf5c816f4b14736cf}} 
+\index{pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}!swrite@{swrite}}
+\index{swrite@{swrite}!pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}}
+\doxysubsubsection{\texorpdfstring{swrite()}{swrite()}}
+{\footnotesize\ttfamily bool swrite (\begin{DoxyParamCaption}\item[{const char $\ast$}]{data,  }\item[{size\+\_\+type}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+write bytes using guard 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data} & source \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & number of bytes to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if write succeed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structaos_1_1pipe_a3b3ee4950c0527ba988a9514fa32e643}\label{structaos_1_1pipe_a3b3ee4950c0527ba988a9514fa32e643}} 
+\index{pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}!write@{write}}
+\index{write@{write}!pipe$<$ size\_type, guard\_type $>$@{pipe$<$ size\_type, guard\_type $>$}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily bool write (\begin{DoxyParamCaption}\item[{const char $\ast$}]{data,  }\item[{size\+\_\+type}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+write bytes without using guard 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em data} & source \\
+\hline
+\mbox{\texttt{ in}}  & {\em len} & number of bytes to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if write succeed 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Tmp/avr/avr\+\_\+tools/avr\+\_\+tools/include/pipe.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,38 @@
+\hypertarget{new_8h_source}{}\doxysection{new.\+h}
+\label{new_8h_source}\index{D:/Tmp/avr/avr\_tools/avr\_tools/include/new.h@{D:/Tmp/avr/avr\_tools/avr\_tools/include/new.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ new.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Created:\ 07.04.2023\ 20:44:57}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ Author:\ MainUser}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ NEW\_H\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ NEW\_H\_}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ [[deprecated(\textcolor{stringliteral}{"{}using\ malloc/free\ is\ a\ bad\ idea"{}})]]}
+\DoxyCodeLine{00020\ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \ \textcolor{keywordtype}{void}\ *\ \textcolor{keyword}{operator}\ \textcolor{keyword}{new}(\textcolor{keywordtype}{size\_t}\ size)}
+\DoxyCodeLine{00021\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{return}\ malloc(size);}
+\DoxyCodeLine{00023\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00029\ [[deprecated(\textcolor{stringliteral}{"{}using\ malloc/free\ is\ bad\ idea"{}})]]}
+\DoxyCodeLine{00030\ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \ \textcolor{keywordtype}{void}\ \textcolor{keyword}{operator}\ \textcolor{keyword}{delete}(\textcolor{keywordtype}{void}\ *\ ptr,\textcolor{keywordtype}{size\_t}\ size)}
+\DoxyCodeLine{00031\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ free(ptr);}
+\DoxyCodeLine{00033\ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keywordtype}{void}\ *\ \textcolor{keyword}{operator}\ \textcolor{keyword}{new}(\textcolor{keywordtype}{size\_t}\ size,\textcolor{keywordtype}{void}\ *ptr)\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordflow}{return}\ ptr;}
+\DoxyCodeLine{00040\ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ NEW\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

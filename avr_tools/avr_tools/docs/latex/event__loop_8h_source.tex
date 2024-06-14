@@ -1,0 +1,89 @@
+\hypertarget{event__loop_8h_source}{}\doxysection{event\+\_\+loop.\+h}
+\label{event__loop_8h_source}\index{D:/Tmp/avr/avr\_tools/avr\_tools/include/event\_loop.h@{D:/Tmp/avr/avr\_tools/avr\_tools/include/event\_loop.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ event\_loop.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Created:\ 09.04.2023\ 11:47:42}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ Author:\ MainUser}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ EVENT\_LOOP\_H\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ EVENT\_LOOP\_H\_}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}pipe.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}size\_types.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}guard.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}sleep\_modes.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <avr/sleep.h>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#ifndef\ PIPE\_SIZE}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#warning\ "{}auto\ define\ of\ PIPE\_SIZE"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#define\ PIPE\_SIZE\ 240;}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#ifndef\ MAX\_CALLBACK\_SIZE}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#warning\ "{}auto\ define\ of\ MAX\_CALLBACK\_SIZE"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#define\ MAX\_CALLBACK\_SIZE\ 8;}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{void}\ default\_sleep\_function(sleep\_block\ *\ sb)\{\}}
+\DoxyCodeLine{00030\ \textcolor{keyword}{namespace\ }aos\{}
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{struct\ }event\_loop\{}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{char}\ pipe\_data[PIPE\_SIZE];}
+\DoxyCodeLine{00034\ \ \ \ \ pipe<typename\ min\_required\_size\_type<PIPE\_SIZE>::type,\_\_guard>\ \_callback\_queue;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ running;}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{decltype}\ (default\_sleep\_function)\ sleep\_function;}
+\DoxyCodeLine{00037\ \ \ \ \ sleep\_block\ sb;}
+\DoxyCodeLine{00038\ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ uint8\_t\ max\_callback\_size\ =\ MAX\_CALLBACK\_SIZE;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ run()\{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(running)\{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ running\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \_tmp\_callback[MAX\_CALLBACK\_SIZE];}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ uint8\_t\ \_tmp\_pkg\_size;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(1)\{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \_callback\_queue.lock();}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\_callback\_queue.read(\&\_tmp\_pkg\_size,1))\{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_callback\_queue.read(\_tmp\_callback,\_tmp\_pkg\_size);}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_callback\_queue.unlock();}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ call\_delayed\_function(*\textcolor{keyword}{reinterpret\_cast<}VDELEGATORFUNCTYPE*\textcolor{keyword}{>}(\_tmp\_callback),}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_tmp\_callback+DELEGATOR\_SIZE+VFUNCTION\_SIZE,}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_tmp\_callback+VFUNCTION\_SIZE}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_callback\_queue.unlock();}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sleep\_function(\&sb);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ event\_loop*instance()\{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ event\_loop\ loop;}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \&loop;}
+\DoxyCodeLine{00067\ \ \ \ \ \}}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \textcolor{keyword}{decltype}(\_callback\_queue)\ \&\ get\_pipe()\{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ instance()-\/>\_callback\_queue;}
+\DoxyCodeLine{00070\ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }Application;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \ \ \ \ event\_loop()\{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ running\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ EVENT\_LOOP\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

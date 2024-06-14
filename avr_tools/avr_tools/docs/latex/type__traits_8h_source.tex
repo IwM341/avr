@@ -1,0 +1,120 @@
+\hypertarget{type__traits_8h_source}{}\doxysection{type\+\_\+traits.\+h}
+\label{type__traits_8h_source}\index{D:/Tmp/avr/avr\_tools/avr\_tools/include/type\_traits.h@{D:/Tmp/avr/avr\_tools/avr\_tools/include/type\_traits.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ type\_traits.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Created:\ 09.04.2023\ 12:24:40}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ Author:\ MainUser}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ TYPE\_TRAITS\_H\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ TYPE\_TRAITS\_H\_}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }aos\{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{bool}\ b,\textcolor{keyword}{typename}\ type1,\textcolor{keyword}{typename}\ type2>}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{struct\ }conditional\{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ type1\ type;}
+\DoxyCodeLine{00017\ \ \ \ \ \};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ type1,\textcolor{keyword}{typename}\ type2>}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{struct\ }conditional<false,type1,type2>\{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ type2\ type;}
+\DoxyCodeLine{00021\ \ \ \ \ \};}
+\DoxyCodeLine{00022\ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{bool}\ condition,\textcolor{keyword}{typename}\ T\ =\ \textcolor{keywordtype}{void}>}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{struct\ }enable\_if\{\};}
+\DoxyCodeLine{00025\ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T\ =\ \textcolor{keywordtype}{void}>}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{struct\ }enable\_if<true>\{}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ T\ type;}
+\DoxyCodeLine{00029\ \ \ \ \ \};}
+\DoxyCodeLine{00030\ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keywordtype}{size\_t}...I>}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{struct\ }index\_sequence\{\};}
+\DoxyCodeLine{00034\ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ i,\textcolor{keyword}{typename}\ seq>}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{struct\ }get\_value;}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ i,\textcolor{keywordtype}{size\_t}\ I0,\textcolor{keywordtype}{size\_t}...I>}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{struct\ }get\_value<i,index\_sequence<I0,I...>>\{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{size\_t}\ value\ =\ get\_value<i-\/1,index\_sequence<I...>>::value;}
+\DoxyCodeLine{00041\ \ \ \ \ \};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ I0,\textcolor{keywordtype}{size\_t}...I>}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{struct\ }get\_value<0,index\_sequence<I0,I...>>\{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{size\_t}\ value\ =\ I0;}
+\DoxyCodeLine{00045\ \ \ \ \ \};}
+\DoxyCodeLine{00046\ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Seq1,\textcolor{keyword}{typename}\ Seq2>}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{struct\ }index\_sequence\_cat;}
+\DoxyCodeLine{00049\ \ \ \ \ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}...I,\textcolor{keywordtype}{size\_t}...J>}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{struct\ }index\_sequence\_cat\{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ index\_sequence<I...,J...>\ type;}
+\DoxyCodeLine{00053\ \ \ \ \ \};}
+\DoxyCodeLine{00054\ \ \ \ \ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ I,\textcolor{keyword}{typename}\ Seq2>}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{struct\ }index\_sequence\_cat\_left;}
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ I,\textcolor{keywordtype}{size\_t}...J>}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{struct\ }index\_sequence\_cat\_left<I,index\_sequence<J...>>\{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ index\_sequence<I,J...>\ type;}
+\DoxyCodeLine{00061\ \ \ \ \ \};}
+\DoxyCodeLine{00062\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Seq2,\textcolor{keywordtype}{size\_t}\ I>}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{struct\ }index\_sequence\_cat\_right;}
+\DoxyCodeLine{00065\ \ \ \ \ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ I,\textcolor{keywordtype}{size\_t}...J>}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{struct\ }index\_sequence\_cat\_right<index\_sequence<J...>,I>\{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ index\_sequence<J...,I>\ type;}
+\DoxyCodeLine{00069\ \ \ \ \ \};}
+\DoxyCodeLine{00070\ \ \ \ \ }
+\DoxyCodeLine{00071\ \ \ \ \ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{struct\ }arg\_count;}
+\DoxyCodeLine{00074\ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{struct\ }arg\_count<>\{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{size\_t}\ value\ =\ 0;}
+\DoxyCodeLine{00078\ \ \ \ \ \};}
+\DoxyCodeLine{00079\ \ \ \ \ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Arg0,\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{struct\ }arg\_count<Arg0,Args...>\{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{size\_t}\ value\ =\ 1\ +\ arg\_count<Args...>::value;}
+\DoxyCodeLine{00083\ \ \ \ \ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{template}\ \ <\textcolor{keywordtype}{size\_t}\ start\ =\ 0,\textcolor{keyword}{typename}\ Arg0,\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{struct\ }make\_index\_sequence\{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{typename}\ index\_sequence\_cat\_left<start,}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ make\_index\_sequence<Args...>::type}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ >::type\ type;\ \ \ }
+\DoxyCodeLine{00091\ \ \ \ \ \};}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{template}\ \ <\textcolor{keywordtype}{size\_t}\ start\ =\ 0,\textcolor{keyword}{typename}\ Arg0>}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{struct\ }make\_index\_sequence\{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ index\_sequence<0>\ type;}
+\DoxyCodeLine{00095\ \ \ \ \ \};}
+\DoxyCodeLine{00096\ \ \ \ \ }
+\DoxyCodeLine{00097\ \ \ \ \ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{struct\ }rm\_ref\{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ T\ type;\ }
+\DoxyCodeLine{00101\ \ \ \ \ \};}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{struct\ }rm\_ref<T\&\&>\{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ T\ type;}
+\DoxyCodeLine{00105\ \ \ \ \ \};}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{struct\ }rm\_ref<T\&>\{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ T\ type;}
+\DoxyCodeLine{00109\ \ \ \ \ \};}
+\DoxyCodeLine{00110\ \ \ \ \ }
+\DoxyCodeLine{00111\ \};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ TYPE\_TRAITS\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

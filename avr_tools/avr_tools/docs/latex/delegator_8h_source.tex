@@ -1,0 +1,238 @@
+\hypertarget{delegator_8h_source}{}\doxysection{delegator.\+h}
+\label{delegator_8h_source}\index{D:/Tmp/avr/avr\_tools/avr\_tools/include/delegator.h@{D:/Tmp/avr/avr\_tools/avr\_tools/include/delegator.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DELEGATOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \ DELEGATOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{namespace\ }aos\{}
+\DoxyCodeLine{00005\ \ \ \ \ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }\_\_detail\_\_\{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00008\ \textcolor{keyword}{struct\ }\_\_DefaultClass\_\_\{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{void}\ \_\_DefaultFunction\_\_(Args...)\{\}}
+\DoxyCodeLine{00010\ \};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{struct\ }\_\_VCallDefaultClass\_\_\{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \_\_DefaultFunction\_\_(\textcolor{keywordtype}{char}\ *)\{\}}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ N,\textcolor{keyword}{typename}\ Arg0,\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00017\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keyword}{auto}\ get\_arg(\textcolor{keywordtype}{char}\ *\ args)\{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordflow}{return}\ get\_arg<N-\/1,Args...>(args\ +\ \textcolor{keyword}{sizeof}(Arg0));}
+\DoxyCodeLine{00019\ \}}
+\DoxyCodeLine{00020\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Arg0,\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00021\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keyword}{auto}\ get\_arg<0>(\textcolor{keywordtype}{char}\ *\ args)\{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{reinterpret\_cast<}Arg0*\textcolor{keyword}{>}(args);}
+\DoxyCodeLine{00023\ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00034\ \textcolor{keyword}{struct\ }ClassDelegator\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \_\_detail\_\_::\_\_DefaultClass\_\_<Args...>\ *\ \_\_Object;}
+\DoxyCodeLine{00037\ \ \ \ \ void\ (\_\_detail\_\_::\_\_DefaultClass\_\_<Args...>::*\_\_Slot)(Args...);}
+\DoxyCodeLine{00038\ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ ClassDelegator():\_\_Object(0),\_\_Slot(\&\_\_detail\_\_::\_\_DefaultClass\_\_<Args...>::\_\_defaultFunction\_\_)\{\}}
+\DoxyCodeLine{00041\ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00043\ \ \ \ \ ClassDelegator(T\ *\ Object,\ \textcolor{keywordtype}{void}\ (T::*Slot)(Args...)):}
+\DoxyCodeLine{00044\ \ \ \ \ \_\_Object(reinterpret\_cast<decltype(\_\_Object)>\ (Object)),}
+\DoxyCodeLine{00045\ \ \ \ \ \_\_Slot(reinterpret\_cast<decltype(\_\_Slot)>(Slot))\{\}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00048\ \ \ \ \ ClassDelegator(T\ *\ Object):}
+\DoxyCodeLine{00049\ \ \ \ \ \_\_Object(reinterpret\_cast<decltype(\_\_Object)>\ (Object)),}
+\DoxyCodeLine{00050\ \ \ \ \ \_\_Slot(reinterpret\_cast<decltype(\_\_Slot)>(\&T::operator()))\{\}}
+\DoxyCodeLine{00051\ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ call(Args...args)\{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ (\_\_Object-\/>*\_\_Slot)(args...);}
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ IS>}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \_\_vcall\_\_helper\_\_(\textcolor{keywordtype}{void}\ *\ args);}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ ...I>}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \_\_vcall\_\_helper\_\_<index\_sequence<I...>>(\textcolor{keywordtype}{void}\ *\ args)\{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ call(\_\_detail\_\_::get\_arg<I,Args...>(args)...);}
+\DoxyCodeLine{00061\ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \ \ \ \ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ vcall(\textcolor{keywordtype}{void}\ *\ args)\{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_\_vcall\_\_helper\_\_<\textcolor{keyword}{typename}\ make\_index\_sequence<Args...>::type>(args);}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00067\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00068\ \textcolor{keyword}{struct\ }FunctionDelegator\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ }
+\DoxyCodeLine{00070\ \ \ \ \ void\ (*\_\_Slot)(Args...);}
+\DoxyCodeLine{00071\ \ \ \ \ }
+\DoxyCodeLine{00072\ \ \ \ \ FunctionDelegator():\_\_Slot(0)\{\}}
+\DoxyCodeLine{00073\ \ \ \ \ }
+\DoxyCodeLine{00074\ \ \ \ \ AnyClassDelegator(\textcolor{keyword}{decltype}(\_\_Slot)\ Slot)):\_\_Slot(Slot)\{\}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ call(Args...args)\{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \_\_Slot(args...);}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ \ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ IS>}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \_\_vcall\_\_helper\_\_(\textcolor{keywordtype}{void}\ *\ args);}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ ...I>}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \_\_vcall\_\_helper\_\_<index\_sequence<I...>>(\textcolor{keywordtype}{void}\ *\ args)\{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ call(\_\_detail\_\_::get\_arg<I,Args...>(args)...);}
+\DoxyCodeLine{00085\ \ \ \ \ \}}
+\DoxyCodeLine{00086\ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ vcall(\textcolor{keywordtype}{void}\ *\ args)\{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_\_vcall\_\_helper\_\_<\textcolor{keyword}{typename}\ make\_index\_sequence<Args...>::type>(args);}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00093\ \textcolor{keyword}{struct\ }ClassOrFunctionDelegator\ \{}
+\DoxyCodeLine{00094\ \ \ \ \ }
+\DoxyCodeLine{00095\ \ \ \ \ \_\_detail\_\_::\_\_DefaultClass\_\_<Args...>\ *\ \_\_Object;}
+\DoxyCodeLine{00096\ \ \ \ \ void\ (\_\_detail\_\_::\_\_DefaultClass\_\_<Args...>::*\_\_Slot)(Args...);}
+\DoxyCodeLine{00097\ \ \ \ \ }
+\DoxyCodeLine{00098\ \ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{inline}\ ClassOrFunctionDelegator(\textcolor{keyword}{const}\ FunctionDelegator<Args...>\ \&\ FD):ClassOrFunctionDelegator(FD.\_\_Slot)\{\}}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keyword}{inline}\ ClassOrFunctionDelegator(\textcolor{keyword}{const}\ ClassDelegator<Args...>\ \&\ CD):ClassOrFunctionDelegator(CD.\_\_Object,CD.\_\_Slot)\{\}\ \ \ }
+\DoxyCodeLine{00101\ \ \ \ \ }
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{inline}\ ClassOrFunctionDelegator\ (T\ *\ Object,\ \textcolor{keywordtype}{void}\ (T::*Slot)(Args...)):}
+\DoxyCodeLine{00104\ \ \ \ \ \_\_Object(reinterpret\_cast<decltype(\_\_Object)>\ (Object)),}
+\DoxyCodeLine{00105\ \ \ \ \ \_\_Slot(reinterpret\_cast<decltype(\_\_Slot)>(Slot))\{\}}
+\DoxyCodeLine{00106\ \ \ \ \ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{inline}\ ClassOrFunctionDelegator\ (T\ *\ Object):}
+\DoxyCodeLine{00109\ \ \ \ \ \_\_Object(reinterpret\_cast<decltype(\_\_Object)>\ (Object)),}
+\DoxyCodeLine{00110\ \ \ \ \ \_\_Slot(reinterpret\_cast<decltype(\_\_Slot)>(\&T::operator()))\{\}}
+\DoxyCodeLine{00111\ \ \ \ \ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keyword}{inline}\ ClassOrFunctionDelegator(\textcolor{keywordtype}{void}\ (*F)(Args...)):\_\_Object(reinterpret\_cast<decltype(\_\_Object)>\ (0)),}
+\DoxyCodeLine{00113\ \ \ \ \ \_\_Slot(\&\_\_DefaultClass\_\_<Args...>::\_\_defaultFunction\_\_)\{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ p\ =\ \ \textcolor{keyword}{reinterpret\_cast<}decltype(F)*\textcolor{keyword}{>}(\ (\_\_DefaultClass\_\_<Args...>**)(\textcolor{keyword}{this})\ +\ 1);}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ *p\ =\ F;}
+\DoxyCodeLine{00116\ \ \ \ \ \}}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordtype}{void}\ call(Args...args)\{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\_\_Object)\{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//std::cout\ <<\ "{}try\ to\ call\ Object"{}\ <<std::endl;}}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ (\_\_Object-\/>*\_\_Slot)(args...);}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//std::cout\ <<\ "{}try\ to\ call\ f"{}\ <<std::endl;}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{reinterpret\_cast<}\textcolor{keywordtype}{void}(*)(Args...)\textcolor{keyword}{>}(\ *((\_\_DefaultClass\_\_<Args...>**)(\textcolor{keyword}{this})\ +\ 1)\ )\ (args...);}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \}}
+\DoxyCodeLine{00128\ \ \ \ \ }
+\DoxyCodeLine{00129\ \ \ \ \ }
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ IS>}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \_\_vcall\_\_helper\_\_(\textcolor{keywordtype}{void}\ *\ args);}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ ...I>}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \_\_vcall\_\_helper\_\_<index\_sequence<I...>>(\textcolor{keywordtype}{void}\ *\ args)\{}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ call(\_\_detail\_\_::get\_arg<I,Args...>(args)...);}
+\DoxyCodeLine{00135\ \ \ \ \ \}}
+\DoxyCodeLine{00136\ \ \ \ \ }
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordtype}{void}\ vcall(\textcolor{keywordtype}{void}\ *\ args)\{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_\_vcall\_\_helper\_\_<\textcolor{keyword}{typename}\ make\_index\_sequence<Args...>::type>(args);}
+\DoxyCodeLine{00139\ \ \ \ \ \}}
+\DoxyCodeLine{00140\ \};}
+\DoxyCodeLine{00141\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00142\ \textcolor{comment}{template\ <size\_t\ max\_size,typename...Args>}}
+\DoxyCodeLine{00143\ \textcolor{comment}{struct\ CommonDelegator\{}}
+\DoxyCodeLine{00144\ \textcolor{comment}{\ \ \ \ uint8\_t\ method;}}
+\DoxyCodeLine{00145\ \textcolor{comment}{\ \ \ \ char\ data[max\_size];}}
+\DoxyCodeLine{00146\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00147\ \textcolor{comment}{\ \ \ \ typedef\ void\ (*FuncType)(Args...);}}
+\DoxyCodeLine{00148\ \textcolor{comment}{\ \ \ \ typedef\ \_\_detail\_\_::\_\_DefaultClass\_\_<Args...>\ *\ CPType;}}
+\DoxyCodeLine{00149\ \textcolor{comment}{\ \ \ \ typedef\ \_\_detail\_\_::\_\_DefaultClass\_\_<Args...>\ \ ClType;}}
+\DoxyCodeLine{00150\ \textcolor{comment}{\ \ \ \ typedef\ void\ (\_\_detail\_\_::\_\_DefaultClass\_\_<Args...>::*CFType)(Args...);}}
+\DoxyCodeLine{00151\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00152\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00153\ \textcolor{comment}{\ \ \ \ inline\ uint8\_t\ size()\{}}
+\DoxyCodeLine{00154\ \textcolor{comment}{\ \ \ \ \ \ \ \ switch\ (method)}}
+\DoxyCodeLine{00155\ \textcolor{comment}{\ \ \ \ \ \ \ \ \{}}
+\DoxyCodeLine{00156\ \textcolor{comment}{\ \ \ \ \ \ \ \ case\ 0:}}
+\DoxyCodeLine{00157\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ return\ sizeof(FuncType);}}
+\DoxyCodeLine{00158\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ break;}}
+\DoxyCodeLine{00159\ \textcolor{comment}{\ \ \ \ \ \ \ \ case\ 1:}}
+\DoxyCodeLine{00160\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ return\ sizeof(CPType)+sizeof(CFType);}}
+\DoxyCodeLine{00161\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ break;}}
+\DoxyCodeLine{00162\ \textcolor{comment}{\ \ \ \ \ \ \ \ default:}}
+\DoxyCodeLine{00163\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ return\ method;}}
+\DoxyCodeLine{00164\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ break;}}
+\DoxyCodeLine{00165\ \textcolor{comment}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00166\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00167\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00168\ \textcolor{comment}{\ \ \ \ CommonDelegator()}}
+\DoxyCodeLine{00169\ \textcolor{comment}{\ \ \ \ CommonDelegator(void\ (*Func)(Args...)):method(0)\{}}
+\DoxyCodeLine{00170\ \textcolor{comment}{\ \ \ \ \ \ \ \ static\_assert(max\_size\ <\ sizeof(Func),"{}too\ few\ space\ for\ creating\ delegator\ object"{});}}
+\DoxyCodeLine{00171\ \textcolor{comment}{\ \ \ \ \ \ \ \ reinterpret\_cast<decltype(Func)>(data)\ =\ Func;}}
+\DoxyCodeLine{00172\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00173\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00174\ \textcolor{comment}{\ \ \ \ template\ <typename\ T>}}
+\DoxyCodeLine{00175\ \textcolor{comment}{\ \ \ \ CommonDelegator(T\ *\ Object,void\ (T::*Slot)(Args...)):method(1)\{}}
+\DoxyCodeLine{00176\ \textcolor{comment}{\ \ \ \ \ \ \ \ static\_assert(max\_size\ <\ sizeof(Object)\ +\ sizeof(Slot)\ ,"{}too\ few\ space\ for\ creating\ delegator\ object"{});}}
+\DoxyCodeLine{00177\ \textcolor{comment}{\ \ \ \ \ \ \ \ reinterpret\_cast<T\ *\ >(data)\ =\ Object;}}
+\DoxyCodeLine{00178\ \textcolor{comment}{\ \ \ \ \ \ \ \ reinterpret\_cast<decltype(Slot)>(data\ +\ sizeof(Object))\ =\ Slot;}}
+\DoxyCodeLine{00179\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00180\ \textcolor{comment}{\ \ \ \ template\ <typename\ T>}}
+\DoxyCodeLine{00181\ \textcolor{comment}{\ \ \ \ CommonDelegator(T\ *\ Object):method(1)\{}}
+\DoxyCodeLine{00182\ \textcolor{comment}{\ \ \ \ \ \ \ \ typedef\ decltype(\&T::operator())\ Ftype;}}
+\DoxyCodeLine{00183\ \textcolor{comment}{\ \ \ \ \ \ \ \ static\_assert(max\_size\ <\ sizeof(Object)\ +\ sizeof(Ftype)\ ,"{}too\ few\ space\ for\ creating\ delegator\ object"{});}}
+\DoxyCodeLine{00184\ \textcolor{comment}{\ \ \ \ \ \ \ \ reinterpret\_cast<T\ *\ >(data)\ =\ Object;}}
+\DoxyCodeLine{00185\ \textcolor{comment}{\ \ \ \ \ \ \ \ reinterpret\_cast<Ftype>(data\ +\ sizeof(Object))\ =\ \&T::operator();}}
+\DoxyCodeLine{00186\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00187\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00188\ \textcolor{comment}{\ \ \ \ template\ <typename\ LambdaType>}}
+\DoxyCodeLine{00189\ \textcolor{comment}{\ \ \ \ CommonDelegator(LambdaType\ \&\&\ Lambda):method(sizeof(CFType)\ +\ sizeof(typename\ rm\_ref<LambdaType>::type))\{}}
+\DoxyCodeLine{00190\ \textcolor{comment}{\ \ \ \ \ \ \ \ static\_assert(max\_size\ <\ sizeof(typename\ rm\_ref<LambdaType>::type)\ ,"{}too\ few\ space\ for\ creating\ delegator\ object"{});}}
+\DoxyCodeLine{00191\ \textcolor{comment}{\ \ \ \ \ \ \ \ reinterpret\_cast<CFType>(data)\ =\ \&LambdaType::operator();}}
+\DoxyCodeLine{00192\ \textcolor{comment}{\ \ \ \ \ \ \ \ *reinterpret\_cast<typename\ rm\_ref<LambdaType>::type*>(data+sizeof(CFType))\ =\ Lambda;}}
+\DoxyCodeLine{00193\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00194\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00195\ \textcolor{comment}{\ \ \ \ void\ call(Args...args)\{}}
+\DoxyCodeLine{00196\ \textcolor{comment}{\ \ \ \ \ \ \ \ switch\ (method)}}
+\DoxyCodeLine{00197\ \textcolor{comment}{\ \ \ \ \ \ \ \ \{}}
+\DoxyCodeLine{00198\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ case\ CLASS:}}
+\DoxyCodeLine{00199\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((*reinterpret\_cast<CPType*>(data))-\/>*(*reinterpret\_cast<CFType*>(data+sizeof(CPType))))(args...);}}
+\DoxyCodeLine{00200\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ break;}}
+\DoxyCodeLine{00201\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ case\ LAMBDA:}}
+\DoxyCodeLine{00202\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (reinterpret\_cast<ClType\ *>(data+sizeof(CFType)\ )\ )-\/>*(*reinterpret\_cast<CFType*>(data))(args...);}}
+\DoxyCodeLine{00203\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ break;}}
+\DoxyCodeLine{00204\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ default:}}
+\DoxyCodeLine{00205\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *reinterpret\_cast<FuncType*>(data)(args...);}}
+\DoxyCodeLine{00206\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ break;}}
+\DoxyCodeLine{00207\ \textcolor{comment}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00208\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00209\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00210\ \textcolor{comment}{\ \ \ \ template\ <typename\ IS>}}
+\DoxyCodeLine{00211\ \textcolor{comment}{\ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ \_\_vcall\_\_helper\_\_(void\ *\ args);}}
+\DoxyCodeLine{00212\ \textcolor{comment}{\ \ \ \ template\ <size\_t\ ...I>}}
+\DoxyCodeLine{00213\ \textcolor{comment}{\ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ \_\_vcall\_\_helper\_\_<\_\_detail\_\_::index\_sequence<I...>>(void\ *\ args)\{}}
+\DoxyCodeLine{00214\ \textcolor{comment}{\ \ \ \ \ \ \ \ call(\_\_detail\_\_::get\_arg<I,Args...>(args)...);}}
+\DoxyCodeLine{00215\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00216\ \textcolor{comment}{\ \ \ \ }}
+\DoxyCodeLine{00217\ \textcolor{comment}{\ \ \ \ void\ vcall(void\ *\ args)\{}}
+\DoxyCodeLine{00218\ \textcolor{comment}{\ \ \ \ \ \ \ \ return\ \_\_vcall\_\_helper\_\_<typename\ make\_index\_sequence<Args...>::type>(args);}}
+\DoxyCodeLine{00219\ \textcolor{comment}{\ \ \ \ \}}}
+\DoxyCodeLine{00220\ \textcolor{comment}{\};}}
+\DoxyCodeLine{00221\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \textcolor{keywordtype}{void}\ call\_delayed\_function(\_\_detail\_\_::\_\_VCallDefaultClass\_\_::*Func(\textcolor{keywordtype}{char}\ *),\textcolor{keywordtype}{char}\ *\ data,\textcolor{keywordtype}{char}\ *\ args)\{}
+\DoxyCodeLine{00224\ \ \ \ \ \textcolor{keyword}{reinterpret\_cast<}\_\_detail\_\_::\_\_VCallDefaultClass\_\_*\textcolor{keyword}{>}(data)-\/>*Func(args);}
+\DoxyCodeLine{00225\ \}}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ \textcolor{preprocessor}{\#define\ DELEGATOR\_SIZE\ sizeof(ClassOrFunctionDelegator<>)}}
+\DoxyCodeLine{00228\ \textcolor{preprocessor}{\#define\ VFUNCTION\_SIZE\ sizeof(\_\_detail\_\_::\_\_VCallDefaultClass\_\_::(*)(char\ *))}}
+\DoxyCodeLine{00229\ \textcolor{keyword}{typedef}\ \ \_\_detail\_\_::\_\_VCallDefaultClass\_\_::*VDELEGATORFUNCTYPE(\textcolor{keywordtype}{char}\ *);}
+\DoxyCodeLine{00230\ }
+\DoxyCodeLine{00231\ \};}
+\DoxyCodeLine{00232\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,12 @@
+struct direct_signal
+struct pipe (interrupt save/thread save)
+struct soft_signal ( send delegator to pipe )
+
+struct FastClassdelegator<Args> (T * oObject, void (T::*Function)(Args))
+struct Delegator<Args>
+struct AbstractDelayCall -> structs DelayCall<Functype,Args...>
+
+processes: uart, i2c, evwnt loop,timer_sheduler
+
+timer_sheduler: on isr: see direct_connections on call, bool is_ready  if(is_ready) soft_connect(EL,prc), 
+	function prc : is_ready = 0, process all soft_connections

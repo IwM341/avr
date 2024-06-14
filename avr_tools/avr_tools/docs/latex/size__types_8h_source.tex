@@ -1,0 +1,160 @@
+\hypertarget{size__types_8h_source}{}\doxysection{size\+\_\+types.\+h}
+\label{size__types_8h_source}\index{D:/Tmp/avr/avr\_tools/avr\_tools/include/size\_types.h@{D:/Tmp/avr/avr\_tools/avr\_tools/include/size\_types.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ size\_types.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Created:\ 09.04.2023\ 11:58:28}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ Author:\ MainUser}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ SIZE\_TYPES\_H\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ SIZE\_TYPES\_H\_}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <limits.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}type\_traits.h"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }aos\{}
+\DoxyCodeLine{00017\ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{int}64\_t\ value>}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{struct\ }min\_required\_size\_type;}
+\DoxyCodeLine{00027\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ \textcolor{keywordtype}{int}\_type>}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structaos_1_1int__bounds}{int\_bounds}};}
+\DoxyCodeLine{00034\ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structaos_1_1int__bounds}{int\_bounds}}<unsigned\ char>\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ min\ =\ 0;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ max\ =\ UCHAR\_MAX;\ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structaos_1_1int__bounds}{int\_bounds}}<signed\ char>\{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ min\ =\ SCHAR\_MIN;}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ max\ =\ SCHAR\_MAX;}
+\DoxyCodeLine{00044\ \ \ \ \ \};}
+\DoxyCodeLine{00045\ \ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{struct\ }int\_bounds<char>\{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ min\ =\ CHAR\_MIN;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ max\ =\ CHAR\_MAX;}
+\DoxyCodeLine{00050\ \ \ \ \ \};}
+\DoxyCodeLine{00051\ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{struct\ }int\_bounds<unsigned\ int>\{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ min\ =\ 0;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ max\ =\ UINT\_MAX;}
+\DoxyCodeLine{00057\ \ \ \ \ \};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{struct\ }int\_bounds<int>\{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ min\ =\ INT\_MIN;}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ max\ =\ INT\_MAX;}
+\DoxyCodeLine{00062\ \ \ \ \ \};}
+\DoxyCodeLine{00063\ \ \ \ \ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{struct\ }int\_bounds<unsigned\ short>\{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ min\ =\ 0;}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ max\ =\ USHRT\_MAX;}
+\DoxyCodeLine{00068\ \ \ \ \ \};}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{struct\ }int\_bounds<short>\{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ min\ =\ SHRT\_MIN;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ max\ =\ SHRT\_MAX;}
+\DoxyCodeLine{00073\ \ \ \ \ \};}
+\DoxyCodeLine{00074\ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{struct\ }int\_bounds<unsigned\ long\ int>\{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ min\ =\ 0;}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ max\ =\ ULONG\_MAX;}
+\DoxyCodeLine{00080\ \ \ \ \ \};}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{struct\ }int\_bounds<long\ int>\{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ min\ =\ LONG\_MIN;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ max\ =\ LONG\_MAX;}
+\DoxyCodeLine{00085\ \ \ \ \ \};}
+\DoxyCodeLine{00086\ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{struct\ }int\_bounds<unsigned\ long\ long\ int>\{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ min\ =\ 0;}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ max\ =\ ULLONG\_MAX;}
+\DoxyCodeLine{00091\ \ \ \ \ \};}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{struct\ }int\_bounds<long\ long\ int>\{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ min\ =\ LLONG\_MIN;}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keyword}{auto}\ max\ =\ LLONG\_MAX;}
+\DoxyCodeLine{00096\ \ \ \ \ \};}
+\DoxyCodeLine{00097\ \ \ \ \ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ index>}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array;}
+\DoxyCodeLine{00100\ \ \ \ \ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array<0>\{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{char}\ type;}
+\DoxyCodeLine{00104\ \ \ \ \ \};}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array<1>\{}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{char}\ type;}
+\DoxyCodeLine{00108\ \ \ \ \ \};}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array<2>\{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{signed}\ \textcolor{keywordtype}{char}\ type;}
+\DoxyCodeLine{00112\ \ \ \ \ \};}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array<3>\{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{short}\ type;}
+\DoxyCodeLine{00116\ \ \ \ \ \};}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array<4>\{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{short}\ type;}
+\DoxyCodeLine{00120\ \ \ \ \ \};}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array<5>\{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ type;}
+\DoxyCodeLine{00124\ \ \ \ \ \};}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array<6>\{}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{int}\ type;}
+\DoxyCodeLine{00128\ \ \ \ \ \};}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array<7>\{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{int}\ type;}
+\DoxyCodeLine{00132\ \ \ \ \ \};}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array<8>\{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{int}\ type;}
+\DoxyCodeLine{00136\ \ \ \ \ \};}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array<9>\{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{int}\ type;}
+\DoxyCodeLine{00140\ \ \ \ \ \};}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keyword}{template}\ <>}
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keyword}{struct\ }type\_array<10>\{}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{int}\ type;}
+\DoxyCodeLine{00144\ \ \ \ \ \};}
+\DoxyCodeLine{00145\ \ \ \ \ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{size\_t}\ index,\textcolor{keywordtype}{int}64\_t\ value>}
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keyword}{struct\ }loop\_type\_array\{}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ aos::conditional<int\_bounds<typename\ type\_array<index>::type>::min\ <=\ value\ \&\&\ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ int\_bounds<typename\ type\_array<index>::type>::max\ >=\ value,\textcolor{keyword}{typename}\ type\_array<index>::type,}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{typename}\ loop\_type\_array<index+1,value>::type>::type\ type;\ \ }
+\DoxyCodeLine{00151\ \ \ \ \ \};}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{int}64\_t\ value>}
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keyword}{struct\ }loop\_type\_array<10,value>\{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ type\_array<10>::type\ type;}
+\DoxyCodeLine{00155\ \ \ \ \ \};}
+\DoxyCodeLine{00156\ \ \ \ \ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keywordtype}{int}64\_t\ value>}
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structaos_1_1min__required__size__type}{min\_required\_size\_type}}\{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{typename}\ loop\_type\_array<0,value>::type\ type;}
+\DoxyCodeLine{00160\ \ \ \ \ \};}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00162\ \};}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ SIZE\_TYPES\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

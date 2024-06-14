@@ -36,6 +36,18 @@
 #define PIN_MASK_12 0b00010000
 #define PIN_MASK_13 0b00100000
 
+constexpr uint8_t & getPort(uint8_t pin){
+    return (pin < 8 ? PORTD : (pin < 14 ? PORTB : *((uint8_t *)NULL)  ));
+}
+constexpr uint8_t getMask(uint8_t pin){
+    return (pin < 8 ? 1<<pin : (pin < 14 ? 1<<pin-8 : 0));
+}
 
+
+template <uint8_t pin>
+struct PortInfo{
+    constexpr static uint8_t & port = getPort(pinNum);
+    constexpr static uint8_t mask = getMask(pinNum);
+};
 
 #endif

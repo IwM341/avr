@@ -85,7 +85,7 @@ class scheduler{
 	
 	void init(){
 		TCCR0B |= (1<<WGM12);
-		TIMSK0 |= (1<<OCIE0A);
+		TIMSK0 = (1<<OCIE0A);
 		
 		TimerParams TP = bestTimerParams(F_CPU,1000);
 		OCR0A = TP.OCRA; //124

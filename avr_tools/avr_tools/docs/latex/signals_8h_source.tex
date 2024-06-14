@@ -1,0 +1,83 @@
+\hypertarget{signals_8h_source}{}\doxysection{signals.\+h}
+\label{signals_8h_source}\index{D:/Tmp/avr/avr\_tools/avr\_tools/include/signals.h@{D:/Tmp/avr/avr\_tools/avr\_tools/include/signals.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ signals.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Created:\ 09.04.2023\ 17:02:28}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ Author:\ MainUser}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ SIGNALS\_H\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ SIGNALS\_H\_}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ DEFAULT\_MAX\_SLOT\_COUNT}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#warning\ "{}auto\ define\ of\ DEFAULT\_MAX\_SLOT\_COUNT"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ DEFAULT\_MAX\_SLOT\_COUNT\ 8;}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <set.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <delegator.h>}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }aos\{}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ DelegatorClass,u\textcolor{keywordtype}{int}8\_t\ max\_slots\ =\ DEFAULT\_MAX\_SLOT\_COUNT>}
+\DoxyCodeLine{00022\ \textcolor{keyword}{struct\ }direct\_signal\_impl;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args,\textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...>\ DelegatorClass,uint8\_t\ max\_slots\ =\ DEFAULT\_MAX\_SLOT\_COUNT>}
+\DoxyCodeLine{00025\ \textcolor{keyword}{struct\ }direct\_signal\_impl<DelegatorClass<Args...>,max\_slots>}
+\DoxyCodeLine{00026\ \ \ \ \ DelegatorClass\ \_slots\_array[max\_slots];}
+\DoxyCodeLine{00027\ \ \ \ \ set<DelegatorClass,uint8\_t,no\_guard>\ \_slots;}
+\DoxyCodeLine{00028\ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ protect\_from\_writing;}
+\DoxyCodeLine{00030\ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ direct\_signal\_impl():\_slots(\_slots\_array,max\_slots),protect\_from\_writing(false)\{\}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args1>}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ connect(Args1\&\&...args)\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \_slots.sinsert(args...);}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args1>}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ disconnect(Args1\&\&...args)\{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \_slots.sremove\_compare(DelegatorClass(args...));}
+\DoxyCodeLine{00042\ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ operator()(Args...args)\{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ protect\_from\_writing\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \_slots.lock();}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(uint8\_t\ i=0;i\ !=\ \_slots.\_size;++i)\{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \_slots\_array[i].call(args...);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \_slots.unlock();}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ protect\_from\_writing\ =\ \textcolor{keyword}{false};\ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args,uint8\_t\ max\_slots\ =\ DEFAULT\_MAX\_SLOT\_COUNT>}
+\DoxyCodeLine{00056\ \textcolor{keyword}{using\ }direct\_c\_signal\ =\ direct\_signal\_impl<Args...,ClassDelegator,max\_slots>;}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args,uint8\_t\ max\_slots\ =\ DEFAULT\_MAX\_SLOT\_COUNT>}
+\DoxyCodeLine{00059\ \textcolor{keyword}{using\ }direct\_signal\ =\ direct\_c\_signal<Args...,max\_slots>;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args,uint8\_t\ max\_slots\ =\ DEFAULT\_MAX\_SLOT\_COUNT>}
+\DoxyCodeLine{00062\ \textcolor{keyword}{using\ }direct\_f\_signal\ =\ direct\_signal\_impl<Args...,FunctionDelegator,max\_slots>;}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Signal,\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00065\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ connect(Signal\ *\ S,Args...args)\{}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordflow}{return}\ S-\/>connect(args...);}
+\DoxyCodeLine{00067\ \};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ Signal,\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00070\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ disconnect(Signal\ *\ S,Args...args)\{}
+\DoxyCodeLine{00071\ \ \ \ \ S-\/>disconnect(args...);}
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ SIGNALS\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

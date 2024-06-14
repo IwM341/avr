@@ -5,7 +5,7 @@
  * Author : MainUser
  */ 
 
-//#define F_CPU 16000000UL
+#define F_CPU 16000000UL
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
@@ -22,7 +22,7 @@ void USART_Init( unsigned int UBBRn)//Инициализация модуля USART
 	
 	// UCSRnA:
 	//UCSR0A |= (1<<U2X0); // удвоение скорости
-	
+	//
 	// UCSRnB:
 	UCSR0B = (1<<RXEN0)|( 1<<TXEN0); //Включаем прием и передачу по USART
 	UCSR0B |= (1<<RXCIE0) | (1<<TXCIE0); //Разрешаем прерывание при  приеме и передаче
@@ -110,7 +110,7 @@ int main(void)
 {
 	sei();
 
-    USART_Init(8);
+    USART_Init(8);//Baud = F_CPU/(16(UBBRn + 1))
 	
 	_delay_ms(1000);
 	USART_send('h');
@@ -123,27 +123,50 @@ int main(void)
 	_delay_ms(1000);
 	
 	Bmp180CalibrationData calibrationData;
-	uint8_t result = bmp180ReadCalibrationData(&calibrationData);
-
-	if (result == BMP180_OK) {
-		Bmp180Data bmp180Data;
-		result = bmp180ReadData(BMP180_OSS_STANDARD, &bmp180Data, &calibrationData);
-
+	
+	while(1)
+	{
+		uint8_t result = bmp180ReadCalibrationData(&calibrationData);
+		
 		if (result == BMP180_OK) {
-			uint8_t temp= bmp180Data.temperatureC;
-			long pressure = bmp180Data.pressurePa;
-			UNUSE(pressure);
-			USART_send('t');
-			USART_send_uint8_t(temp);
-			USART_send('C');
+			Bmp180Data bmp180Data;
+			USART_send('o');
+			USART_send('k');
+			USART_send('0');
+			USART_send('\n');
+			result = bmp180ReadData(BMP180_OSS_STANDARD, &bmp180Data, &calibrationData);
+			
+			if (result == BMP180_OK) {
+				uint8_t temp= bmp180Data.temperatureC;
+				long pressure = bmp180Data.pressurePa;
+				UNUSE(pressure);
+				USART_send('t');
+				USART_send_uint8_t(temp);
+				USART_send('C');
+				} else {
+				USART_send('e');
+				USART_send('r');
+				USART_send('r');
+				USART_send('o');
+				USART_send('w');
+				USART_send(' ');
+				USART_send_uint8_t(result);
+				USART_send('\n');
+			}
+			} else {
+			USART_send('e');
+			USART_send('r');
+			USART_send('0');
+			USART_send('\n');
 		}
+// 		USART_send('\"');
+// 		for(uint8_t* it = &calibrationData;it < (uint8_t *)(&calibrationData) + sizeof(calibrationData);++it){
+// 			USART_send_uint8_t(*it);
+// 			USART_send('.');
+// 		}
+// 		USART_send('\"');
+		_delay_ms(2000);
 	}
-	USART_send('\"');
-	for(uint8_t* it = &calibrationData;it < (uint8_t *)(&calibrationData) + sizeof(calibrationData);++it){
-		USART_send_uint8_t(*it);
-		USART_send('.');
-	}
-	USART_send('\"');
 	
 	//USART_send('\n');
 	

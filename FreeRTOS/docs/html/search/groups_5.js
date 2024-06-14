@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['vcoroutineschedule_0',['vCoRoutineSchedule',['../group__v_co_routine_schedule.html',1,'']]],
+  ['vqueuedelete_1',['vQueueDelete',['../group__v_queue_delete.html',1,'']]],
+  ['vsemaphorecreatebinary_2',['vSemaphoreCreateBinary',['../group__v_semaphore_create_binary.html',1,'']]],
+  ['vsemaphoredelete_3',['vSemaphoreDelete',['../group__v_semaphore_delete.html',1,'']]],
+  ['vtaskdelay_4',['vTaskDelay',['../group__v_task_delay.html',1,'']]],
+  ['vtaskdelayuntil_5',['vTaskDelayUntil',['../group__v_task_delay_until.html',1,'']]],
+  ['vtaskdelete_6',['vTaskDelete',['../group__v_task_delete.html',1,'']]],
+  ['vtaskendscheduler_7',['vTaskEndScheduler',['../group__v_task_end_scheduler.html',1,'']]],
+  ['vtaskgetinfo_8',['vTaskGetInfo',['../group__v_task_get_info.html',1,'']]],
+  ['vtaskgetruntimestats_9',['vTaskGetRunTimeStats',['../group__v_task_get_run_time_stats.html',1,'']]],
+  ['vtasklist_10',['vTaskList',['../group__v_task_list.html',1,'']]],
+  ['vtaskpriorityset_11',['vTaskPrioritySet',['../group__v_task_priority_set.html',1,'']]],
+  ['vtaskresume_12',['vTaskResume',['../group__v_task_resume.html',1,'']]],
+  ['vtaskresumefromisr_13',['vTaskResumeFromISR',['../group__v_task_resume_from_i_s_r.html',1,'']]],
+  ['vtaskstartscheduler_14',['vTaskStartScheduler',['../group__v_task_start_scheduler.html',1,'']]],
+  ['vtasksuspend_15',['vTaskSuspend',['../group__v_task_suspend.html',1,'']]],
+  ['vtasksuspendall_16',['vTaskSuspendAll',['../group__v_task_suspend_all.html',1,'']]]
+];

@@ -1,0 +1,46 @@
+\hypertarget{signals_8h}{}\doxysection{D\+:/\+Tmp/avr/avr\+\_\+tools/avr\+\_\+tools/include/signals.h File Reference}
+\label{signals_8h}\index{D:/Tmp/avr/avr\_tools/avr\_tools/include/signals.h@{D:/Tmp/avr/avr\_tools/avr\_tools/include/signals.h}}
+{\ttfamily \#include $<$set.\+h$>$}\newline
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceaos}{aos}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{signals_8h_ae785252bd771aec039915d45b5e3823d}{DEFAULT\+\_\+\+MAX\+\_\+\+SLOT\+\_\+\+COUNT}}~8;
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceaos_aad685b5b473c6322b75084a31a6a2579}{aos\+::direct\+\_\+signal\+\_\+impl}} ()
+\item 
+{\footnotesize template$<$typename... Args1$>$ }\\bool \mbox{\hyperlink{namespaceaos_a57c23da940d69a2e262ea274f03c5151}{aos\+::connect}} (Args1 \&\&...args)
+\item 
+{\footnotesize template$<$typename... Args1$>$ }\\void \mbox{\hyperlink{namespaceaos_af2124a9e50a1e563b1d9cf48588be6e9}{aos\+::disconnect}} (Args1 \&\&...args)
+\item 
+void \mbox{\hyperlink{namespaceaos_a764ffaade9367585d0ece58109340e4c}{aos\+::operator()}} (Args...\+args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args, templae$<$ typename... $>$ Delegator\+Class, uint8\+\_\+t max\+\_\+slots = DEFAULT\+\_\+\+MAX\+\_\+\+SLOT\+\_\+\+COUNT$>$ }\\struct direct\+\_\+signal\+\_\+impl$<$ Delegator\+Class$<$ Args... $>$, max\+\_\+slots $>$ Delegator\+Class \mbox{\hyperlink{namespaceaos_a4753febf0bb891f6232584820bc62368}{aos\+::\+\_\+slots\+\_\+array}} \mbox{[}max\+\_\+slots\mbox{]}
+\item 
+set$<$ Delegator\+Class, uint8\+\_\+t, no\+\_\+guard $>$ \mbox{\hyperlink{namespaceaos_a0cef7bf4abb5d882db79f484bb6b838a}{aos\+::\+\_\+slots}}
+\item 
+bool \mbox{\hyperlink{namespaceaos_a365dde35491c5fa88aecde0e2b305a26}{aos\+::protect\+\_\+from\+\_\+writing}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{signals_8h_ae785252bd771aec039915d45b5e3823d}\label{signals_8h_ae785252bd771aec039915d45b5e3823d}} 
+\index{signals.h@{signals.h}!DEFAULT\_MAX\_SLOT\_COUNT@{DEFAULT\_MAX\_SLOT\_COUNT}}
+\index{DEFAULT\_MAX\_SLOT\_COUNT@{DEFAULT\_MAX\_SLOT\_COUNT}!signals.h@{signals.h}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_MAX\_SLOT\_COUNT}{DEFAULT\_MAX\_SLOT\_COUNT}}
+{\footnotesize\ttfamily \#define DEFAULT\+\_\+\+MAX\+\_\+\+SLOT\+\_\+\+COUNT~8;}
+
+
+
+Definition at line \mbox{\hyperlink{signals_8h_source_l00014}{14}} of file \mbox{\hyperlink{signals_8h_source}{signals.\+h}}.
+

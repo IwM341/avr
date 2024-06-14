@@ -1,0 +1,1461 @@
+Archive member included to satisfy reference by file (symbol)
+
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                              main.o (__ltsf2)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                              main.o (__divsf3)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3.o) (__divsf3x)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixsfdi.o)
+                              main.o (__fixunssfdi)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                              main.o (__fixunssfsi)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                              main.o (__floatunsisf)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_inf)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_nan)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_negdi.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixsfdi.o) (__fp_negdi)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_pscA)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_pscB)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3.o) (__fp_round)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_split3)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o) (__fp_zero)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                              main.o (__gtsf2)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                              main.o (__mulsf3)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                              main.o (__udivmodsi4)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                              d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+                              main.o (__tablejump2__)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+                              main.o (__do_clear_bss)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+                              main.o (__adddi3_s8)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                              main.o (malloc)
+d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(abort.o)
+                              main.o (abort)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .group         0x0000000000000000        0xc cppimpl.o
+ .text          0x0000000000000000        0x0 cppimpl.o
+ .data          0x0000000000000000        0x0 cppimpl.o
+ .bss           0x0000000000000000        0x0 cppimpl.o
+ .text.__cxa_guard_abort
+                0x0000000000000000       0x1a cppimpl.o
+ .text.__cxa_pure_virtual
+                0x0000000000000000       0x10 cppimpl.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .group         0x0000000000000000        0xc main.o
+ .text          0x0000000000000000        0x0 main.o
+ .data          0x0000000000000000        0x0 main.o
+ .bss           0x0000000000000000        0x0 main.o
+ .text._ZNSt7__n486122__dummy_resume_destroyEv
+                0x0000000000000000       0x10 main.o
+ .data._ZNSt7__n486114__noop_coro_frE
+                0x0000000000000000        0x5 main.o
+ .rodata._ZN10asyncruino11time_prefixL2psE
+                0x0000000000000000        0x2 main.o
+ .rodata._ZN10asyncruino11time_prefixL2nsE
+                0x0000000000000000        0x2 main.o
+ .rodata._ZN10asyncruino11time_prefixL3musE
+                0x0000000000000000        0x2 main.o
+ .rodata._ZN10asyncruino11time_prefixL2msE
+                0x0000000000000000        0x2 main.o
+ .rodata._ZN10asyncruino11time_prefixL1sE
+                0x0000000000000000        0x2 main.o
+ .rodata._ZN10asyncruino11time_prefixL2KsE
+                0x0000000000000000        0x2 main.o
+ .rodata._ZN10asyncruino11time_prefixL2MsE
+                0x0000000000000000        0x2 main.o
+ .rodata._ZN10asyncruino13time_literalsL2psE
+                0x0000000000000000        0x1 main.o
+ .rodata._ZN10asyncruino13time_literalsL2nsE
+                0x0000000000000000        0x1 main.o
+ .rodata._ZN10asyncruino13time_literalsL3musE
+                0x0000000000000000        0x1 main.o
+ .rodata._ZN10asyncruino13time_literalsL2msE
+                0x0000000000000000        0x1 main.o
+ .rodata._ZN10asyncruino13time_literalsL1sE
+                0x0000000000000000        0x1 main.o
+ .rodata._ZN10asyncruino13time_literalsL2KsE
+                0x0000000000000000        0x1 main.o
+ .rodata._ZN10asyncruino13time_literalsL2MsE
+                0x0000000000000000        0x1 main.o
+ .bss.delay_bug_param
+                0x0000000000000000        0x2 main.o
+ .debug_macro   0x0000000000000000      0xd84 main.o
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixsfdi.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixsfdi.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixsfdi.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_negdi.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_negdi.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_negdi.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.fixed
+                0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+ .text          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .data          0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(abort.o)
+ .bss           0x0000000000000000        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(abort.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000003 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+user_signatures  0x0000000000850000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+LOAD cppimpl.o
+LOAD main.o
+START GROUP
+LOAD d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a
+END GROUP
+LOAD d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a
+LOAD d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a
+START GROUP
+LOAD d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a
+LOAD d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a
+LOAD d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a
+LOAD d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libatmega328p.a
+END GROUP
+                0x0000000000020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x000000000000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x0000000000010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x0000000000000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x0000000000000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x0000000000000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x0000000000000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000     0x4786
+ *(.vectors)
+ .vectors       0x0000000000000000       0x68 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000000000000000                __vector_default
+                0x0000000000000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x0000000000000068                . = ALIGN (0x2)
+                0x0000000000000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000000000000068        0x0 linker stubs
+ *(.trampolines*)
+                0x0000000000000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem.*)
+                0x0000000000000068                . = ALIGN (0x2)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000000000000068                __ctors_start = .
+ *(.ctors)
+                0x0000000000000068                __ctors_end = .
+                0x0000000000000068                __dtors_start = .
+ *(.dtors)
+                0x0000000000000068                __dtors_end = .
+ SORT_BY_NAME(*)(.ctors)
+ SORT_BY_NAME(*)(.dtors)
+ *(.init0)
+ .init0         0x0000000000000068        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x0000000000000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000000000000068        0xc d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000000000000074       0x16 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+                0x0000000000000074                __do_copy_data
+ .init4         0x000000000000008a       0x10 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+                0x000000000000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000000000009a        0x8 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000a2        0x4 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000000000000a2                __vector_22
+                0x00000000000000a2                __vector_1
+                0x00000000000000a2                __vector_24
+                0x00000000000000a2                __vector_12
+                0x00000000000000a2                __bad_interrupt
+                0x00000000000000a2                __vector_6
+                0x00000000000000a2                __vector_3
+                0x00000000000000a2                __vector_23
+                0x00000000000000a2                __vector_25
+                0x00000000000000a2                __vector_11
+                0x00000000000000a2                __vector_13
+                0x00000000000000a2                __vector_17
+                0x00000000000000a2                __vector_19
+                0x00000000000000a2                __vector_7
+                0x00000000000000a2                __vector_5
+                0x00000000000000a2                __vector_4
+                0x00000000000000a2                __vector_9
+                0x00000000000000a2                __vector_2
+                0x00000000000000a2                __vector_21
+                0x00000000000000a2                __vector_15
+                0x00000000000000a2                __vector_8
+                0x00000000000000a2                __vector_14
+                0x00000000000000a2                __vector_10
+                0x00000000000000a6                . = ALIGN (0x2)
+ *(.text.*)
+ .text.__cxa_guard_acquire
+                0x00000000000000a6       0x2c cppimpl.o
+                0x00000000000000a6                __cxa_guard_acquire
+ .text.__cxa_guard_release
+                0x00000000000000d2       0x24 cppimpl.o
+                0x00000000000000d2                __cxa_guard_release
+ .text._ZNSt7__n486116coroutine_handleIvEC2Ev
+                0x00000000000000f6       0x24 main.o
+                0x00000000000000f6                _ZNSt7__n486116coroutine_handleIvEC1Ev
+                0x00000000000000f6                _ZNSt7__n486116coroutine_handleIvEC2Ev
+ .text._ZNKSt7__n486116coroutine_handleIvE6resumeEv
+                0x000000000000011a       0x2e main.o
+                0x000000000000011a                _ZNKSt7__n486116coroutine_handleIvE6resumeEv
+ .text._ZNSt7__n486113suspend_never11await_readyEv
+                0x0000000000000148       0x1a main.o
+                0x0000000000000148                _ZNSt7__n486113suspend_never11await_readyEv
+ .text._ZNSt7__n486113suspend_never13await_suspendENS_16coroutine_handleIvEE
+                0x0000000000000162       0x24 main.o
+                0x0000000000000162                _ZNSt7__n486113suspend_never13await_suspendENS_16coroutine_handleIvEE
+ .text._ZNSt7__n486113suspend_never12await_resumeEv
+                0x0000000000000186       0x1a main.o
+                0x0000000000000186                _ZNSt7__n486113suspend_never12await_resumeEv
+ .text._ZN10asyncruino4task12promise_typenwEj
+                0x00000000000001a0       0x20 main.o
+                0x00000000000001a0                _ZN10asyncruino4task12promise_typenwEj
+ .text._ZN10asyncruino4task12promise_typedlEPv
+                0x00000000000001c0       0x22 main.o
+                0x00000000000001c0                _ZN10asyncruino4task12promise_typedlEPv
+ .text._ZN10asyncruino4task12promise_type17get_return_objectEv
+                0x00000000000001e2       0x1c main.o
+                0x00000000000001e2                _ZN10asyncruino4task12promise_type17get_return_objectEv
+ .text._ZN10asyncruino4task12promise_type15initial_suspendEv
+                0x00000000000001fe       0x1c main.o
+                0x00000000000001fe                _ZN10asyncruino4task12promise_type15initial_suspendEv
+ .text._ZN10asyncruino13default_guardC2Ev
+                0x000000000000021a       0x22 main.o
+                0x000000000000021a                _ZN10asyncruino13default_guardC1Ev
+                0x000000000000021a                _ZN10asyncruino13default_guardC2Ev
+ .text._ZN10asyncruino13default_guard4lockEv
+                0x000000000000023c       0x4e main.o
+                0x000000000000023c                _ZN10asyncruino13default_guard4lockEv
+ .text._ZN10asyncruino13default_guard6unlockEv
+                0x000000000000028a       0x46 main.o
+                0x000000000000028a                _ZN10asyncruino13default_guard6unlockEv
+ .text._ZN10asyncruino9schedulerC2Ev
+                0x00000000000002d0       0x24 main.o
+                0x00000000000002d0                _ZN10asyncruino9schedulerC1Ev
+                0x00000000000002d0                _ZN10asyncruino9schedulerC2Ev
+ .text._ZN10asyncruino9scheduler8instanceEv
+                0x00000000000002f4       0x36 main.o
+                0x00000000000002f4                _ZN10asyncruino9scheduler8instanceEv
+ .text._ZN10asyncruino9scheduler3runEv
+                0x000000000000032a       0x1a main.o
+                0x000000000000032a                _ZN10asyncruino9scheduler3runEv
+ .text._ZN10asyncruino18hardware_uart_implC2Ev
+                0x0000000000000344       0x1a main.o
+                0x0000000000000344                _ZN10asyncruino18hardware_uart_implC2Ev
+                0x0000000000000344                _ZN10asyncruino18hardware_uart_implC1Ev
+ .text._ZN10asyncruino18hardware_uart_impl14write_if_readyEc
+                0x000000000000035e       0x4a main.o
+                0x000000000000035e                _ZN10asyncruino18hardware_uart_impl14write_if_readyEc
+ .text._ZN10asyncruino18hardware_uart_impl5writeEc
+                0x00000000000003a8       0x2a main.o
+                0x00000000000003a8                _ZN10asyncruino18hardware_uart_impl5writeEc
+ .text._ZN10asyncruino18hardware_uart_impl12debug_stringEPKc
+                0x00000000000003d2       0x76 main.o
+                0x00000000000003d2                _ZN10asyncruino18hardware_uart_impl12debug_stringEPKc
+ .text._ZN10asyncruino18hardware_uart_impl4initEmm
+                0x0000000000000448      0x17c main.o
+                0x0000000000000448                _ZN10asyncruino18hardware_uart_impl4initEmm
+ .text._ZN10asyncruino18hardware_uart_impl8instanceEv
+                0x00000000000005c4       0x36 main.o
+                0x00000000000005c4                _ZN10asyncruino18hardware_uart_impl8instanceEv
+ .text._ZN10asyncruino4uartC2Ev
+                0x00000000000005fa       0x6c main.o
+                0x00000000000005fa                _ZN10asyncruino4uartC2Ev
+                0x00000000000005fa                _ZN10asyncruino4uartC1Ev
+ .text._ZN10asyncruino4uart4initEmm
+                0x0000000000000666       0x64 main.o
+                0x0000000000000666                _ZN10asyncruino4uart4initEmm
+ .text._ZN10asyncruino4uart8instanceEv
+                0x00000000000006ca       0x36 main.o
+                0x00000000000006ca                _ZN10asyncruino4uart8instanceEv
+ .text._ZN10asyncruino4uart8ReadByteEv
+                0x0000000000000700       0x4e main.o
+                0x0000000000000700                _ZN10asyncruino4uart8ReadByteEv
+ .text._ZN10asyncruino4uart14ReadBytesUntilEPcch
+                0x000000000000074e       0x4c main.o
+                0x000000000000074e                _ZN10asyncruino4uart14ReadBytesUntilEPcch
+ .text._ZN10asyncruino4uart9WriteByteEc
+                0x000000000000079a       0x54 main.o
+                0x000000000000079a                _ZN10asyncruino4uart9WriteByteEc
+ .text._ZN10asyncruino4uart10WriteBytesEPKch
+                0x00000000000007ee       0xd6 main.o
+                0x00000000000007ee                _ZN10asyncruino4uart10WriteBytesEPKch
+ .text._ZN10asyncruino4uart10WriteBytesEPKc
+                0x00000000000008c4       0xd2 main.o
+                0x00000000000008c4                _ZN10asyncruino4uart10WriteBytesEPKc
+ .text._ZN10asyncruino4uart11debug_crushEPKc
+                0x0000000000000996       0x2c main.o
+                0x0000000000000996                _ZN10asyncruino4uart11debug_crushEPKc
+ .text.__vector_18
+                0x00000000000009c2       0x6a main.o
+                0x00000000000009c2                __vector_18
+ .text.__vector_20
+                0x0000000000000a2c       0x5c main.o
+                0x0000000000000a2c                __vector_20
+ .text._ZN10asyncruino16timer_0_hw__implC2Ev
+                0x0000000000000a88       0x1a main.o
+                0x0000000000000a88                _ZN10asyncruino16timer_0_hw__implC1Ev
+                0x0000000000000a88                _ZN10asyncruino16timer_0_hw__implC2Ev
+ .text._ZN10asyncruino16timer_0_hw__impl8instanceEv
+                0x0000000000000aa2       0x36 main.o
+                0x0000000000000aa2                _ZN10asyncruino16timer_0_hw__impl8instanceEv
+ .text._ZN10asyncruino16timer_0_hw__impl5startEh
+                0x0000000000000ad8       0x4a main.o
+                0x0000000000000ad8                _ZN10asyncruino16timer_0_hw__impl5startEh
+ .text._ZN10asyncruino6timer0C2Ev
+                0x0000000000000b22       0x52 main.o
+                0x0000000000000b22                _ZN10asyncruino6timer0C2Ev
+                0x0000000000000b22                _ZN10asyncruino6timer0C1Ev
+ .text._ZN10asyncruino6timer09set_speedEm
+                0x0000000000000b74       0x88 main.o
+                0x0000000000000b74                _ZN10asyncruino6timer09set_speedEm
+ .text._ZN10asyncruino6timer08instanceEv
+                0x0000000000000bfc       0x36 main.o
+                0x0000000000000bfc                _ZN10asyncruino6timer08instanceEv
+ .text.__vector_16
+                0x0000000000000c32       0x5a main.o
+                0x0000000000000c32                __vector_16
+ .text._Z10EchoServerv
+                0x0000000000000c8c       0x78 main.o
+                0x0000000000000c8c                _Z10EchoServerv
+ .text._Z10EchoServerPZ10EchoServervE21_Z10EchoServerv.Frame.actor
+                0x0000000000000d04      0x994 main.o
+ .text._Z10EchoServerPZ10EchoServervE21_Z10EchoServerv.Frame.destroy
+                0x0000000000001698       0x38 main.o
+ .text._ZN10asyncruino18timer_counter_implINS_9schedulerENS_13default_guardEmNS_17timer_dim_counterIyfLi0EEEhLj1EE5DelayIyEEDaT_
+                0x00000000000016d0       0xe8 main.o
+                0x00000000000016d0                _ZN10asyncruino18timer_counter_implINS_9schedulerENS_13default_guardEmNS_17timer_dim_counterIyfLi0EEEhLj1EE5DelayIyEEDaT_
+ .text._ZN10asyncruino18timer_counter_implINS_9schedulerENS_13default_guardEmNS_17timer_dim_counterIyfLi0EEEhLj1EE5DelayIjLin3EEEDaT_NS_13time_prefix_tIXT0_EEE
+                0x00000000000017b8      0x102 main.o
+                0x00000000000017b8                _ZN10asyncruino18timer_counter_implINS_9schedulerENS_13default_guardEmNS_17timer_dim_counterIyfLi0EEEhLj1EE5DelayIjLin3EEEDaT_NS_13time_prefix_tIXT0_EEE
+ .text._Z5Blinkji
+                0x00000000000018ba       0xa8 main.o
+                0x00000000000018ba                _Z5Blinkji
+ .text._Z5BlinkPZ5BlinkjiE16_Z5Blinkji.Frame.actor
+                0x0000000000001962      0x2f8 main.o
+ .text._Z5BlinkPZ5BlinkjiE16_Z5Blinkji.Frame.destroy
+                0x0000000000001c5a       0x38 main.o
+ .text._Z10sleep_funcv
+                0x0000000000001c92      0x2ba main.o
+                0x0000000000001c92                _Z10sleep_funcv
+ .text._Z13double_lockedv
+                0x0000000000001f4c       0x18 main.o
+                0x0000000000001f4c                _Z13double_lockedv
+ .text._Z15double_unlockedv
+                0x0000000000001f64       0x1e main.o
+                0x0000000000001f64                _Z15double_unlockedv
+ .text.main     0x0000000000001f82       0x80 main.o
+                0x0000000000001f82                main
+ .text._ZN10asyncruino14scheduler_implINS_13default_guardELj32EEC2Ev
+                0x0000000000002002       0x3c main.o
+                0x0000000000002002                _ZN10asyncruino14scheduler_implINS_13default_guardELj32EEC1Ev
+                0x0000000000002002                _ZN10asyncruino14scheduler_implINS_13default_guardELj32EEC2Ev
+ .text._ZN10asyncruino14scheduler_implINS_13default_guardELj32EE3runEv
+                0x000000000000203e       0x84 main.o
+                0x000000000000203e                _ZN10asyncruino14scheduler_implINS_13default_guardELj32EE3runEv
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EEC2ERS1_
+                0x00000000000020c2       0x56 main.o
+                0x00000000000020c2                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EEC1ERS1_
+                0x00000000000020c2                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EEC2ERS1_
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhEC2ERS1_RS2_
+                0x0000000000002118       0x5e main.o
+                0x0000000000002118                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhEC2ERS1_RS2_
+                0x0000000000002118                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhEC1ERS1_RS2_
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE8ReadByteEv
+                0x0000000000002176       0x50 main.o
+                0x0000000000002176                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE8ReadByteEv
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE14ReadBytesUntilEPchc
+                0x00000000000021c6       0x5c main.o
+                0x00000000000021c6                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE14ReadBytesUntilEPchc
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9WriteByteEc
+                0x0000000000002222       0x54 main.o
+                0x0000000000002222                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9WriteByteEc
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE10WriteBytesEPKch
+                0x0000000000002276       0xbc main.o
+                0x0000000000002276                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE10WriteBytesEPKch
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE10WriteBytesEPKc
+                0x0000000000002332       0xd6 main.o
+                0x0000000000002332                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE10WriteBytesEPKc
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9interruptEc
+                0x0000000000002408      0x29a main.o
+                0x0000000000002408                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9interruptEc
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9interruptEv
+                0x00000000000026a2      0x11a main.o
+                0x00000000000026a2                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9interruptEv
+ .text._ZN10asyncruino18timer_counter_implINS_9schedulerENS_13default_guardEmNS_17timer_dim_counterIyfLi0EEEhLj1EEC2ILi0EEERS1_fNS_13time_prefix_tIXT_EEE
+                0x00000000000027bc       0x6c main.o
+                0x00000000000027bc                _ZN10asyncruino18timer_counter_implINS_9schedulerENS_13default_guardEmNS_17timer_dim_counterIyfLi0EEEhLj1EEC2ILi0EEERS1_fNS_13time_prefix_tIXT_EEE
+                0x00000000000027bc                _ZN10asyncruino18timer_counter_implINS_9schedulerENS_13default_guardEmNS_17timer_dim_counterIyfLi0EEEhLj1EEC1ILi0EEERS1_fNS_13time_prefix_tIXT_EEE
+ .text._ZN10asyncruino16timer_0_hw__impl20prefix_sec_per_ticksIfLi0EEET_NS_13time_prefix_tIXT0_EEEm
+                0x0000000000002828       0xe6 main.o
+                0x0000000000002828                _ZN10asyncruino16timer_0_hw__impl20prefix_sec_per_ticksIfLi0EEET_NS_13time_prefix_tIXT0_EEEm
+ .text._ZN10asyncruino18timer_counter_implINS_9schedulerENS_13default_guardEmNS_17timer_dim_counterIyfLi0EEEhLj1EE9set_speedILi0EEEvfNS_13time_prefix_tIXT_EEE
+                0x000000000000290e       0x4e main.o
+                0x000000000000290e                _ZN10asyncruino18timer_counter_implINS_9schedulerENS_13default_guardEmNS_17timer_dim_counterIyfLi0EEEhLj1EE9set_speedILi0EEEvfNS_13time_prefix_tIXT_EEE
+ .text._ZN10asyncruino18timer_counter_implINS_9schedulerENS_13default_guardEmNS_17timer_dim_counterIyfLi0EEEhLj1EE9interruptEv
+                0x000000000000295c       0xb0 main.o
+                0x000000000000295c                _ZN10asyncruino18timer_counter_implINS_9schedulerENS_13default_guardEmNS_17timer_dim_counterIyfLi0EEEhLj1EE9interruptEv
+ .text._Z9write_intImEhT_Pch
+                0x0000000000002a0c      0x160 main.o
+                0x0000000000002a0c                _Z9write_intImEhT_Pch
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE19write_bytes_awaitor11await_readyEv
+                0x0000000000002b6c       0x20 main.o
+                0x0000000000002b6c                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE19write_bytes_awaitor11await_readyEv
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE19write_bytes_awaitor13await_suspendENSt7__n486116coroutine_handleIvEE
+                0x0000000000002b8c       0x90 main.o
+                0x0000000000002b8c                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE19write_bytes_awaitor13await_suspendENSt7__n486116coroutine_handleIvEE
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE19write_bytes_awaitor12await_resumeEv
+                0x0000000000002c1c       0x36 main.o
+                0x0000000000002c1c                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE19write_bytes_awaitor12await_resumeEv
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE18write_byte_awaitor11await_readyEv
+                0x0000000000002c52       0x20 main.o
+                0x0000000000002c52                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE18write_byte_awaitor11await_readyEv
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE18write_byte_awaitor13await_suspendENSt7__n486116coroutine_handleIvEE
+                0x0000000000002c72       0x74 main.o
+                0x0000000000002c72                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE18write_byte_awaitor13await_suspendENSt7__n486116coroutine_handleIvEE
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE18write_byte_awaitor12await_resumeEv
+                0x0000000000002ce6       0x36 main.o
+                0x0000000000002ce6                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE18write_byte_awaitor12await_resumeEv
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE17read_byte_awaitor11await_readyEv
+                0x0000000000002d1c       0x20 main.o
+                0x0000000000002d1c                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE17read_byte_awaitor11await_readyEv
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE17read_byte_awaitor13await_suspendENSt7__n486116coroutine_handleIvEE
+                0x0000000000002d3c       0x5e main.o
+                0x0000000000002d3c                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE17read_byte_awaitor13await_suspendENSt7__n486116coroutine_handleIvEE
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE17read_byte_awaitor12await_resumeEv
+                0x0000000000002d9a       0x7c main.o
+                0x0000000000002d9a                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE17read_byte_awaitor12await_resumeEv
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE24read_bytes_until_awaitorILh1EE11await_readyEv
+                0x0000000000002e16       0x20 main.o
+                0x0000000000002e16                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE24read_bytes_until_awaitorILh1EE11await_readyEv
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE24read_bytes_until_awaitorILh1EE13await_suspendENSt7__n486116coroutine_handleIvEE
+                0x0000000000002e36       0xb4 main.o
+                0x0000000000002e36                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE24read_bytes_until_awaitorILh1EE13await_suspendENSt7__n486116coroutine_handleIvEE
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE24read_bytes_until_awaitorILh1EE12await_resumeEv
+                0x0000000000002eea       0x64 main.o
+                0x0000000000002eea                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE24read_bytes_until_awaitorILh1EE12await_resumeEv
+ .text._ZNSt7__n486116coroutine_handleIN10asyncruino4task12promise_typeEE12from_addressEPv
+                0x0000000000002f4e       0x2e main.o
+                0x0000000000002f4e                _ZNSt7__n486116coroutine_handleIN10asyncruino4task12promise_typeEE12from_addressEPv
+ .text._ZNK10asyncruino17timer_dim_counterIyfLi0EE12to_counter_tIjLin3EEEyT_NS_13time_prefix_tIXT0_EEE
+                0x0000000000002f7c       0x8e main.o
+                0x0000000000002f7c                _ZNK10asyncruino17timer_dim_counterIyfLi0EE12to_counter_tIjLin3EEEyT_NS_13time_prefix_tIXT0_EEE
+ .text._ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE5DelayEm
+                0x000000000000300a       0xec main.o
+                0x000000000000300a                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE5DelayEm
+ .text._ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE13Delay_awaitor11await_readyEv
+                0x00000000000030f6       0x34 main.o
+                0x00000000000030f6                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE13Delay_awaitor11await_readyEv
+ .text._ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE13Delay_awaitor13await_suspendENSt7__n486116coroutine_handleIvEE
+                0x000000000000312a       0x5a main.o
+                0x000000000000312a                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE13Delay_awaitor13await_suspendENSt7__n486116coroutine_handleIvEE
+ .text._ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE13Delay_awaitor12await_resumeEv
+                0x0000000000003184       0x1a main.o
+                0x0000000000003184                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE13Delay_awaitor12await_resumeEv
+ .text._ZN10asyncruino4pipeINSt7__n486116coroutine_handleIvEEjLj32EEC2Ev
+                0x000000000000319e       0x46 main.o
+                0x000000000000319e                _ZN10asyncruino4pipeINSt7__n486116coroutine_handleIvEEjLj32EEC2Ev
+                0x000000000000319e                _ZN10asyncruino4pipeINSt7__n486116coroutine_handleIvEEjLj32EEC1Ev
+ .text._ZNK10asyncruino4pipeINSt7__n486116coroutine_handleIvEEjLj32EE5emptyEv
+                0x00000000000031e4       0x30 main.o
+                0x00000000000031e4                _ZNK10asyncruino4pipeINSt7__n486116coroutine_handleIvEEjLj32EE5emptyEv
+ .text._ZN10asyncruino4pipeINSt7__n486116coroutine_handleIvEEjLj32EE4readERS3_
+                0x0000000000003214       0xce main.o
+                0x0000000000003214                _ZN10asyncruino4pipeINSt7__n486116coroutine_handleIvEEjLj32EE4readERS3_
+ .text._ZN10asyncruino15sheduler_getterINS_9schedulerEEC2ERS1_
+                0x00000000000032e2       0x24 main.o
+                0x00000000000032e2                _ZN10asyncruino15sheduler_getterINS_9schedulerEEC2ERS1_
+                0x00000000000032e2                _ZN10asyncruino15sheduler_getterINS_9schedulerEEC1ERS1_
+ .text._ZN10asyncruino4pipeIchLh32EEC2Ev
+                0x0000000000003306       0x2a main.o
+                0x0000000000003306                _ZN10asyncruino4pipeIchLh32EEC1Ev
+                0x0000000000003306                _ZN10asyncruino4pipeIchLh32EEC2Ev
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataC2Ev
+                0x0000000000003330       0x24 main.o
+                0x0000000000003330                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataC1Ev
+                0x0000000000003330                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataC2Ev
+ .text._ZN10asyncruino8optionalINS_16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataEEC2Ev
+                0x0000000000003354       0x2a main.o
+                0x0000000000003354                _ZN10asyncruino8optionalINS_16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataEEC1Ev
+                0x0000000000003354                _ZN10asyncruino8optionalINS_16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataEEC2Ev
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataC2Ev
+                0x000000000000337e       0x24 main.o
+                0x000000000000337e                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataC1Ev
+                0x000000000000337e                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataC2Ev
+ .text._ZN10asyncruino8optionalINS_17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataEEC2Ev
+                0x00000000000033a2       0x2a main.o
+                0x00000000000033a2                _ZN10asyncruino8optionalINS_17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataEEC2Ev
+                0x00000000000033a2                _ZN10asyncruino8optionalINS_17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataEEC1Ev
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE17read_byte_awaitorC2ERS3_
+                0x00000000000033cc       0x64 main.o
+                0x00000000000033cc                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE17read_byte_awaitorC2ERS3_
+                0x00000000000033cc                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE17read_byte_awaitorC1ERS3_
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE24read_bytes_until_awaitorILh1EEC2ERS3_PchPKc
+                0x0000000000003430       0xe8 main.o
+                0x0000000000003430                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE24read_bytes_until_awaitorILh1EEC1ERS3_PchPKc
+                0x0000000000003430                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE24read_bytes_until_awaitorILh1EEC2ERS3_PchPKc
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE18write_byte_awaitorC2ERS4_c
+                0x0000000000003518       0x80 main.o
+                0x0000000000003518                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE18write_byte_awaitorC2ERS4_c
+                0x0000000000003518                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE18write_byte_awaitorC1ERS4_c
+ .text._ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE19write_bytes_awaitorC2ERS4_PKch
+                0x0000000000003598       0xc8 main.o
+                0x0000000000003598                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE19write_bytes_awaitorC2ERS4_PKch
+                0x0000000000003598                _ZN10asyncruino17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE19write_bytes_awaitorC1ERS4_PKch
+ .text._ZNK10asyncruino8optionalINS_16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataEEcvbEv
+                0x0000000000003660       0x20 main.o
+                0x0000000000003660                _ZNK10asyncruino8optionalINS_16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataEEcvbEv
+ .text._ZN10asyncruino4pipeIchLh32EE5writeERKc
+                0x0000000000003680       0x84 main.o
+                0x0000000000003680                _ZN10asyncruino4pipeIchLh32EE5writeERKc
+ .text._ZN10asyncruino8optionalINS_16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataEE5resetEv
+                0x0000000000003704       0x22 main.o
+                0x0000000000003704                _ZN10asyncruino8optionalINS_16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataEE5resetEv
+ .text._ZN10asyncruino15sheduler_getterINS_9schedulerEE13_get_shedulerEv
+                0x0000000000003726       0x12 main.o
+                0x0000000000003726                _ZN10asyncruino15sheduler_getterINS_9schedulerEE13_get_shedulerEv
+ .text._ZN10asyncruino14scheduler_implINS_13default_guardELj32EE9push_taskENSt7__n486116coroutine_handleIvEE
+                0x0000000000003738       0x52 main.o
+                0x0000000000003738                _ZN10asyncruino14scheduler_implINS_13default_guardELj32EE9push_taskENSt7__n486116coroutine_handleIvEE
+ .text._ZNK10asyncruino8optionalINS_17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataEEcvbEv
+                0x000000000000378a       0x20 main.o
+                0x000000000000378a                _ZNK10asyncruino8optionalINS_17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataEEcvbEv
+ .text._ZN10asyncruino8optionalINS_17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataEE5resetEv
+                0x00000000000037aa       0x22 main.o
+                0x00000000000037aa                _ZN10asyncruino8optionalINS_17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataEE5resetEv
+ .text._ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EEC2ERS1_
+                0x00000000000037cc       0x6e main.o
+                0x00000000000037cc                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EEC2ERS1_
+                0x00000000000037cc                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EEC1ERS1_
+ .text._ZN10asyncruino17timer_dim_counterIyfLi0EEC2ILi0EEEfNS_13time_prefix_tIXT_EEE
+                0x000000000000383a       0x6e main.o
+                0x000000000000383a                _ZN10asyncruino17timer_dim_counterIyfLi0EEC1ILi0EEEfNS_13time_prefix_tIXT_EEE
+                0x000000000000383a                _ZN10asyncruino17timer_dim_counterIyfLi0EEC2ILi0EEEfNS_13time_prefix_tIXT_EEE
+ .text._ZN10asyncruino17timer_dim_counterIyfLi0EE9set_speedILi0EEEvfNS_13time_prefix_tIXT_EEE
+                0x00000000000038a8       0x7a main.o
+                0x00000000000038a8                _ZN10asyncruino17timer_dim_counterIyfLi0EE9set_speedILi0EEEvfNS_13time_prefix_tIXT_EEE
+ .text._ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE9interruptEv
+                0x0000000000003922      0x15c main.o
+                0x0000000000003922                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE9interruptEv
+ .text._ZN10asyncruino8optionalINS_17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataEEaSERKS6_
+                0x0000000000003a7e       0x48 main.o
+                0x0000000000003a7e                _ZN10asyncruino8optionalINS_17async_output_implINS_9schedulerENS_18hardware_uart_implENS_13default_guardEhE9coro_dataEEaSERKS6_
+ .text._ZN10asyncruino8optionalINS_16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataEEaSERKS5_
+                0x0000000000003ac6       0x48 main.o
+                0x0000000000003ac6                _ZN10asyncruino8optionalINS_16async_input_implINS_9schedulerENS_13default_guardEhLh32EE9coro_dataEEaSERKS5_
+ .text._ZN10asyncruino4pipeIchLh32EE4readERc
+                0x0000000000003b0e       0x92 main.o
+                0x0000000000003b0e                _ZN10asyncruino4pipeIchLh32EE4readERc
+ .text._ZNK10asyncruino17timer_dim_counterIyfLi0EE12to_counter_tILan3EjEEyT0_
+                0x0000000000003ba0      0x126 main.o
+                0x0000000000003ba0                _ZNK10asyncruino17timer_dim_counterIyfLi0EE12to_counter_tILan3EjEEyT0_
+ .text._ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE13Delay_awaitorC2EmRS3_
+                0x0000000000003cc6       0x5c main.o
+                0x0000000000003cc6                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE13Delay_awaitorC1EmRS3_
+                0x0000000000003cc6                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE13Delay_awaitorC2EmRS3_
+ .text._ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE13push_listenerENSt7__n486116coroutine_handleIvEEm
+                0x0000000000003d22       0xde main.o
+                0x0000000000003d22                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE13push_listenerENSt7__n486116coroutine_handleIvEEm
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE18read_from_buf_byteERc
+                0x0000000000003e00       0x30 main.o
+                0x0000000000003e00                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE18read_from_buf_byteERc
+ .text._ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE27read_from_buf_until_1_bytesEPcch
+                0x0000000000003e30       0x98 main.o
+                0x0000000000003e30                _ZN10asyncruino16async_input_implINS_9schedulerENS_13default_guardEhLh32EE27read_from_buf_until_1_bytesEPcch
+ .text._ZN10asyncruino4pipeINSt7__n486116coroutine_handleIvEEjLj32EE5writeERKS3_
+                0x0000000000003ec8       0xac main.o
+                0x0000000000003ec8                _ZN10asyncruino4pipeINSt7__n486116coroutine_handleIvEEjLj32EE5writeERKS3_
+ .text._ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE10timer_infoC2Ev
+                0x0000000000003f74       0x32 main.o
+                0x0000000000003f74                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE10timer_infoC2Ev
+                0x0000000000003f74                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE10timer_infoC1Ev
+ .text._ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE10timer_infoC2EmNSt7__n486116coroutine_handleIvEE
+                0x0000000000003fa6       0x5c main.o
+                0x0000000000003fa6                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE10timer_infoC2EmNSt7__n486116coroutine_handleIvEE
+                0x0000000000003fa6                _ZN10asyncruino10timer_implINS_9schedulerENS_13default_guardEmhLh1EE10timer_infoC1EmNSt7__n486116coroutine_handleIvEE
+ .text.avr-libc.fplib
+                0x0000000000004002        0xa d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                0x0000000000004002                __nesf2
+                0x0000000000004002                __eqsf2
+                0x0000000000004002                __cmpsf2
+                0x0000000000004002                __ltsf2
+                0x0000000000004002                __lesf2
+ .text.avr-libc.fplib
+                0x000000000000400c        0x8 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                0x000000000000400c                __divsf3
+ .text.avr-libc.fplib
+                0x0000000000004014       0xdc d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                0x0000000000004034                __divsf3x
+                0x000000000000403a                __divsf3_pse
+ .text.avr-libc.fplib
+                0x00000000000040f0       0x78 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixsfdi.o)
+                0x00000000000040f0                __fixsfdi
+                0x00000000000040fa                __fixunssfdi
+ .text.avr-libc.fplib
+                0x0000000000004168       0x5e d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                0x0000000000004168                __fixunssfsi
+ .text.avr-libc.fplib
+                0x00000000000041c6       0x7a d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                0x00000000000041c6                __floatunsisf
+                0x00000000000041ca                __floatsisf
+ .text.avr-libc.fplib
+                0x0000000000004240       0x48 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                0x0000000000004240                __fp_cmp
+ .text.avr-libc.fplib
+                0x0000000000004288        0xc d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                0x0000000000004288                __fp_inf
+ .text.avr-libc.fplib
+                0x0000000000004294        0x6 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                0x0000000000004294                __fp_nan
+ .text.avr-libc.fplib
+                0x000000000000429a       0x20 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_negdi.o)
+                0x000000000000429a                __fp_negdi
+ .text.avr-libc.fplib
+                0x00000000000042ba        0xe d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                0x00000000000042ba                __fp_pscA
+ .text.avr-libc.fplib
+                0x00000000000042c8        0xe d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                0x00000000000042c8                __fp_pscB
+ .text.avr-libc.fplib
+                0x00000000000042d6       0x22 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                0x00000000000042d6                __fp_round
+ .text.avr-libc.fplib
+                0x00000000000042f8       0x44 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                0x00000000000042f8                __fp_split3
+                0x0000000000004308                __fp_splitA
+ .text.avr-libc.fplib
+                0x000000000000433c        0xe d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                0x000000000000433c                __fp_zero
+                0x000000000000433e                __fp_szero
+ .text.avr-libc.fplib
+                0x000000000000434a        0xa d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                0x000000000000434a                __gesf2
+                0x000000000000434a                __gtsf2
+ .text.avr-libc.fplib
+                0x0000000000004354        0x8 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                0x0000000000004354                __mulsf3
+ .text.avr-libc.fplib
+                0x000000000000435c       0xd2 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                0x000000000000437a                __mulsf3x
+                0x0000000000004380                __mulsf3_pse
+ .text.libgcc.div
+                0x000000000000442e       0x44 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x000000000000442e                __udivmodsi4
+ .text.libgcc   0x0000000000004472        0xc d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+                0x0000000000004472                __tablejump2__
+ .text.libgcc   0x000000000000447e       0x18 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+                0x000000000000447e                __adddi3_s8
+ .text.avr-libc
+                0x0000000000004496      0x26e d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x0000000000004496                malloc
+                0x00000000000045c2                free
+ .text.avr-libc
+                0x0000000000004704        0xa d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(abort.o)
+                0x0000000000004704                abort
+                0x000000000000470e                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000000470e        0x0 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+                0x000000000000470e                _exit
+                0x000000000000470e                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000000470e        0x4 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+ *(.hightext)
+ *(.hightext*)
+ *(.progmemx.*)
+                0x0000000000004712                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ .jumptables.gcc._Z10EchoServerPZ10EchoServervE21_Z10EchoServerv.Frame.actor
+                0x0000000000004712       0x74 main.o
+                0x0000000000004786                _etext = .
+
+.data           0x0000000000800100       0x54 load address 0x0000000000004786
+                0x0000000000800100                PROVIDE (__data_start = .)
+ *(.data)
+ .data          0x0000000000800100        0x6 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x0000000000800100                __malloc_heap_end
+                0x0000000000800102                __malloc_heap_start
+                0x0000000000800104                __malloc_margin
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ .rodata        0x0000000000800106       0x48 main.o
+ *(.rodata*)
+ .rodata._ZN10asyncruino16timer_0_hw__impl12prescal_degsE
+                0x000000000080014e        0x5 main.o
+                0x000000000080014e                _ZN10asyncruino16timer_0_hw__impl12prescal_degsE
+ *(.gnu.linkonce.r*)
+                0x0000000000800154                . = ALIGN (0x2)
+ *fill*         0x0000000000800153        0x1 
+                0x0000000000800154                _edata = .
+                0x0000000000800154                PROVIDE (__data_end = .)
+
+.bss            0x0000000000800154       0xc9
+                0x0000000000800154                PROVIDE (__bss_start = .)
+ *(.bss)
+ .bss           0x0000000000800154        0x4 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+                0x0000000000800154                __flp
+                0x0000000000800156                __brkval
+ *(.bss*)
+ .bss._ZZN10asyncruino9scheduler8instanceEvE6m_inst
+                0x0000000000800158       0x48 main.o
+                0x0000000000800158                _ZZN10asyncruino9scheduler8instanceEvE6m_inst
+ .bss._ZGVZN10asyncruino9scheduler8instanceEvE6m_inst
+                0x00000000008001a0        0x8 main.o
+                0x00000000008001a0                _ZGVZN10asyncruino9scheduler8instanceEvE6m_inst
+ .bss._ZZN10asyncruino18hardware_uart_impl8instanceEvE8m_writer
+                0x00000000008001a8        0x1 main.o
+                0x00000000008001a8                _ZZN10asyncruino18hardware_uart_impl8instanceEvE8m_writer
+ .bss._ZGVZN10asyncruino18hardware_uart_impl8instanceEvE8m_writer
+                0x00000000008001a9        0x8 main.o
+                0x00000000008001a9                _ZGVZN10asyncruino18hardware_uart_impl8instanceEvE8m_writer
+ .bss._ZZN10asyncruino4uart8instanceEvE6m_inst
+                0x00000000008001b1       0x3a main.o
+                0x00000000008001b1                _ZZN10asyncruino4uart8instanceEvE6m_inst
+ .bss._ZGVZN10asyncruino4uart8instanceEvE6m_inst
+                0x00000000008001eb        0x8 main.o
+                0x00000000008001eb                _ZGVZN10asyncruino4uart8instanceEvE6m_inst
+ .bss._ZZN10asyncruino16timer_0_hw__impl8instanceEvE4inst
+                0x00000000008001f3        0x1 main.o
+                0x00000000008001f3                _ZZN10asyncruino16timer_0_hw__impl8instanceEvE4inst
+ .bss._ZGVZN10asyncruino16timer_0_hw__impl8instanceEvE4inst
+                0x00000000008001f4        0x8 main.o
+                0x00000000008001f4                _ZGVZN10asyncruino16timer_0_hw__impl8instanceEvE4inst
+ .bss._ZZN10asyncruino6timer08instanceEvE6m_inst
+                0x00000000008001fc       0x18 main.o
+                0x00000000008001fc                _ZZN10asyncruino6timer08instanceEvE6m_inst
+ .bss._ZGVZN10asyncruino6timer08instanceEvE6m_inst
+                0x0000000000800214        0x8 main.o
+                0x0000000000800214                _ZGVZN10asyncruino6timer08instanceEvE6m_inst
+ .bss.error     0x000000000080021c        0x1 main.o
+                0x000000000080021c                error
+ *(COMMON)
+                0x000000000080021d                PROVIDE (__bss_end = .)
+                0x0000000000004786                __data_load_start = LOADADDR (.data)
+                0x00000000000047da                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x000000000080021d        0x0
+                [!provide]                        PROVIDE (__noinit_start = .)
+ *(.noinit .noinit.* .gnu.linkonce.n.*)
+                [!provide]                        PROVIDE (__noinit_end = .)
+                0x000000000080021d                _end = .
+                0x000000000080021d                PROVIDE (__heap_start = .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x12
+ *(.comment)
+ .comment       0x0000000000000000       0x12 cppimpl.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 main.o
+ .comment       0x0000000000000012       0x13 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5\libc.a(malloc.o)
+
+.note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x0000000000000000       0x40 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000      0x4d8
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x38 cppimpl.o
+ .debug_aranges
+                0x0000000000000038      0x3e0 main.o
+ .debug_aranges
+                0x0000000000000418       0x20 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_aranges
+                0x0000000000000438       0x20 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_aranges
+                0x0000000000000458       0x20 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_aranges
+                0x0000000000000478       0x20 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x0000000000000498       0x20 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_aranges
+                0x00000000000004b8       0x20 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x4ea2
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000      0x5f4 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_info    0x00000000000005f4       0xc2 cppimpl.o
+ .debug_info    0x00000000000006b6     0x4714 main.o
+ .debug_info    0x0000000000004dca       0x24 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_info    0x0000000000004dee       0x24 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_info    0x0000000000004e12       0x24 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_info    0x0000000000004e36       0x24 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_info    0x0000000000004e5a       0x24 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_info    0x0000000000004e7e       0x24 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+
+.debug_abbrev   0x0000000000000000      0xfc0
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x5a2 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_abbrev  0x00000000000005a2       0xac cppimpl.o
+ .debug_abbrev  0x000000000000064e      0x8fa main.o
+ .debug_abbrev  0x0000000000000f48       0x14 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_abbrev  0x0000000000000f5c       0x14 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_abbrev  0x0000000000000f70       0x14 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_abbrev  0x0000000000000f84       0x14 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_abbrev  0x0000000000000f98       0x14 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_abbrev  0x0000000000000fac       0x14 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+
+.debug_line     0x0000000000000000     0x3149
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x1d d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_line    0x000000000000001d       0xbc cppimpl.o
+ .debug_line    0x00000000000000d9     0x2d40 main.o
+ .debug_line    0x0000000000002e19      0x111 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_line    0x0000000000002f2a       0x51 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_line    0x0000000000002f7b       0x69 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_line    0x0000000000002fe4       0x87 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_line    0x000000000000306b       0x75 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_line    0x00000000000030e0       0x69 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+
+.debug_frame    0x0000000000000000     0x1390
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0x94 cppimpl.o
+ .debug_frame   0x0000000000000094     0x12fc main.o
+
+.debug_str      0x0000000000000000    0x10323
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x20b d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_str     0x000000000000020b     0x3b76 cppimpl.o
+                                       0x3b84 (size before relaxing)
+ .debug_str     0x0000000000003d81     0xc543 main.o
+                                      0x10427 (size before relaxing)
+ .debug_str     0x00000000000102c4       0x5f d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+ .debug_str     0x0000000000010323       0x5f d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_str     0x0000000000010323       0x5f d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_str     0x0000000000010323       0x5f d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_str     0x0000000000010323       0x5f d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_str     0x0000000000010323       0x5f d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+                0x0000000000000000      0x640
+ *(.debug_line_str)
+ .debug_line_str
+                0x0000000000000000       0x4a cppimpl.o
+                                         0x96 (size before relaxing)
+ .debug_line_str
+                0x000000000000004a      0x5a3 main.o
+                                        0x64a (size before relaxing)
+ .debug_line_str
+                0x00000000000005ed       0x53 d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_udivmodsi4.o)
+                                         0x5f (size before relaxing)
+ .debug_line_str
+                0x0000000000000640       0x5f d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_exit.o)
+ .debug_line_str
+                0x0000000000000640       0x5f d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_tablejump2.o)
+ .debug_line_str
+                0x0000000000000640       0x5f d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_copy_data.o)
+ .debug_line_str
+                0x0000000000000640       0x5f d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_clear_bss.o)
+ .debug_line_str
+                0x0000000000000640       0x5f d:/soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/bin/../lib/gcc/avr/12.1.0/avr5\libgcc.a(_adddi3_s8.o)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro    0x0000000000000000     0x3a6c
+ *(.debug_macro)
+ .debug_macro   0x0000000000000000       0x11 cppimpl.o
+ .debug_macro   0x0000000000000011      0xd84 cppimpl.o
+ .debug_macro   0x0000000000000d95      0x327 main.o
+ .debug_macro   0x00000000000010bc       0x10 main.o
+ .debug_macro   0x00000000000010cc       0x1c main.o
+ .debug_macro   0x00000000000010e8      0x1c9 main.o
+ .debug_macro   0x00000000000012b1      0x2fc main.o
+ .debug_macro   0x00000000000015ad       0x9e main.o
+ .debug_macro   0x000000000000164b     0x1411 main.o
+ .debug_macro   0x0000000000002a5c      0x13a main.o
+ .debug_macro   0x0000000000002b96       0xbd main.o
+ .debug_macro   0x0000000000002c53       0x34 main.o
+ .debug_macro   0x0000000000002c87       0x18 main.o
+ .debug_macro   0x0000000000002c9f       0x6c main.o
+ .debug_macro   0x0000000000002d0b      0x438 main.o
+ .debug_macro   0x0000000000003143       0x94 main.o
+ .debug_macro   0x00000000000031d7       0x10 main.o
+ .debug_macro   0x00000000000031e7       0x1c main.o
+ .debug_macro   0x0000000000003203      0x11c main.o
+ .debug_macro   0x000000000000331f       0x66 main.o
+ .debug_macro   0x0000000000003385       0x8c main.o
+ .debug_macro   0x0000000000003411       0x34 main.o
+ .debug_macro   0x0000000000003445       0x17 main.o
+ .debug_macro   0x000000000000345c       0x10 main.o
+ .debug_macro   0x000000000000346c      0x160 main.o
+ .debug_macro   0x00000000000035cc       0x1c main.o
+ .debug_macro   0x00000000000035e8       0x18 main.o
+ .debug_macro   0x0000000000003600       0x6e main.o
+ .debug_macro   0x000000000000366e       0x1f main.o
+ .debug_macro   0x000000000000368d       0x17 main.o
+ .debug_macro   0x00000000000036a4       0x10 main.o
+ .debug_macro   0x00000000000036b4       0x28 main.o
+ .debug_macro   0x00000000000036dc       0x2e main.o
+ .debug_macro   0x000000000000370a       0x16 main.o
+ .debug_macro   0x0000000000003720       0x28 main.o
+ .debug_macro   0x0000000000003748       0x9b main.o
+ .debug_macro   0x00000000000037e3       0x12 main.o
+ .debug_macro   0x00000000000037f5       0x19 main.o
+ .debug_macro   0x000000000000380e       0x88 main.o
+ .debug_macro   0x0000000000003896       0x19 main.o
+ .debug_macro   0x00000000000038af      0x146 main.o
+ .debug_macro   0x00000000000039f5       0x11 main.o
+ .debug_macro   0x0000000000003a06       0x11 main.o
+ .debug_macro   0x0000000000003a17       0x12 main.o
+ .debug_macro   0x0000000000003a29       0x17 main.o
+ .debug_macro   0x0000000000003a40       0x10 main.o
+ .debug_macro   0x0000000000003a50       0x1c main.o
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+                0x0000000000000000      0x36b
+ *(.debug_rnglists)
+ .debug_rnglists
+                0x0000000000000000       0x25 cppimpl.o
+ .debug_rnglists
+                0x0000000000000025      0x346 main.o
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+OUTPUT(coro.elf elf32-avr)
+LOAD linker stubs

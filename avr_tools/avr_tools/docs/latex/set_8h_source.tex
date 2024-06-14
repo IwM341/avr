@@ -1,0 +1,242 @@
+\hypertarget{set_8h_source}{}\doxysection{set.\+h}
+\label{set_8h_source}\index{D:/Tmp/avr/avr\_tools/avr\_tools/include/set.h@{D:/Tmp/avr/avr\_tools/avr\_tools/include/set.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ set.h}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ Created:\ 09.04.2023\ 9:05:19}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ Author:\ MainUser}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ */}\ }
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ SET\_H\_}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ SET\_H\_}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }aos\{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T,\textcolor{keyword}{typename}\ \textcolor{keywordtype}{size\_t}ype,\textcolor{keyword}{typename}\ guard\_type>}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{struct\ }set\{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ T\ *\ \_data;}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ size\_type\ \_reserved;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ size\_type\ \_size;}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ guard\_type\ guard;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ set(T\ *\ \_data,size\_type\ \_reserved):\_data(\_data),\_reserved(\_reserved),\_size(\_size)\{\}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ T\ *\ begin()\{\textcolor{keywordflow}{return}\ \_data;\}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ T\ *\ end()\{\textcolor{keywordflow}{return}\ \_data+\_size;\}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keyword}{const}\ T\ *\ cbegin()\textcolor{keyword}{const}\{\textcolor{keywordflow}{return}\ \_data;\}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keyword}{const}\ T\ *\ cend()\textcolor{keyword}{const}\{\textcolor{keywordflow}{return}\ \_data+\_size;\}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keyword}{const}\ T\ *\ begin()\textcolor{keyword}{const}\{\textcolor{keywordflow}{return}\ \_data;\}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keyword}{const}\ T\ *\ end()\textcolor{keyword}{const}\{\textcolor{keywordflow}{return}\ \_data+\_size;\}}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keywordtype}{void}\ lock()\{guard.lock();\}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keywordtype}{void}\ unlock()\{guard.unlock();\}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ insert(Args\ \&\&\ args)\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\_size\ <\ \_reserved)\{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ *(\_data+\_size++)\ T(\textcolor{keyword}{static\_cast<}Args\&\&\textcolor{keyword}{>}(args)...);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}...Args>}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keywordtype}{bool}\ sinsert(Args\ \&\&\ args)\{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ lock\_guard<guard\_type>(guard)\ lg;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ insert(args...);}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ remove(T\ *\ position)\{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(position\ \ <\ \_data\ \ +\ \_size)}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ position-\/>\string~T();}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \_size-\/-\/;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\_size)}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ position\ =\ (\_data\ +\ \_size\ -\/\ 1);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keywordtype}{bool}\ sremove(T\ *\ position)\{}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ lock\_guard<guard\_type>(guard)\ lg;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ insert(value);}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ remove\_compare(T\ \textcolor{keyword}{const}\&\ value)\{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(T\ *\ ptr\ =\ begin();ptr\ !=\ end();++ptr)\{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(*ptr\ ==\ value)\{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ remove(ptr);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keywordtype}{void}\ sremove\_compare(T\ \textcolor{keyword}{const}\&\ value)\{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ lock\_guard<guard\_type>(guard)\ lg;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ remove\_compare(value);}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ CondType>}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ remove\_if(CondType\ \&\&\ condition)\{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ T\ *\ ptr\ =\ begin();}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}(ptr\ !=\ end())\{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(condition(*ptr))}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ remove(ptr);}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ++ptr;}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ CondType>}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keyword}{inline}\ \_\_attribute\_\_((always\_inline))\ \textcolor{keywordtype}{bool}\ remove\_if(CondType\ \&\&\ condition)\{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ lock\_guard<guard\_type>(guard)\ lg;}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ remove\_if(value);}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00092\ \ \ \ \ \};}
+\DoxyCodeLine{00093\ \ \ \ \ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00095\ \textcolor{comment}{\ \ \ \ template\ <typename\ T,typename\ size\_type,typename\ guard\_type>}}
+\DoxyCodeLine{00096\ \textcolor{comment}{\ \ \ \ struct\ memory\{}}
+\DoxyCodeLine{00097\ \textcolor{comment}{\ \ \ \ \ \ \ \ struct\ mem\_item\{}}
+\DoxyCodeLine{00098\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ T\ data;}}
+\DoxyCodeLine{00099\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ size\_type\ \_prev;}}
+\DoxyCodeLine{00100\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ size\_type\ \_next;}}
+\DoxyCodeLine{00101\ \textcolor{comment}{\ \ \ \ \ \ \ \ \};}}
+\DoxyCodeLine{00102\ \textcolor{comment}{\ \ \ \ \ \ \ \ mem\_item\ *\ \_buffer;}}
+\DoxyCodeLine{00103\ \textcolor{comment}{\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00104\ \textcolor{comment}{\ \ \ \ \ \ \ \ size\_type\ \_first;}}
+\DoxyCodeLine{00105\ \textcolor{comment}{\ \ \ \ \ \ \ \ size\_type\ \_size;}}
+\DoxyCodeLine{00106\ \textcolor{comment}{\ \ \ \ \ \ \ \ size\_type\ \_reserved;}}
+\DoxyCodeLine{00107\ \textcolor{comment}{\ \ \ \ \ \ \ \ guard\_type\ guard;}}
+\DoxyCodeLine{00108\ \textcolor{comment}{\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00109\ \textcolor{comment}{\ \ \ \ \ \ \ \ constexpr\ inline\ \_\_attribute\_\_((always\_inline))\ static\ size\_type\ recommended\_buffer\_size(size\_type\ m\_size)\{}}
+\DoxyCodeLine{00110\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ return\ m\_size*sizeof(mem\_item);}}
+\DoxyCodeLine{00111\ \textcolor{comment}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00112\ \textcolor{comment}{\ \ \ \ \ \ \ \ template\ <size\_type\ m\_size>}}
+\DoxyCodeLine{00113\ \textcolor{comment}{\ \ \ \ \ \ \ \ struct\ recommended\_buff\_size\{}}
+\DoxyCodeLine{00114\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ constexpr\ static\ size\_type\ value\ =\ m\_size*sizeof(mem\_item);}}
+\DoxyCodeLine{00115\ \textcolor{comment}{\ \ \ \ \ \ \ \ \};}}
+\DoxyCodeLine{00116\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00117\ \textcolor{comment}{\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00118\ \textcolor{comment}{\ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ memory(void\ *\ \_buffer,size\_type\ \_reserved):\_buffer(\_buffer),\_reserved(\_reserved),\_size(0),\_first(\_reserved)\{\}}}
+\DoxyCodeLine{00119\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00120\ \textcolor{comment}{\ \ \ \ \ \ \ \ T\ *\ allocate()\{}}
+\DoxyCodeLine{00121\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ if(\_size\ <\ \_reserved)\{}}
+\DoxyCodeLine{00122\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(\_first\ >\ 0)\{\ }}
+\DoxyCodeLine{00123\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_buffer-\/>\_next\ =\ \_first;}}
+\DoxyCodeLine{00124\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\_buffer+\_first)-\/>\_prev\ =\ 0;}}
+\DoxyCodeLine{00125\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_first\ =\ 0;}}
+\DoxyCodeLine{00126\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ++\_size;}}
+\DoxyCodeLine{00127\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ \_buffer;}}
+\DoxyCodeLine{00128\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}else\{}}
+\DoxyCodeLine{00129\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ mem\_item\ *\ ptr\ =\ \_buffer;}}
+\DoxyCodeLine{00130\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00131\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00132\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}else\{}}
+\DoxyCodeLine{00133\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ nullptr;}}
+\DoxyCodeLine{00134\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00135\ \textcolor{comment}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00136\ \textcolor{comment}{\ \ \ \ \};}}
+\DoxyCodeLine{00137\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00138\ \ \ \ \ }
+\DoxyCodeLine{00139\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00140\ \textcolor{comment}{\ \ \ \ template\ <typename\ T,typename\ size\_type,typename\ guard\_type>}}
+\DoxyCodeLine{00141\ \textcolor{comment}{\ \ \ \ struct\ list\{}}
+\DoxyCodeLine{00142\ \textcolor{comment}{\ \ \ \ \ \ \ \ struct\ list\_data\{}}
+\DoxyCodeLine{00143\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ T\ value;}}
+\DoxyCodeLine{00144\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ list\_data\ *\_next;}}
+\DoxyCodeLine{00145\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ list\_data\ *\_prev;}}
+\DoxyCodeLine{00146\ \textcolor{comment}{\ \ \ \ \ \ \ \ \};}}
+\DoxyCodeLine{00147\ \textcolor{comment}{\ \ \ \ \ \ \ \ struct\ iterator\{}}
+\DoxyCodeLine{00148\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ list\_data\ *\ \_data;}}
+\DoxyCodeLine{00149\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00150\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ iterator\ \&\ operator++()\{}}
+\DoxyCodeLine{00151\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_data\ =\ \_data-\/>\_next;}}
+\DoxyCodeLine{00152\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ *this;}}
+\DoxyCodeLine{00153\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00154\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ iterator\ \&\ operator-\/-\/()\{}}
+\DoxyCodeLine{00155\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_data\ =\ \_data-\/>\_prev;}}
+\DoxyCodeLine{00156\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ *this;}}
+\DoxyCodeLine{00157\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00158\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ operator\ ==\ (iterator\ const\ \&\ it1)const\{}}
+\DoxyCodeLine{00159\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ it1.\_data\ ==\ \_data;}}
+\DoxyCodeLine{00160\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00161\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ operator\ !=\ (iterator\ const\ \&\ it1)const\{}}
+\DoxyCodeLine{00162\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ it1.\_data\ !=\ \_data;}}
+\DoxyCodeLine{00163\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00164\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ bool\ is\_end()const\{return\ \_data\ ==\ nullptr;\}}}
+\DoxyCodeLine{00165\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ bool\ not\_end()const\{return\ \_data;\}}}
+\DoxyCodeLine{00166\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ operator\ const\_iterator()const\{return\ const\_iterator\{\_data\};\}}}
+\DoxyCodeLine{00167\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \_\_attribute\_\_((always\_inline))\ T\ \&\ operator\ *\ ()\{return\ \_data-\/>value;\}}}
+\DoxyCodeLine{00168\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \_\_attribute\_\_((always\_inline))\ T\ *\ operator\ -\/>()\{return\ \&\_data-\/>value;\}\ }}
+\DoxyCodeLine{00169\ \textcolor{comment}{\ \ \ \ \ \ \ \ \};}}
+\DoxyCodeLine{00170\ \textcolor{comment}{\ \ \ \ \ \ \ \ struct\ const\_iterator\{}}
+\DoxyCodeLine{00171\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ const\ list\_data\ *\ \_data;}}
+\DoxyCodeLine{00172\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ const\_iterator\ \&\ operator++()\{}}
+\DoxyCodeLine{00173\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_data\ =\ \_data-\/>\_next;}}
+\DoxyCodeLine{00174\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ *this;}}
+\DoxyCodeLine{00175\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00176\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ const\_iterator\ \&\ operator-\/-\/()\{}}
+\DoxyCodeLine{00177\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \_data\ =\ \_data-\/>\_prev;}}
+\DoxyCodeLine{00178\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ *this;}}
+\DoxyCodeLine{00179\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00180\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ operator\ ==\ (const\_iterator\ const\ \&\ it1)const\{}}
+\DoxyCodeLine{00181\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ it1.\_data\ ==\ \_data;}}
+\DoxyCodeLine{00182\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00183\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ operator\ !=\ (const\_iterator\ const\ \&\ it1)const\{}}
+\DoxyCodeLine{00184\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ it1.\_data\ !=\ \_data;}}
+\DoxyCodeLine{00185\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00186\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ bool\ is\_end()const\{return\ \_data\ ==\ nullptr;\}}}
+\DoxyCodeLine{00187\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ bool\ not\_end()const\{return\ \_data;\}}}
+\DoxyCodeLine{00188\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00189\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \_\_attribute\_\_((always\_inline))\ const\ T\ \&\ operator\ *\ ()const\{return\ \_data-\/>value;\}}}
+\DoxyCodeLine{00190\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \_\_attribute\_\_((always\_inline))\ const\ T\ *\ operator\ -\/>()const\{return\ \&\_data-\/>value;\}}}
+\DoxyCodeLine{00191\ \textcolor{comment}{\ \ \ \ \ \ \ \ \};}}
+\DoxyCodeLine{00192\ \textcolor{comment}{\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00193\ \textcolor{comment}{\ \ \ \ \ \ \ \ list\_data\ *\_data;}}
+\DoxyCodeLine{00194\ \textcolor{comment}{\ \ \ \ \ \ \ \ list\_data\ *\_first;}}
+\DoxyCodeLine{00195\ \textcolor{comment}{\ \ \ \ \ \ \ \ size\_type\ \_size;}}
+\DoxyCodeLine{00196\ \textcolor{comment}{\ \ \ \ \ \ \ \ size\_type\ \_reserved;}}
+\DoxyCodeLine{00197\ \textcolor{comment}{\ \ \ \ \ \ \ \ guard\_type\ guard;}}
+\DoxyCodeLine{00198\ \textcolor{comment}{\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00199\ \textcolor{comment}{\ \ \ \ \ \ \ \ template\ <size\_type\ m\_size>}}
+\DoxyCodeLine{00200\ \textcolor{comment}{\ \ \ \ \ \ \ \ struct\ recommended\_buff\_size\{}}
+\DoxyCodeLine{00201\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ constexpr\ static\ size\_type\ value\ =\ m\_size*sizeof(list\_data);}}
+\DoxyCodeLine{00202\ \textcolor{comment}{\ \ \ \ \ \ \ \ \};}}
+\DoxyCodeLine{00203\ \textcolor{comment}{\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00204\ \textcolor{comment}{\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00205\ \textcolor{comment}{\ \ \ \ \ \ \ \ list(void\ *\ \_data,size\_type\ \_reserved):\_data(\_data),\_reserved(\_reserved),\_first(nullptr),\_size(0)\{\}}}
+\DoxyCodeLine{00206\ \textcolor{comment}{\ \ \ \ \ \ \ \ template\ <typename...Args>}}
+\DoxyCodeLine{00207\ \textcolor{comment}{\ \ \ \ \ \ \ \ inline\ bool\ insert(iterator\ place,Args\&\&...args)\{}}
+\DoxyCodeLine{00208\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ if(\_size\ <\ \_reserved)\{}}
+\DoxyCodeLine{00209\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ list\_data\ *\ ptr\ =\ \_data+\_size;}}
+\DoxyCodeLine{00210\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ new\ (\&(ptr-\/>value))\ T(static\_cast<Args\&\&>(args)...);}}
+\DoxyCodeLine{00211\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ptr-\/>\_next\ =\ place.\_data;}}
+\DoxyCodeLine{00212\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ptr-\/>\_prev\ =\ place-\/>\_prev;}}
+\DoxyCodeLine{00213\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(place.not\_end())\{}}
+\DoxyCodeLine{00214\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ place-\/>\_prev\ =\ ptr;}}
+\DoxyCodeLine{00215\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(place-\/>\_prev)\{}}
+\DoxyCodeLine{00216\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ place-\/>\_prev-\/>\_next\ =\ ptr;}}
+\DoxyCodeLine{00217\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00218\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00219\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ true;}}
+\DoxyCodeLine{00220\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}else\{}}
+\DoxyCodeLine{00221\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ false;}}
+\DoxyCodeLine{00222\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00223\ \textcolor{comment}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00224\ \textcolor{comment}{\ \ \ \ \ \ \ \ inline\ \_\_attribute\_\_((always\_inline))\ bool\ sinsert(iterator\ place,Args\&\&...args)\{}}
+\DoxyCodeLine{00225\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ lock\_guard<guard\_type>(guard)\ lg;}}
+\DoxyCodeLine{00226\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ return\ insert(place,static\_cast<Args\&\&>(args)...);}}
+\DoxyCodeLine{00227\ \textcolor{comment}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00228\ \textcolor{comment}{\ \ \ \ \ \ \ \ inline\ void\ remove(iterator\ \&place)\{}}
+\DoxyCodeLine{00229\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00230\ \textcolor{comment}{\ \ \ \ \ \ \ \ \}}}
+\DoxyCodeLine{00231\ \textcolor{comment}{\ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{00232\ \textcolor{comment}{\ \ \ \ \};}}
+\DoxyCodeLine{00233\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00234\ \};}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00236\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ SET\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

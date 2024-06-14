@@ -18,7 +18,7 @@
 
 #include "bmp180/bmp180.h"
 
-STATIC_UART_CONNECTION(/*uart::uart_process_r().write(UDR0)*/)
+STATIC_UART_CONNECTION(uart::uart_process_r().write(UDR0))
 
 int main(void)
 {

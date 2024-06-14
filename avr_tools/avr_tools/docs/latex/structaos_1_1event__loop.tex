@@ -1,0 +1,52 @@
+\hypertarget{structaos_1_1event__loop}{}\doxysection{aos\+::event\+\_\+loop Struct Reference}
+\label{structaos_1_1event__loop}\index{aos::event\_loop@{aos::event\_loop}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structaos_1_1event__loop_a54dfed6e3c52a4d20f176565cfbbb27c}\label{structaos_1_1event__loop_a54dfed6e3c52a4d20f176565cfbbb27c}} 
+void {\bfseries run} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structaos_1_1event__loop_a3d3ff5fc9502b4dcbc2cbf3b0affa158}\label{structaos_1_1event__loop_a3d3ff5fc9502b4dcbc2cbf3b0affa158}} 
+static \mbox{\hyperlink{structaos_1_1event__loop}{event\+\_\+loop}} $\ast$ {\bfseries instance} ()
+\item 
+\mbox{\Hypertarget{structaos_1_1event__loop_a0b9f7e3fd0f8a97e859cd3bcfde31f69}\label{structaos_1_1event__loop_a0b9f7e3fd0f8a97e859cd3bcfde31f69}} 
+static decltype(\+\_\+callback\+\_\+queue) \& {\bfseries get\+\_\+pipe} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structaos_1_1event__loop_a880fdeabaf5dc2480cec34b2d47840dc}\label{structaos_1_1event__loop_a880fdeabaf5dc2480cec34b2d47840dc}} 
+char {\bfseries pipe\+\_\+data} \mbox{[}PIPE\+\_\+\+SIZE\mbox{]}
+\item 
+\mbox{\Hypertarget{structaos_1_1event__loop_a59ddb01628ede0f21f52a8493e499d26}\label{structaos_1_1event__loop_a59ddb01628ede0f21f52a8493e499d26}} 
+\mbox{\hyperlink{structaos_1_1pipe}{pipe}}$<$ typename \mbox{\hyperlink{structaos_1_1min__required__size__type}{min\+\_\+required\+\_\+size\+\_\+type}}$<$ PIPE\+\_\+\+SIZE $>$\+::type, \mbox{\hyperlink{structaos_1_1____guard}{\+\_\+\+\_\+guard}} $>$ {\bfseries \+\_\+callback\+\_\+queue}
+\item 
+\mbox{\Hypertarget{structaos_1_1event__loop_aa8b42e2cdf26d343dd53ad4e283adf40}\label{structaos_1_1event__loop_aa8b42e2cdf26d343dd53ad4e283adf40}} 
+bool {\bfseries running}
+\item 
+\mbox{\Hypertarget{structaos_1_1event__loop_a02c3445803f01805f8039e09db874979}\label{structaos_1_1event__loop_a02c3445803f01805f8039e09db874979}} 
+decltype(default\+\_\+sleep\+\_\+function) {\bfseries sleep\+\_\+function}
+\item 
+\mbox{\Hypertarget{structaos_1_1event__loop_a6dbf9a50f207cdc778bd9c22097aaf09}\label{structaos_1_1event__loop_a6dbf9a50f207cdc778bd9c22097aaf09}} 
+\mbox{\hyperlink{structaos_1_1sleep__block}{sleep\+\_\+block}} {\bfseries sb}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structaos_1_1event__loop_a74372aad245b3a78c6b62806ac606db6}\label{structaos_1_1event__loop_a74372aad245b3a78c6b62806ac606db6}} 
+static constexpr uint8\+\_\+t {\bfseries max\+\_\+callback\+\_\+size} = MAX\+\_\+\+CALLBACK\+\_\+\+SIZE
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structaos_1_1event__loop_a23f25bcc02a0e94c2f5a4188496b04d0}\label{structaos_1_1event__loop_a23f25bcc02a0e94c2f5a4188496b04d0}} 
+class {\bfseries Application}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Tmp/avr/avr\+\_\+tools/avr\+\_\+tools/include/event\+\_\+loop.\+h\end{DoxyCompactItemize}

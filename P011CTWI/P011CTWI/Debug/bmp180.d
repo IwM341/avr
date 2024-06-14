@@ -12,7 +12,7 @@ bmp180.d bmp180.o: .././bmp180.c \
  ../../../framework/avr-bmp180/include/i2c.h \
  d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
- D:\soft\7.0\Packs\atmel\ATmega_DFP\1.6.364\include/avr/iom328p.h \
+ d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\iom328p.h \
  d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\portpins.h \
  d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\common.h \
  d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h \
@@ -45,7 +45,7 @@ d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
 d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h:
 
-D:\soft\7.0\Packs\atmel\ATmega_DFP\1.6.364\include/avr/iom328p.h:
+d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\iom328p.h:
 
 d:\soft\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\portpins.h:
 

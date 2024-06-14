@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "D:/Soft/7.0/avr-libstdcpp/include",
+                "D:/Soft/7.0/packs/atmel/ATmega_DFP/1.7.374/include",
+                "D:/Tmp/avr/asyncruino/include",
+                "D:/Soft/7.0/gcc_toolchain/avr-gcc-12.1.0-x64-windows/avr-gcc-12.1.0-x64-windows/avr/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__AVR_ATmega328P__"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}

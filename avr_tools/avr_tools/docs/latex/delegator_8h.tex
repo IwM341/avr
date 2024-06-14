@@ -1,0 +1,66 @@
+\hypertarget{delegator_8h}{}\doxysection{D\+:/\+Tmp/avr/avr\+\_\+tools/avr\+\_\+tools/include/delegator.h File Reference}
+\label{delegator_8h}\index{D:/Tmp/avr/avr\_tools/avr\_tools/include/delegator.h@{D:/Tmp/avr/avr\_tools/avr\_tools/include/delegator.h}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structaos_1_1____detail_____1_1_____default_class____}{aos\+::\+\_\+\+\_\+detail\+\_\+\+\_\+\+::\+\_\+\+\_\+\+Default\+Class\+\_\+\+\_\+$<$ Args $>$}}
+\item 
+struct \mbox{\hyperlink{structaos_1_1____detail_____1_1_____v_call_default_class____}{aos\+::\+\_\+\+\_\+detail\+\_\+\+\_\+\+::\+\_\+\+\_\+\+VCall\+Default\+Class\+\_\+\+\_\+}}
+\item 
+struct \mbox{\hyperlink{structaos_1_1_class_delegator}{aos\+::\+Class\+Delegator$<$ Args $>$}}
+\item 
+struct \mbox{\hyperlink{structaos_1_1_function_delegator}{aos\+::\+Function\+Delegator$<$ Args $>$}}
+\item 
+struct \mbox{\hyperlink{structaos_1_1_class_or_function_delegator}{aos\+::\+Class\+Or\+Function\+Delegator$<$ Args $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceaos}{aos}}
+\item 
+namespace \mbox{\hyperlink{namespaceaos_1_1____detail____}{aos\+::\+\_\+\+\_\+detail\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{delegator_8h_aaea8ef412c3f2a8d06d464e550109402}{DELEGATOR\+\_\+\+SIZE}}~sizeof(Class\+Or\+Function\+Delegator$<$$>$)
+\item 
+\#define \mbox{\hyperlink{delegator_8h_a37d564a889b40a6a53e945a76c1f0600}{VFUNCTION\+\_\+\+SIZE}}~sizeof(\+\_\+\+\_\+detail\+\_\+\+\_\+\+::\+\_\+\+\_\+\+VCall\+Default\+Class\+\_\+\+\_\+\+::($\ast$)(char $\ast$))
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+\_\+\+\_\+detail\+\_\+\+\_\+\+::\+\_\+\+\_\+\+VCall\+Default\+Class\+\_\+\+\_\+\+::$\ast$ \mbox{\hyperlink{namespaceaos_acc59879dc33549adfc67cfc1e9970500}{aos\+::\+VDELEGATORFUNCTYPE}}(char $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$size\+\_\+t N, typename Arg0 , typename... Args$>$ }\\constexpr \mbox{\hyperlink{namespaceaos_1_1____detail_____ab057720fefdc684477f07ce88d2c4d03}{aos\+::\+\_\+\+\_\+detail\+\_\+\+\_\+\+::\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((always\+\_\+inline)) auto get\+\_\+arg(char $\ast$args)
+\item 
+{\footnotesize template$<$typename Arg0 , typename... Args$>$ }\\constexpr \mbox{\hyperlink{namespaceaos_1_1____detail_____abaaad55138d2d28645b7737ffba7be11}{aos\+::\+\_\+\+\_\+detail\+\_\+\+\_\+\+::\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((always\+\_\+inline)) auto get\+\_\+arg$<$ 0 $>$(char $\ast$args)
+\item 
+void call\+\_\+delayed\+\_\+function\+\_\+\+\_\+detail\+\_\+\+\_\+\+::\+\_\+\+\_\+\+VCall\+Default\+Class\+\_\+\+\_\+\+::$\ast$ \mbox{\hyperlink{namespaceaos_ad3ee1115d28468d668c50bedf11f7c28}{aos\+::\+Func}} (char $\ast$), char $\ast$data, char $\ast$args
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{delegator_8h_aaea8ef412c3f2a8d06d464e550109402}\label{delegator_8h_aaea8ef412c3f2a8d06d464e550109402}} 
+\index{delegator.h@{delegator.h}!DELEGATOR\_SIZE@{DELEGATOR\_SIZE}}
+\index{DELEGATOR\_SIZE@{DELEGATOR\_SIZE}!delegator.h@{delegator.h}}
+\doxysubsubsection{\texorpdfstring{DELEGATOR\_SIZE}{DELEGATOR\_SIZE}}
+{\footnotesize\ttfamily \#define DELEGATOR\+\_\+\+SIZE~sizeof(Class\+Or\+Function\+Delegator$<$$>$)}
+
+
+
+Definition at line \mbox{\hyperlink{delegator_8h_source_l00227}{227}} of file \mbox{\hyperlink{delegator_8h_source}{delegator.\+h}}.
+
+\mbox{\Hypertarget{delegator_8h_a37d564a889b40a6a53e945a76c1f0600}\label{delegator_8h_a37d564a889b40a6a53e945a76c1f0600}} 
+\index{delegator.h@{delegator.h}!VFUNCTION\_SIZE@{VFUNCTION\_SIZE}}
+\index{VFUNCTION\_SIZE@{VFUNCTION\_SIZE}!delegator.h@{delegator.h}}
+\doxysubsubsection{\texorpdfstring{VFUNCTION\_SIZE}{VFUNCTION\_SIZE}}
+{\footnotesize\ttfamily \#define VFUNCTION\+\_\+\+SIZE~sizeof(\+\_\+\+\_\+detail\+\_\+\+\_\+\+::\+\_\+\+\_\+\+VCall\+Default\+Class\+\_\+\+\_\+\+::($\ast$)(char $\ast$))}
+
+
+
+Definition at line \mbox{\hyperlink{delegator_8h_source_l00228}{228}} of file \mbox{\hyperlink{delegator_8h_source}{delegator.\+h}}.
+

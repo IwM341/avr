@@ -1,0 +1,92 @@
+\hypertarget{structaos_1_1sleep__block}{}\doxysection{sleep\+\_\+block Struct Reference}
+\label{structaos_1_1sleep__block}\index{sleep\_block@{sleep\_block}}
+
+
+structure, which contains information, about how many classes(processes) don\textquotesingle{}t allow sleep  
+
+
+
+
+{\ttfamily \#include $<$sleep\+\_\+modes.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448}{smode}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448a1217e3e1c04184e3a3338c3654d9e9d6}{mode0}} = 0
+, {\bfseries mode1} = 1
+, \mbox{\hyperlink{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448a607607c41817349b1d80d93cb50258ae}{mode2}} = 2
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structaos_1_1sleep__block_adf61e80a3c061a87866aab7d2ad95ba5}\label{structaos_1_1sleep__block_adf61e80a3c061a87866aab7d2ad95ba5}} 
+{\footnotesize template$<$\mbox{\hyperlink{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448}{smode}} mode$>$ }\\void {\bfseries block} ()
+\begin{DoxyCompactList}\small\item\em increment number of items, deprecated sleep in mode mode \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structaos_1_1sleep__block_aa23d49c00dec37b582042cb692ccab15}\label{structaos_1_1sleep__block_aa23d49c00dec37b582042cb692ccab15}} 
+{\footnotesize template$<$\mbox{\hyperlink{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448}{smode}} mode$>$ }\\void {\bfseries unblock} ()
+\begin{DoxyCompactList}\small\item\em deincrement number of items, deprecated sleep in mode mode \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448}{smode}} mode$>$ }\\bool \mbox{\hyperlink{structaos_1_1sleep__block_a0d718209b6acea29332acd99f1063913}{is\+\_\+enabled}} () const
+\begin{DoxyCompactList}\small\item\em check, if sleep mode is enabled \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structaos_1_1sleep__block_a612e4a81f23859610af4ebf739927632}{is\+\_\+enabled}} (\mbox{\hyperlink{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448}{smode}} mode) const
+\begin{DoxyCompactList}\small\item\em check, if sleep mode is enabled \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+structure, which contains information, about how many classes(processes) don\textquotesingle{}t allow sleep 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448}\label{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448}} 
+\index{sleep\_block@{sleep\_block}!smode@{smode}}
+\index{smode@{smode}!sleep\_block@{sleep\_block}}
+\doxysubsubsection{\texorpdfstring{smode}{smode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448}{smode}} \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mode0@{mode0}!sleep\_block@{sleep\_block}}\index{sleep\_block@{sleep\_block}!mode0@{mode0}}}\mbox{\Hypertarget{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448a1217e3e1c04184e3a3338c3654d9e9d6}\label{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448a1217e3e1c04184e3a3338c3654d9e9d6}} 
+mode0&full sleep \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mode2@{mode2}!sleep\_block@{sleep\_block}}\index{sleep\_block@{sleep\_block}!mode2@{mode2}}}\mbox{\Hypertarget{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448a607607c41817349b1d80d93cb50258ae}\label{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448a607607c41817349b1d80d93cb50258ae}} 
+mode2&sleep1 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structaos_1_1sleep__block_a0d718209b6acea29332acd99f1063913}\label{structaos_1_1sleep__block_a0d718209b6acea29332acd99f1063913}} 
+\index{sleep\_block@{sleep\_block}!is\_enabled@{is\_enabled}}
+\index{is\_enabled@{is\_enabled}!sleep\_block@{sleep\_block}}
+\doxysubsubsection{\texorpdfstring{is\_enabled()}{is\_enabled()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool is\+\_\+enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+check, if sleep mode is enabled 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em mode} & sleep mode to check \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{structaos_1_1sleep__block_a612e4a81f23859610af4ebf739927632}\label{structaos_1_1sleep__block_a612e4a81f23859610af4ebf739927632}} 
+\index{sleep\_block@{sleep\_block}!is\_enabled@{is\_enabled}}
+\index{is\_enabled@{is\_enabled}!sleep\_block@{sleep\_block}}
+\doxysubsubsection{\texorpdfstring{is\_enabled()}{is\_enabled()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool is\+\_\+enabled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structaos_1_1sleep__block_ac3c40320f7e1064971a6d3d4cdd3b448}{smode}}}]{mode }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+check, if sleep mode is enabled 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & sleep mode to check \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Tmp/avr/avr\+\_\+tools/avr\+\_\+tools/include/sleep\+\_\+modes.\+h\end{DoxyCompactItemize}

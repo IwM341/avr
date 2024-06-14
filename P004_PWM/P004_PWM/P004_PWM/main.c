@@ -18,14 +18,15 @@ unsigned char Up;
 void init_PWM_timer(void)
 {
 	//ASSR=0x00;	//
-	TCCR0A = (1<<WGM00)| (1<<WGM01)| (1<<COM0A1); // Режим fast PWM и сравнение с регистром OCR0A
-	TCCR0B = 1<<CS02; // Делитель частоты
-	OCR0A = 100;  // То, с чем сравниваем
+	TCCR0A = (0<<WGM00)| (1<<WGM01)| (1<<COM0A0) | (0<<COM0B0) | (1<<COM0B1); // Режим fast PWM и сравнение с регистром OCR0A
+	TCCR0B = (1<<CS00) | (1<<FOC0B); // Делитель частоты
+	OCR0A = 80;  // То, с чем сравниваем
+	OCR0B = 50;
 	TCNT0 = 0x00; // обнуление счетчика
-	TIMSK0  |=	1<<TOIE0; // Включаем прерывание по переполнению счетчика
+	TIMSK0  |=	1<<OCIE0A; // Включаем прерывание по переполнению счетчика
 }
 
-ISR (TIMER0_OVF_vect)
+ISR (TIMER0_COMPA_vect)
 {
 	/*
 	if(Up){
@@ -42,7 +43,8 @@ ISR (TIMER0_OVF_vect)
 		}
 	}
 	*/
-	set_port(PORTD,1<<PORTD7,0xFF); 
+	
+	set_port(PORTD,1<<PORTD5,0xFF); 
 };
 int main(void)
 {

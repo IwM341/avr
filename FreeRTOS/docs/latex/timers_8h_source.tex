@@ -1,0 +1,197 @@
+\hypertarget{timers_8h_source}{}\doxysection{D\+:/\+Tmp/avr/\+Free\+RTOS/timers.h}
+\mbox{\hyperlink{timers_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00002}00002\ \textcolor{comment}{\ \ \ \ FreeRTOS\ V9.0.0\ -\/\ Copyright\ (C)\ 2016\ Real\ Time\ Engineers\ Ltd.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00003}00003\ \textcolor{comment}{\ \ \ \ All\ rights\ reserved}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00004}00004\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00005}00005\ \textcolor{comment}{\ \ \ \ VISIT\ http://www.FreeRTOS.org\ TO\ ENSURE\ YOU\ ARE\ USING\ THE\ LATEST\ VERSION.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00006}00006\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00007}00007\ \textcolor{comment}{\ \ \ \ This\ file\ is\ part\ of\ the\ FreeRTOS\ distribution.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00008}00008\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00009}00009\ \textcolor{comment}{\ \ \ \ FreeRTOS\ is\ free\ software;\ you\ can\ redistribute\ it\ and/or\ modify\ it\ under}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00010}00010\ \textcolor{comment}{\ \ \ \ the\ terms\ of\ the\ GNU\ General\ Public\ License\ (version\ 2)\ as\ published\ by\ the}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00011}00011\ \textcolor{comment}{\ \ \ \ Free\ Software\ Foundation\ >>>>\ AND\ MODIFIED\ BY\ <<<<\ the\ FreeRTOS\ exception.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00012}00012\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00013}00013\ \textcolor{comment}{\ \ \ \ ***************************************************************************}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00014}00014\ \textcolor{comment}{\ \ \ \ >>!\ \ \ NOTE:\ The\ modification\ to\ the\ GPL\ is\ included\ to\ allow\ you\ to\ \ \ \ \ !<<}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00015}00015\ \textcolor{comment}{\ \ \ \ >>!\ \ \ distribute\ a\ combined\ work\ that\ includes\ FreeRTOS\ without\ being\ \ \ !<<}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00016}00016\ \textcolor{comment}{\ \ \ \ >>!\ \ \ obliged\ to\ provide\ the\ source\ code\ for\ proprietary\ components\ \ \ \ \ !<<}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00017}00017\ \textcolor{comment}{\ \ \ \ >>!\ \ \ outside\ of\ the\ FreeRTOS\ kernel.\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ !<<}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00018}00018\ \textcolor{comment}{\ \ \ \ ***************************************************************************}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00019}00019\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00020}00020\ \textcolor{comment}{\ \ \ \ FreeRTOS\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,\ but\ WITHOUT\ ANY}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00021}00021\ \textcolor{comment}{\ \ \ \ WARRANTY;\ without\ even\ the\ implied\ warranty\ of\ MERCHANTABILITY\ or\ FITNESS}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00022}00022\ \textcolor{comment}{\ \ \ \ FOR\ A\ PARTICULAR\ PURPOSE.\ \ Full\ license\ text\ is\ available\ on\ the\ following}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00023}00023\ \textcolor{comment}{\ \ \ \ link:\ http://www.freertos.org/a00114.html}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00024}00024\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00025}00025\ \textcolor{comment}{\ \ \ \ ***************************************************************************}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ FreeRTOS\ provides\ completely\ free\ yet\ professionally\ developed,\ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00028}00028\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ robust,\ strictly\ quality\ controlled,\ supported,\ and\ cross\ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00029}00029\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ platform\ software\ that\ is\ more\ than\ just\ the\ market\ leader,\ it\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00030}00030\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ is\ the\ industry's\ de\ facto\ standard.\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00032}00032\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ Help\ yourself\ get\ started\ quickly\ while\ simultaneously\ helping\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00033}00033\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ to\ support\ the\ FreeRTOS\ project\ by\ purchasing\ a\ FreeRTOS\ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ tutorial\ book,\ reference\ manual,\ or\ both:\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00035}00035\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ http://www.FreeRTOS.org/Documentation\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00037}00037\ \textcolor{comment}{\ \ \ \ ***************************************************************************}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00038}00038\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00039}00039\ \textcolor{comment}{\ \ \ \ http://www.FreeRTOS.org/FAQHelp.html\ -\/\ Having\ a\ problem?\ \ Start\ by\ reading}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00040}00040\ \textcolor{comment}{\ \ \ \ the\ FAQ\ page\ "{}My\ application\ does\ not\ run,\ what\ could\ be\ wrong?"{}.\ \ Have\ you}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00041}00041\ \textcolor{comment}{\ \ \ \ defined\ configASSERT()?}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00042}00042\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00043}00043\ \textcolor{comment}{\ \ \ \ http://www.FreeRTOS.org/support\ -\/\ In\ return\ for\ receiving\ this\ top\ quality}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00044}00044\ \textcolor{comment}{\ \ \ \ embedded\ software\ for\ free\ we\ request\ you\ assist\ our\ global\ community\ by}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00045}00045\ \textcolor{comment}{\ \ \ \ participating\ in\ the\ support\ forum.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00046}00046\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00047}00047\ \textcolor{comment}{\ \ \ \ http://www.FreeRTOS.org/training\ -\/\ Investing\ in\ training\ allows\ your\ team\ to}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00048}00048\ \textcolor{comment}{\ \ \ \ be\ as\ productive\ as\ possible\ as\ early\ as\ possible.\ \ Now\ you\ can\ receive}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00049}00049\ \textcolor{comment}{\ \ \ \ FreeRTOS\ training\ directly\ from\ Richard\ Barry,\ CEO\ of\ Real\ Time\ Engineers}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00050}00050\ \textcolor{comment}{\ \ \ \ Ltd,\ and\ the\ world's\ leading\ authority\ on\ the\ world's\ leading\ RTOS.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00051}00051\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00052}00052\ \textcolor{comment}{\ \ \ \ http://www.FreeRTOS.org/plus\ -\/\ A\ selection\ of\ FreeRTOS\ ecosystem\ products,}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00053}00053\ \textcolor{comment}{\ \ \ \ including\ FreeRTOS+Trace\ -\/\ an\ indispensable\ productivity\ tool,\ a\ DOS}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00054}00054\ \textcolor{comment}{\ \ \ \ compatible\ FAT\ file\ system,\ and\ our\ tiny\ thread\ aware\ UDP/IP\ stack.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00055}00055\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00056}00056\ \textcolor{comment}{\ \ \ \ http://www.FreeRTOS.org/labs\ -\/\ Where\ new\ FreeRTOS\ products\ go\ to\ incubate.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00057}00057\ \textcolor{comment}{\ \ \ \ Come\ and\ try\ FreeRTOS+TCP,\ our\ new\ open\ source\ TCP/IP\ stack\ for\ FreeRTOS.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00058}00058\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00059}00059\ \textcolor{comment}{\ \ \ \ http://www.OpenRTOS.com\ -\/\ Real\ Time\ Engineers\ ltd.\ license\ FreeRTOS\ to\ High}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00060}00060\ \textcolor{comment}{\ \ \ \ Integrity\ Systems\ ltd.\ to\ sell\ under\ the\ OpenRTOS\ brand.\ \ Low\ cost\ OpenRTOS}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00061}00061\ \textcolor{comment}{\ \ \ \ licenses\ offer\ ticketed\ support,\ indemnification\ and\ commercial\ middleware.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00062}00062\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00063}00063\ \textcolor{comment}{\ \ \ \ http://www.SafeRTOS.com\ -\/\ High\ Integrity\ Systems\ also\ provide\ a\ safety}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00064}00064\ \textcolor{comment}{\ \ \ \ engineered\ and\ independently\ SIL3\ certified\ version\ for\ use\ in\ safety\ and}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00065}00065\ \textcolor{comment}{\ \ \ \ mission\ critical\ applications\ that\ require\ provable\ dependability.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00066}00066\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00067}00067\ \textcolor{comment}{\ \ \ \ 1\ tab\ ==\ 4\ spaces!}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00068}00068\ \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00071}00071\ \textcolor{preprocessor}{\#ifndef\ TIMERS\_H}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00072}00072\ \textcolor{preprocessor}{\#define\ TIMERS\_H}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00074}00074\ \textcolor{preprocessor}{\#ifndef\ INC\_FREERTOS\_H}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00075}00075\ \textcolor{preprocessor}{\ \ \ \ \#error\ "{}include\ FreeRTOS.h\ must\ appear\ in\ source\ files\ before\ include\ timers.h"{}}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00076}00076\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00078}00078\ \textcolor{comment}{/*lint\ -\/e537\ This\ headers\ are\ only\ multiply\ included\ if\ the\ application\ code}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00079}00079\ \textcolor{comment}{happens\ to\ also\ be\ including\ task.h.\ */}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00080}00080\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{task_8h}{task.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00081}00081\ \textcolor{comment}{/*lint\ +e537\ */}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00083}00083\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00084}00084\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00085}00085\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00087}00087\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00088}00088\ \textcolor{comment}{\ *\ MACROS\ AND\ DEFINITIONS}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00089}00089\ \textcolor{comment}{\ *-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00091}00091\ \textcolor{comment}{/*\ IDs\ for\ commands\ that\ can\ be\ sent/received\ on\ the\ timer\ queue.\ \ These\ are\ to}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00092}00092\ \textcolor{comment}{be\ used\ solely\ through\ the\ macros\ that\ make\ up\ the\ public\ software\ timer\ API,}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00093}00093\ \textcolor{comment}{as\ defined\ below.\ \ The\ commands\ that\ are\ sent\ from\ interrupts\ must\ use\ the}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00094}00094\ \textcolor{comment}{highest\ numbers\ as\ tmrFIRST\_FROM\_ISR\_COMMAND\ is\ used\ to\ determine\ if\ the\ task}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00095}00095\ \textcolor{comment}{or\ interrupt\ version\ of\ the\ queue\ send\ function\ should\ be\ used.\ */}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00096}\mbox{\hyperlink{timers_8h_aff0b8d2d5d743afef9d52861618139bf}{00096}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_EXECUTE\_CALLBACK\_FROM\_ISR\ \ \ \ (\ (\ BaseType\_t\ )\ -\/2\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00097}\mbox{\hyperlink{timers_8h_aca42f545424488ce7dfd43c0d70ca610}{00097}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_EXECUTE\_CALLBACK\ \ \ \ \ \ \ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ -\/1\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00098}\mbox{\hyperlink{timers_8h_adcc4f4391b0850b18596974d7618bdfc}{00098}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_START\_DONT\_TRACE\ \ \ \ \ \ \ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ 0\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00099}\mbox{\hyperlink{timers_8h_afc38af63403775cc4ced3995f920343a}{00099}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_START\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ 1\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00100}\mbox{\hyperlink{timers_8h_a0a63f701c021371d186adca7c590e923}{00100}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_RESET\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ 2\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00101}\mbox{\hyperlink{timers_8h_a0cd6f6a41dcd52d2fc06c350f43516c0}{00101}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_STOP\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ 3\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00102}\mbox{\hyperlink{timers_8h_adb27881a1a1118b9cc4d711391c89414}{00102}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_CHANGE\_PERIOD\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ 4\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00103}\mbox{\hyperlink{timers_8h_a5a5586339a9dbc1320153fd96a1c2f33}{00103}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_DELETE\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ 5\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00105}\mbox{\hyperlink{timers_8h_afab5e13e40f49f678d62925ab8bc44a1}{00105}}\ \textcolor{preprocessor}{\#define\ tmrFIRST\_FROM\_ISR\_COMMAND\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ 6\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00106}\mbox{\hyperlink{timers_8h_add053fdcf41607ba790004590c11844f}{00106}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_START\_FROM\_ISR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ 6\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00107}\mbox{\hyperlink{timers_8h_a1d69bd5e47301570a4aa149bd868534a}{00107}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_RESET\_FROM\_ISR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ 7\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00108}\mbox{\hyperlink{timers_8h_acbf988b64a5897a1c030da417cc654de}{00108}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_STOP\_FROM\_ISR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ 8\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00109}\mbox{\hyperlink{timers_8h_ab520106084753fbb137ac275ab3ff20b}{00109}}\ \textcolor{preprocessor}{\#define\ tmrCOMMAND\_CHANGE\_PERIOD\_FROM\_ISR\ \ \ \ \ \ \ (\ (\ BaseType\_t\ )\ 9\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00118}\mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{00118}}\ \textcolor{keyword}{typedef}\ \textcolor{keywordtype}{void}\ *\ \mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{TimerHandle\_t}};}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00120}00120\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00121}00121\ \textcolor{comment}{\ *\ Defines\ the\ prototype\ to\ which\ timer\ callback\ functions\ must\ conform.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00122}00122\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00123}\mbox{\hyperlink{timers_8h_a5cf6d1f61ccd4871022ed8ad454c6027}{00123}}\ \textcolor{keyword}{typedef}\ void\ (*\mbox{\hyperlink{timers_8h_a5cf6d1f61ccd4871022ed8ad454c6027}{TimerCallbackFunction\_t}})(\ \mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{TimerHandle\_t}}\ xTimer\ );}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00124}00124\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00125}00125\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00126}00126\ \textcolor{comment}{\ *\ Defines\ the\ prototype\ to\ which\ functions\ used\ with\ the}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00127}00127\ \textcolor{comment}{\ *\ xTimerPendFunctionCallFromISR()\ function\ must\ conform.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00128}00128\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00129}\mbox{\hyperlink{timers_8h_af6e8e2be58df2be9f9bb808fcdc51622}{00129}}\ \textcolor{keyword}{typedef}\ void\ (*\mbox{\hyperlink{timers_8h_af6e8e2be58df2be9f9bb808fcdc51622}{PendedFunction\_t}})(\ \textcolor{keywordtype}{void}\ *,\ uint32\_t\ );}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00268}00268\ \textcolor{preprocessor}{\#if(\ configSUPPORT\_DYNAMIC\_ALLOCATION\ ==\ 1\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00269}00269\ \ \ \ \ \mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{TimerHandle\_t}}\ xTimerCreate(\ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ \textcolor{keyword}{const}\ pcTimerName,}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00270}00270\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{TickType\_t}}\ xTimerPeriodInTicks,}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00271}00271\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{portmacro_8h_a7f2008eba0546c7ed62997511b87ceaf}{UBaseType\_t}}\ uxAutoReload,}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00272}00272\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *\ \textcolor{keyword}{const}\ pvTimerID,}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00273}00273\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{timers_8h_a5cf6d1f61ccd4871022ed8ad454c6027}{TimerCallbackFunction\_t}}\ pxCallbackFunction\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};\ \textcolor{comment}{/*lint\ !e971\ Unqualified\ char\ types\ are\ allowed\ for\ strings\ and\ single\ characters\ only.\ */}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00274}00274\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00275}00275\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00398}00398\ \textcolor{preprocessor}{\#if(\ configSUPPORT\_STATIC\_ALLOCATION\ ==\ 1\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00399}00399\ \ \ \ \ \mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{TimerHandle\_t}}\ xTimerCreateStatic(\ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ \textcolor{keyword}{const}\ pcTimerName,}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00400}00400\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{TickType\_t}}\ xTimerPeriodInTicks,}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00401}00401\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{portmacro_8h_a7f2008eba0546c7ed62997511b87ceaf}{UBaseType\_t}}\ uxAutoReload,}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00402}00402\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ *\ \textcolor{keyword}{const}\ pvTimerID,}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00403}00403\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{timers_8h_a5cf6d1f61ccd4871022ed8ad454c6027}{TimerCallbackFunction\_t}}\ pxCallbackFunction,}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00404}00404\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structx_s_t_a_t_i_c___t_i_m_e_r}{StaticTimer\_t}}\ *pxTimerBuffer\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};\ \textcolor{comment}{/*lint\ !e971\ Unqualified\ char\ types\ are\ allowed\ for\ strings\ and\ single\ characters\ only.\ */}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00405}00405\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ configSUPPORT\_STATIC\_ALLOCATION\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00406}00406\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00427}\mbox{\hyperlink{timers_8h_a116df5c5464393c6aeda6ecec6c9e916}{00427}}\ \textcolor{keywordtype}{void}\ *\mbox{\hyperlink{timers_8h_a116df5c5464393c6aeda6ecec6c9e916}{pvTimerGetTimerID}}(\ \textcolor{keyword}{const}\ \mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{TimerHandle\_t}}\ xTimer\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00428}00428\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00448}\mbox{\hyperlink{timers_8h_a1f06045a953481dd7012d4c7762990cb}{00448}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{timers_8h_a1f06045a953481dd7012d4c7762990cb}{vTimerSetTimerID}}(\ \mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{TimerHandle\_t}}\ xTimer,\ \textcolor{keywordtype}{void}\ *pvNewID\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00449}00449\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00485}\mbox{\hyperlink{timers_8h_a2cd9b1399fb25203be698f123846dc33}{00485}}\ \mbox{\hyperlink{portmacro_8h_a84960222057153898d715ce6adf9a2b6}{BaseType\_t}}\ \mbox{\hyperlink{timers_8h_a2cd9b1399fb25203be698f123846dc33}{xTimerIsTimerActive}}(\ \mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{TimerHandle\_t}}\ xTimer\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00486}00486\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00493}\mbox{\hyperlink{timers_8h_ad2a0d15a1e213493bd898e748d9f7555}{00493}}\ \mbox{\hyperlink{task_8h_ae95f44d4cfeb4a599c6cc258d241cb6b}{TaskHandle\_t}}\ \mbox{\hyperlink{timers_8h_ad2a0d15a1e213493bd898e748d9f7555}{xTimerGetTimerDaemonTaskHandle}}(\ \textcolor{keywordtype}{void}\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00494}00494\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00545}\mbox{\hyperlink{timers_8h_a3a9b838f48991e852ce05c986b0eeb8c}{00545}}\ \textcolor{preprocessor}{\#define\ xTimerStart(\ xTimer,\ xTicksToWait\ )\ xTimerGenericCommand(\ (\ xTimer\ ),\ tmrCOMMAND\_START,\ (\ xTaskGetTickCount()\ ),\ NULL,\ (\ xTicksToWait\ )\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00546}00546\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00587}\mbox{\hyperlink{timers_8h_a8327c7fc10aee414cb163b445c5269a4}{00587}}\ \textcolor{preprocessor}{\#define\ xTimerStop(\ xTimer,\ xTicksToWait\ )\ xTimerGenericCommand(\ (\ xTimer\ ),\ tmrCOMMAND\_STOP,\ 0U,\ NULL,\ (\ xTicksToWait\ )\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00588}00588\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00667}\mbox{\hyperlink{timers_8h_ab12eac1c69a3437b8161ce81ff34b2f4}{00667}}\ \textcolor{preprocessor}{\ \#define\ xTimerChangePeriod(\ xTimer,\ xNewPeriod,\ xTicksToWait\ )\ xTimerGenericCommand(\ (\ xTimer\ ),\ tmrCOMMAND\_CHANGE\_PERIOD,\ (\ xNewPeriod\ ),\ NULL,\ (\ xTicksToWait\ )\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00668}00668\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00705}\mbox{\hyperlink{timers_8h_a8c8e21f05ebe92e15449addc5d269d10}{00705}}\ \textcolor{preprocessor}{\#define\ xTimerDelete(\ xTimer,\ xTicksToWait\ )\ xTimerGenericCommand(\ (\ xTimer\ ),\ tmrCOMMAND\_DELETE,\ 0U,\ NULL,\ (\ xTicksToWait\ )\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00706}00706\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00829}\mbox{\hyperlink{timers_8h_a8081b4541b752908dc55df2693e53287}{00829}}\ \textcolor{preprocessor}{\#define\ xTimerReset(\ xTimer,\ xTicksToWait\ )\ xTimerGenericCommand(\ (\ xTimer\ ),\ tmrCOMMAND\_RESET,\ (\ xTaskGetTickCount()\ ),\ NULL,\ (\ xTicksToWait\ )\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00830}00830\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00915}\mbox{\hyperlink{timers_8h_adab5809f9679e44a343b8dbb8fb7c67f}{00915}}\ \textcolor{preprocessor}{\#define\ xTimerStartFromISR(\ xTimer,\ pxHigherPriorityTaskWoken\ )\ xTimerGenericCommand(\ (\ xTimer\ ),\ tmrCOMMAND\_START\_FROM\_ISR,\ (\ xTaskGetTickCountFromISR()\ ),\ (\ pxHigherPriorityTaskWoken\ ),\ 0U\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00916}00916\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00978}\mbox{\hyperlink{timers_8h_aef0f53e7ecfaa881621da83d61072db7}{00978}}\ \textcolor{preprocessor}{\#define\ xTimerStopFromISR(\ xTimer,\ pxHigherPriorityTaskWoken\ )\ xTimerGenericCommand(\ (\ xTimer\ ),\ tmrCOMMAND\_STOP\_FROM\_ISR,\ 0,\ (\ pxHigherPriorityTaskWoken\ ),\ 0U\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l00979}00979\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01051}\mbox{\hyperlink{timers_8h_a6d89ca6afb6e692e98932b5038c9e14a}{01051}}\ \textcolor{preprocessor}{\#define\ xTimerChangePeriodFromISR(\ xTimer,\ xNewPeriod,\ pxHigherPriorityTaskWoken\ )\ xTimerGenericCommand(\ (\ xTimer\ ),\ tmrCOMMAND\_CHANGE\_PERIOD\_FROM\_ISR,\ (\ xNewPeriod\ ),\ (\ pxHigherPriorityTaskWoken\ ),\ 0U\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01052}01052\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01137}\mbox{\hyperlink{timers_8h_a448138d0cebf76044f107ca56c842230}{01137}}\ \textcolor{preprocessor}{\#define\ xTimerResetFromISR(\ xTimer,\ pxHigherPriorityTaskWoken\ )\ xTimerGenericCommand(\ (\ xTimer\ ),\ tmrCOMMAND\_RESET\_FROM\_ISR,\ (\ xTaskGetTickCountFromISR()\ ),\ (\ pxHigherPriorityTaskWoken\ ),\ 0U\ )}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01138}01138\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01139}01139\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01228}\mbox{\hyperlink{timers_8h_ae0d9338933037e6feebe6437763fa299}{01228}}\ \mbox{\hyperlink{portmacro_8h_a84960222057153898d715ce6adf9a2b6}{BaseType\_t}}\ \mbox{\hyperlink{timers_8h_ae0d9338933037e6feebe6437763fa299}{xTimerPendFunctionCallFromISR}}(\ \mbox{\hyperlink{timers_8h_af6e8e2be58df2be9f9bb808fcdc51622}{PendedFunction\_t}}\ xFunctionToPend,\ \textcolor{keywordtype}{void}\ *pvParameter1,\ uint32\_t\ ulParameter2,\ \mbox{\hyperlink{portmacro_8h_a84960222057153898d715ce6adf9a2b6}{BaseType\_t}}\ *pxHigherPriorityTaskWoken\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01229}01229\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01262}\mbox{\hyperlink{timers_8h_a04e031135bd3276caaedd656d464dc23}{01262}}\ \mbox{\hyperlink{portmacro_8h_a84960222057153898d715ce6adf9a2b6}{BaseType\_t}}\ \mbox{\hyperlink{timers_8h_a04e031135bd3276caaedd656d464dc23}{xTimerPendFunctionCall}}(\ \mbox{\hyperlink{timers_8h_af6e8e2be58df2be9f9bb808fcdc51622}{PendedFunction\_t}}\ xFunctionToPend,\ \textcolor{keywordtype}{void}\ *pvParameter1,\ uint32\_t\ ulParameter2,\ \mbox{\hyperlink{portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{TickType\_t}}\ xTicksToWait\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01263}01263\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01273}\mbox{\hyperlink{timers_8h_a5007aef53e4cc6aea1aadcdcc72aa9da}{01273}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *\ \mbox{\hyperlink{timers_8h_a5007aef53e4cc6aea1aadcdcc72aa9da}{pcTimerGetName}}(\ \mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{TimerHandle\_t}}\ xTimer\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};\ \textcolor{comment}{/*lint\ !e971\ Unqualified\ char\ types\ are\ allowed\ for\ strings\ and\ single\ characters\ only.\ */}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01274}01274\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01284}\mbox{\hyperlink{timers_8h_a2735e79e155b2ca2a3809958ebb7431e}{01284}}\ \mbox{\hyperlink{portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{TickType\_t}}\ \mbox{\hyperlink{timers_8h_a2735e79e155b2ca2a3809958ebb7431e}{xTimerGetPeriod}}(\ \mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{TimerHandle\_t}}\ xTimer\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01285}01285\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01299}\mbox{\hyperlink{timers_8h_a06cdc26759c622eeb575070064e26025}{01299}}\ \mbox{\hyperlink{portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{TickType\_t}}\ \mbox{\hyperlink{timers_8h_a06cdc26759c622eeb575070064e26025}{xTimerGetExpiryTime}}(\ \mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{TimerHandle\_t}}\ xTimer\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01300}01300\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01301}01301\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01302}01302\ \textcolor{comment}{\ *\ Functions\ beyond\ this\ part\ are\ not\ part\ of\ the\ public\ API\ and\ are\ intended}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01303}01303\ \textcolor{comment}{\ *\ for\ use\ by\ the\ kernel\ only.}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01304}01304\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01305}\mbox{\hyperlink{timers_8h_af777ab3e9ac04abd5dd21be739fa1321}{01305}}\ \mbox{\hyperlink{portmacro_8h_a84960222057153898d715ce6adf9a2b6}{BaseType\_t}}\ \mbox{\hyperlink{timers_8h_af777ab3e9ac04abd5dd21be739fa1321}{xTimerCreateTimerTask}}(\ \textcolor{keywordtype}{void}\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01306}\mbox{\hyperlink{timers_8h_a1ee4da95d99c4e81bfa14c0350fbd594}{01306}}\ \mbox{\hyperlink{portmacro_8h_a84960222057153898d715ce6adf9a2b6}{BaseType\_t}}\ \mbox{\hyperlink{timers_8h_a1ee4da95d99c4e81bfa14c0350fbd594}{xTimerGenericCommand}}(\ \mbox{\hyperlink{timers_8h_aae4bf1dce696ab615d5fd073606fd3cb}{TimerHandle\_t}}\ xTimer,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{portmacro_8h_a84960222057153898d715ce6adf9a2b6}{BaseType\_t}}\ xCommandID,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{TickType\_t}}\ xOptionalValue,\ \mbox{\hyperlink{portmacro_8h_a84960222057153898d715ce6adf9a2b6}{BaseType\_t}}\ *\ \textcolor{keyword}{const}\ pxHigherPriorityTaskWoken,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{portmacro_8h_aa69c48c6e902ce54f70886e6573c92a9}{TickType\_t}}\ xTicksToWait\ )\ \mbox{\hyperlink{mpu__wrappers_8h_a4785c4f4a8c04b835139dcc2a6682078}{PRIVILEGED\_FUNCTION}};}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01307}01307\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01308}01308\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01309}01309\ \}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01310}01310\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01311}01311\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ TIMERS\_H\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01312}01312\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01313}01313\ }
+\DoxyCodeLine{\Hypertarget{timers_8h_source_l01314}01314\ }
+
+\end{DoxyCode}

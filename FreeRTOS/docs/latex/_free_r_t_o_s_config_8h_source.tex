@@ -1,0 +1,122 @@
+\hypertarget{_free_r_t_o_s_config_8h_source}{}\doxysection{D\+:/\+Tmp/avr/\+Free\+RTOS/\+Free\+RTOSConfig.h}
+\mbox{\hyperlink{_free_r_t_o_s_config_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00001}00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00002}00002\ \textcolor{comment}{\ \ \ \ FreeRTOS\ V9.0.0\ -\/\ Copyright\ (C)\ 2016\ Real\ Time\ Engineers\ Ltd.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00003}00003\ \textcolor{comment}{\ \ \ \ All\ rights\ reserved}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00004}00004\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00005}00005\ \textcolor{comment}{\ \ \ \ VISIT\ http://www.FreeRTOS.org\ TO\ ENSURE\ YOU\ ARE\ USING\ THE\ LATEST\ VERSION.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00006}00006\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00007}00007\ \textcolor{comment}{\ \ \ \ This\ file\ is\ part\ of\ the\ FreeRTOS\ distribution.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00008}00008\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00009}00009\ \textcolor{comment}{\ \ \ \ FreeRTOS\ is\ free\ software;\ you\ can\ redistribute\ it\ and/or\ modify\ it\ under}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00010}00010\ \textcolor{comment}{\ \ \ \ the\ terms\ of\ the\ GNU\ General\ Public\ License\ (version\ 2)\ as\ published\ by\ the}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00011}00011\ \textcolor{comment}{\ \ \ \ Free\ Software\ Foundation\ >>>>\ AND\ MODIFIED\ BY\ <<<<\ the\ FreeRTOS\ exception.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00012}00012\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00013}00013\ \textcolor{comment}{\ \ \ \ ***************************************************************************}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00014}00014\ \textcolor{comment}{\ \ \ \ >>!\ \ \ NOTE:\ The\ modification\ to\ the\ GPL\ is\ included\ to\ allow\ you\ to\ \ \ \ \ !<<}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00015}00015\ \textcolor{comment}{\ \ \ \ >>!\ \ \ distribute\ a\ combined\ work\ that\ includes\ FreeRTOS\ without\ being\ \ \ !<<}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00016}00016\ \textcolor{comment}{\ \ \ \ >>!\ \ \ obliged\ to\ provide\ the\ source\ code\ for\ proprietary\ components\ \ \ \ \ !<<}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00017}00017\ \textcolor{comment}{\ \ \ \ >>!\ \ \ outside\ of\ the\ FreeRTOS\ kernel.\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ !<<}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00018}00018\ \textcolor{comment}{\ \ \ \ ***************************************************************************}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00019}00019\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00020}00020\ \textcolor{comment}{\ \ \ \ FreeRTOS\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,\ but\ WITHOUT\ ANY}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00021}00021\ \textcolor{comment}{\ \ \ \ WARRANTY;\ without\ even\ the\ implied\ warranty\ of\ MERCHANTABILITY\ or\ FITNESS}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00022}00022\ \textcolor{comment}{\ \ \ \ FOR\ A\ PARTICULAR\ PURPOSE.\ \ Full\ license\ text\ is\ available\ on\ the\ following}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00023}00023\ \textcolor{comment}{\ \ \ \ link:\ http://www.freertos.org/a00114.html}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00024}00024\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00025}00025\ \textcolor{comment}{\ \ \ \ ***************************************************************************}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00026}00026\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00027}00027\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ FreeRTOS\ provides\ completely\ free\ yet\ professionally\ developed,\ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00028}00028\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ robust,\ strictly\ quality\ controlled,\ supported,\ and\ cross\ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00029}00029\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ platform\ software\ that\ is\ more\ than\ just\ the\ market\ leader,\ it\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00030}00030\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ is\ the\ industry's\ de\ facto\ standard.\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00032}00032\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ Help\ yourself\ get\ started\ quickly\ while\ simultaneously\ helping\ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00033}00033\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ to\ support\ the\ FreeRTOS\ project\ by\ purchasing\ a\ FreeRTOS\ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ tutorial\ book,\ reference\ manual,\ or\ both:\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00035}00035\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ http://www.FreeRTOS.org/Documentation\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ *\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00037}00037\ \textcolor{comment}{\ \ \ \ ***************************************************************************}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00038}00038\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00039}00039\ \textcolor{comment}{\ \ \ \ http://www.FreeRTOS.org/FAQHelp.html\ -\/\ Having\ a\ problem?\ \ Start\ by\ reading}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00040}00040\ \textcolor{comment}{\ \ \ \ the\ FAQ\ page\ "{}My\ application\ does\ not\ run,\ what\ could\ be\ wrong?"{}.\ \ Have\ you}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00041}00041\ \textcolor{comment}{\ \ \ \ defined\ configASSERT()?}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00042}00042\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00043}00043\ \textcolor{comment}{\ \ \ \ http://www.FreeRTOS.org/support\ -\/\ In\ return\ for\ receiving\ this\ top\ quality}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00044}00044\ \textcolor{comment}{\ \ \ \ embedded\ software\ for\ free\ we\ request\ you\ assist\ our\ global\ community\ by}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00045}00045\ \textcolor{comment}{\ \ \ \ participating\ in\ the\ support\ forum.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00046}00046\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00047}00047\ \textcolor{comment}{\ \ \ \ http://www.FreeRTOS.org/training\ -\/\ Investing\ in\ training\ allows\ your\ team\ to}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00048}00048\ \textcolor{comment}{\ \ \ \ be\ as\ productive\ as\ possible\ as\ early\ as\ possible.\ \ Now\ you\ can\ receive}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00049}00049\ \textcolor{comment}{\ \ \ \ FreeRTOS\ training\ directly\ from\ Richard\ Barry,\ CEO\ of\ Real\ Time\ Engineers}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00050}00050\ \textcolor{comment}{\ \ \ \ Ltd,\ and\ the\ world's\ leading\ authority\ on\ the\ world's\ leading\ RTOS.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00051}00051\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00052}00052\ \textcolor{comment}{\ \ \ \ http://www.FreeRTOS.org/plus\ -\/\ A\ selection\ of\ FreeRTOS\ ecosystem\ products,}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00053}00053\ \textcolor{comment}{\ \ \ \ including\ FreeRTOS+Trace\ -\/\ an\ indispensable\ productivity\ tool,\ a\ DOS}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00054}00054\ \textcolor{comment}{\ \ \ \ compatible\ FAT\ file\ system,\ and\ our\ tiny\ thread\ aware\ UDP/IP\ stack.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00055}00055\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00056}00056\ \textcolor{comment}{\ \ \ \ http://www.FreeRTOS.org/labs\ -\/\ Where\ new\ FreeRTOS\ products\ go\ to\ incubate.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00057}00057\ \textcolor{comment}{\ \ \ \ Come\ and\ try\ FreeRTOS+TCP,\ our\ new\ open\ source\ TCP/IP\ stack\ for\ FreeRTOS.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00058}00058\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00059}00059\ \textcolor{comment}{\ \ \ \ http://www.OpenRTOS.com\ -\/\ Real\ Time\ Engineers\ ltd.\ license\ FreeRTOS\ to\ High}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00060}00060\ \textcolor{comment}{\ \ \ \ Integrity\ Systems\ ltd.\ to\ sell\ under\ the\ OpenRTOS\ brand.\ \ Low\ cost\ OpenRTOS}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00061}00061\ \textcolor{comment}{\ \ \ \ licenses\ offer\ ticketed\ support,\ indemnification\ and\ commercial\ middleware.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00062}00062\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00063}00063\ \textcolor{comment}{\ \ \ \ http://www.SafeRTOS.com\ -\/\ High\ Integrity\ Systems\ also\ provide\ a\ safety}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00064}00064\ \textcolor{comment}{\ \ \ \ engineered\ and\ independently\ SIL3\ certified\ version\ for\ use\ in\ safety\ and}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00065}00065\ \textcolor{comment}{\ \ \ \ mission\ critical\ applications\ that\ require\ provable\ dependability.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00066}00066\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00067}00067\ \textcolor{comment}{\ \ \ \ 1\ tab\ ==\ 4\ spaces!}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00068}00068\ \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00070}00070\ \textcolor{preprocessor}{\#ifndef\ FREERTOS\_CONFIG\_H}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00071}00071\ \textcolor{preprocessor}{\#define\ FREERTOS\_CONFIG\_H}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00073}00073\ \textcolor{preprocessor}{\#include\ <avr/io.h>}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00075}00075\ \textcolor{comment}{/*-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00076}00076\ \textcolor{comment}{\ *\ Application\ specific\ definitions.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00077}00077\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00078}00078\ \textcolor{comment}{\ *\ These\ definitions\ should\ be\ adjusted\ for\ your\ particular\ hardware\ and}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00079}00079\ \textcolor{comment}{\ *\ application\ requirements.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00080}00080\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00081}00081\ \textcolor{comment}{\ *\ THESE\ PARAMETERS\ ARE\ DESCRIBED\ WITHIN\ THE\ 'CONFIGURATION'\ SECTION\ OF\ THE}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00082}00082\ \textcolor{comment}{\ *\ FreeRTOS\ API\ DOCUMENTATION\ AVAILABLE\ ON\ THE\ FreeRTOS.org\ WEB\ SITE.\ }}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00083}00083\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00084}00084\ \textcolor{comment}{\ *\ See\ http://www.freertos.org/a00110.html.}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00085}00085\ \textcolor{comment}{\ *-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00087}\mbox{\hyperlink{_free_r_t_o_s_config_8h_adde83486022745409c40605922b0bdd6}{00087}}\ \textcolor{preprocessor}{\#define\ configUSE\_PREEMPTION\ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00088}\mbox{\hyperlink{_free_r_t_o_s_config_8h_ac637ae45863c19fa2e919db0ed49301f}{00088}}\ \textcolor{preprocessor}{\#define\ configUSE\_IDLE\_HOOK\ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00089}\mbox{\hyperlink{_free_r_t_o_s_config_8h_a23c5922c077106fad3f70b54d9071466}{00089}}\ \textcolor{preprocessor}{\#define\ configUSE\_TICK\_HOOK\ \ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00090}\mbox{\hyperlink{_free_r_t_o_s_config_8h_aa68082df879e6fc96bcb9b26513639e7}{00090}}\ \textcolor{preprocessor}{\#define\ configCPU\_CLOCK\_HZ\ \ \ \ \ \ \ \ \ \ (\ (\ unsigned\ long\ )\ 16000000\ )}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00091}\mbox{\hyperlink{_free_r_t_o_s_config_8h_a2f0258dd1e3b877e5bc013be54c2db6a}{00091}}\ \textcolor{preprocessor}{\#define\ configTICK\_RATE\_HZ\ \ \ \ \ \ \ \ \ \ (\ (\ TickType\_t\ )\ 1000\ )}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00092}\mbox{\hyperlink{_free_r_t_o_s_config_8h_a9a78f5ac61e6cb172dadf2a51f11db38}{00092}}\ \textcolor{preprocessor}{\#define\ configMAX\_PRIORITIES\ \ \ \ \ \ \ \ (\ 4\ )}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00093}\mbox{\hyperlink{_free_r_t_o_s_config_8h_a6c534a6cf8a00528fe0be42083484f9a}{00093}}\ \textcolor{preprocessor}{\#define\ configMINIMAL\_STACK\_SIZE\ \ \ \ (\ (\ unsigned\ short\ )\ 85\ )}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00094}\mbox{\hyperlink{_free_r_t_o_s_config_8h_a9f213227674effff0122a75d94d87938}{00094}}\ \textcolor{preprocessor}{\#define\ configTOTAL\_HEAP\_SIZE\ \ \ \ \ \ \ (\ (size\_t\ )\ (\ 1500\ )\ )}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00095}\mbox{\hyperlink{_free_r_t_o_s_config_8h_ac388dc4041aab6997348828eb27fc1a8}{00095}}\ \textcolor{preprocessor}{\#define\ configMAX\_TASK\_NAME\_LEN\ \ \ \ \ (\ 8\ )}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00096}\mbox{\hyperlink{_free_r_t_o_s_config_8h_a27f5ee137dc9f125681a31f0b0a4b3be}{00096}}\ \textcolor{preprocessor}{\#define\ configUSE\_TRACE\_FACILITY\ \ \ \ 0}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00097}\mbox{\hyperlink{_free_r_t_o_s_config_8h_aac311ed9b9e5ae4d2d9648b33a24acce}{00097}}\ \textcolor{preprocessor}{\#define\ configUSE\_16\_BIT\_TICKS\ \ \ \ \ \ 1}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00098}\mbox{\hyperlink{_free_r_t_o_s_config_8h_ad6a5061a742fee450ac455e4ad0f4b6c}{00098}}\ \textcolor{preprocessor}{\#define\ configIDLE\_SHOULD\_YIELD\ \ \ \ \ 1}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00099}\mbox{\hyperlink{_free_r_t_o_s_config_8h_aa4b5138c4e42a180f0abd4f2455f90fb}{00099}}\ \textcolor{preprocessor}{\#define\ configQUEUE\_REGISTRY\_SIZE\ \ \ 0}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00101}00101\ \textcolor{comment}{/*\ Co-\/routine\ definitions.\ */}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00102}\mbox{\hyperlink{_free_r_t_o_s_config_8h_a57990715eb06402474b8b47e1d562616}{00102}}\ \textcolor{preprocessor}{\#define\ configUSE\_CO\_ROUTINES\ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00103}\mbox{\hyperlink{_free_r_t_o_s_config_8h_ae8f3fd645e6e78dfeb8a6e874af6195a}{00103}}\ \textcolor{preprocessor}{\#define\ configMAX\_CO\_ROUTINE\_PRIORITIES\ (\ 2\ )}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00105}00105\ \textcolor{comment}{/*\ Set\ the\ following\ definitions\ to\ 1\ to\ include\ the\ API\ function,\ or\ zero}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00106}00106\ \textcolor{comment}{to\ exclude\ the\ API\ function.\ */}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00108}\mbox{\hyperlink{_free_r_t_o_s_config_8h_ad6858ac8aaf726007fd19752956ef1bd}{00108}}\ \textcolor{preprocessor}{\#define\ INCLUDE\_vTaskPrioritySet\ \ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00109}\mbox{\hyperlink{_free_r_t_o_s_config_8h_a1279eb797355460aeeec06aa524e91df}{00109}}\ \textcolor{preprocessor}{\#define\ INCLUDE\_uxTaskPriorityGet\ \ \ \ \ \ \ 0}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00110}\mbox{\hyperlink{_free_r_t_o_s_config_8h_a5ae1434fdf995108dc749ff9329f53bd}{00110}}\ \textcolor{preprocessor}{\#define\ INCLUDE\_vTaskDelete\ \ \ \ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00111}\mbox{\hyperlink{_free_r_t_o_s_config_8h_a7ee138825e57f243c8ee5fd4207b9e26}{00111}}\ \textcolor{preprocessor}{\#define\ INCLUDE\_vTaskCleanUpResources\ \ \ 0}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00112}\mbox{\hyperlink{_free_r_t_o_s_config_8h_aef8fbb97819ad3d962f334ac298206d1}{00112}}\ \textcolor{preprocessor}{\#define\ INCLUDE\_vTaskSuspend\ \ \ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00113}\mbox{\hyperlink{_free_r_t_o_s_config_8h_ae8459bfd5b428319bb10de9f504a53aa}{00113}}\ \textcolor{preprocessor}{\#define\ INCLUDE\_vTaskDelayUntil\ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00114}\mbox{\hyperlink{_free_r_t_o_s_config_8h_a24361a6eb816a965f1ee4e2e08e364f8}{00114}}\ \textcolor{preprocessor}{\#define\ INCLUDE\_vTaskDelay\ \ \ \ \ \ \ \ \ \ \ \ \ \ 1}}
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00116}00116\ }
+\DoxyCodeLine{\Hypertarget{_free_r_t_o_s_config_8h_source_l00117}00117\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ FREERTOS\_CONFIG\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

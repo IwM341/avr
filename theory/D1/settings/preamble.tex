@@ -1,0 +1,98 @@
+\documentclass[
+candidate, % document type
+subf, % use and configure subfig package for nested figure numbering
+times, % use Times font as main
+]{disser}
+
+% Кодировка и язык
+\usepackage[T2A]{fontenc} % поддержка кириллицы
+\usepackage[utf8]{inputenc} % кодировка исходного текста
+\usepackage[english,russian]{babel} % переключение языков
+
+% Геометрия страницы и графика
+\usepackage[left=3cm, right=1.5cm, top=2cm, bottom=2cm]{geometry} % поля страницы
+\usepackage{graphicx} % подключение графики
+\usepackage{pdfpages} % вставка pdf-страниц
+
+% Таблицы
+\usepackage{array} % расширенные возможности для работы с таблицами
+\usepackage{tabularx} % автоматический подбор ширины столбцов
+\usepackage{dcolumn} % выравнивание чисел по разделителю
+\usepackage{array}
+% Математика
+\usepackage{bm} % полужирное начертание для математических символов
+\usepackage{amsmath} % дополнительные математические возможности
+\usepackage{amssymb} % дополнительные математические символы
+\usepackage{physics}
+% Библиография и ссылки
+%\usepackage[square,numbers]{natbib} % поддержка цитирования
+\usepackage{url}
+\usepackage[hidelinks]{hyperref} % создание гиперссылок
+
+% Прочее
+\usepackage{color} % работа с цветом
+\usepackage{epstopdf} % конвертация eps в pdf
+\usepackage{multirow} % объединение ячеек таблиц по вертикали
+\usepackage{afterpage} % вставка материала после текущей страницы
+\usepackage[font={normal}]{caption} % настройка подписей к рисункам и таблицам
+\usepackage[onehalfspacing]{setspace} % полуторный интервал
+\usepackage{fancyhdr} % установка колонтитулов
+\usepackage{listings} % поддержка вставки исходного кода
+\usepackage{float} %Позиционирование графиков
+
+% Установка шрифта Times New Roman
+\renewcommand{\rmdefault}{ftm}
+
+% Создание нового типа столбца для выравнивания содержимого по центру
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+
+% Настройка стиля страницы
+\pagestyle{fancy}      % Использование стиля "fancy" для оформления страниц
+\fancyhf{}              % Очистка текущих значений колонтитулов
+\fancyfoot[C]{\thepage} % Установка номера страницы в нижнем колонтитуле по центру
+\renewcommand{\headrulewidth}{0pt} % Удаление разделительной линии в верхнем колонтитуле
+
+% Настройка подписей к изображениям и таблицам
+\captionsetup{format=hang,labelsep=period}
+
+% Использование полужирного начертания для векторов
+%\let\vec=\mathbf
+
+% Установка глубины оглавления
+\setcounter{tocdepth}{2}
+
+% Указание папки для поиска изображений
+\graphicspath{{images/}}
+
+% Установка стилей страницы и главы
+\pagestyle{footcenter}
+\chapterpagestyle{footcenter}
+%\usepackage{gnuplottex}
+
+
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepgfplotslibrary{
+	groupplots,
+}
+
+\usepackage{adjustbox}
+
+\usepackage{color}
+\usepackage{listings}
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	breaklines=true,
+	frame=L,
+	xleftmargin=\parindent,
+	language=C++,
+	showstringspaces=false,
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+}
+\lstset{escapechar=@,style=customc}

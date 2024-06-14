@@ -1,4 +1,4 @@
-x#define F_CPU 16000000UL
+#define F_CPU 16000000UL
 #include <avr/io.h>
 #include "../../../utils/ports.h"
 #include <avr/interrupt.h>

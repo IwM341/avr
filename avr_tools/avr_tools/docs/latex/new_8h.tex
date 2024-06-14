@@ -1,0 +1,74 @@
+\hypertarget{new_8h}{}\doxysection{D\+:/\+Tmp/avr/avr\+\_\+tools/avr\+\_\+tools/include/new.h File Reference}
+\label{new_8h}\index{D:/Tmp/avr/avr\_tools/avr\_tools/include/new.h@{D:/Tmp/avr/avr\_tools/avr\_tools/include/new.h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{new_8h_a88600769e926a5672c33882719717cd7}{\+\_\+\+\_\+attribute\+\_\+\+\_\+}} ((always\+\_\+inline)) void $\ast$operator new(size\+\_\+t \mbox{\hyperlink{new_8h_a854352f53b148adc24983a58a1866d66}{size}})
+\begin{DoxyCompactList}\small\item\em operator new \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{new_8h_a854352f53b148adc24983a58a1866d66}{size}}
+\item 
+void $\ast$ \mbox{\hyperlink{new_8h_add9af9569af79ec26dd741fb226b38ba}{ptr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{new_8h_a88600769e926a5672c33882719717cd7}\label{new_8h_a88600769e926a5672c33882719717cd7}} 
+\index{new.h@{new.h}!\_\_attribute\_\_@{\_\_attribute\_\_}}
+\index{\_\_attribute\_\_@{\_\_attribute\_\_}!new.h@{new.h}}
+\doxysubsubsection{\texorpdfstring{\_\_attribute\_\_()}{\_\_attribute\_\_()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+attribute\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{(always\+\_\+inline)}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [new]}}
+
+
+
+operator new 
+
+placement operator new
+
+operator delete
+
+\begin{DoxyWarning}{Warning}
+bad idea to use it 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{new_8h_source_l00020}{20}} of file \mbox{\hyperlink{new_8h_source}{new.\+h}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{new_8h_add9af9569af79ec26dd741fb226b38ba}\label{new_8h_add9af9569af79ec26dd741fb226b38ba}} 
+\index{new.h@{new.h}!ptr@{ptr}}
+\index{ptr@{ptr}!new.h@{new.h}}
+\doxysubsubsection{\texorpdfstring{ptr}{ptr}}
+{\footnotesize\ttfamily void$\ast$ ptr}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{new_8h_add9af9569af79ec26dd741fb226b38ba}{ptr}}}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{new_8h_source_l00038}{38}} of file \mbox{\hyperlink{new_8h_source}{new.\+h}}.
+
+\mbox{\Hypertarget{new_8h_a854352f53b148adc24983a58a1866d66}\label{new_8h_a854352f53b148adc24983a58a1866d66}} 
+\index{new.h@{new.h}!size@{size}}
+\index{size@{size}!new.h@{new.h}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily size\+\_\+t size}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ free(\mbox{\hyperlink{new_8h_add9af9569af79ec26dd741fb226b38ba}{ptr}})}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{new_8h_source_l00030}{30}} of file \mbox{\hyperlink{new_8h_source}{new.\+h}}.
+
