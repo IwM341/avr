@@ -41,7 +41,7 @@ void task_watering(void *){
 		hh_mm_ss_dd current = clocks.get([](Clocks const & clk){return clk.current();});
 		bool ready = false;
 		uint_least32_t duration = 0; 
-		water_plan.apply([&current,&last_water,&ready,&duration](water_plan_array_t & plan){
+		water_plan.apply([&current,&last_water,&ready,&duration,&m_delay](water_plan_array_t & plan){
 			for (uint_least8_t i=0;i<plan.size();++i){
 				if(plan[i].actual){
 					if(plan[i].is_ready(current.hh,current.mm,current.ss)){
@@ -58,7 +58,7 @@ void task_watering(void *){
 			last_water = water_process(current,duration);
 		}
 		ready = false;
-		water_every.apply([&current,&last_water,&ready,&duration](water_every_array_t & m_every){
+		water_every.apply([&current,&last_water,&ready,&duration,&m_delay](water_every_array_t & m_every){
 			for (uint_least8_t i=0;i<m_every.size();++i){
 				if(m_every[i].exist_flag){
 					if(m_every[i].is_ready(current.hh,current.mm,current.ss)){

@@ -36,8 +36,8 @@ namespace Std{
 
         constexpr bool operator == (const char * _other)const{
             for(size_t i=0;i<_size;++i){
-                if(_other[i] == 0){
-                    return _data[i] == 0;
+                if(_other[i] ==  (char)0){
+                    return _data[i] == (char)0;
                 }else if(_other[i] != _data[i]){
                     return false;
 				}

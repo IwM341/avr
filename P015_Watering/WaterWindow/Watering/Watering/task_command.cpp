@@ -37,6 +37,8 @@ void task_command_executor(void *){
 	while(1){
 		
 		uint8_t rd_bt = Serial.readBytesUntil('\n',strbuf,max_buf_size);
+		//uint8_t rd_bt = 8;
+		//memcpy(strbuf,"get Temp",8);
 		Std::string_view m_string(strbuf,rd_bt);
 		Std::string_view m_command = parse_command(m_string);
 		if(m_command.size() == 0){
@@ -47,51 +49,50 @@ void task_command_executor(void *){
 		
 		
 		if(m_command == "get"){
-			char m_params_raw[] = "TempT1oT1cT2oT2c";
-			Std::array<const char * ,5> float_params
-			(m_params_raw,m_params_raw+4,m_params_raw+4+3,m_params_raw+4+3*2,m_params_raw+4+3*3);
+			using namespace Std;
+			Std::array<Std::string_view ,5> float_params
+			("Temp"sv,"T1o"sv,"T1c"sv,"T2o"sv,"T2c"sv);
 			 
 			Std::string_view m_pname = parse_variable(m_string);
 			uint8_t is_float = float_params.find(m_pname);
 			
 			if(is_float <float_params.size() ){
 				float m_param = get_float_param(static_cast<float_pname>(is_float));
-				Serial.print(float_params[is_float]);
+				print_sw(float_params[is_float]);
 				Serial.print(" = ");
 				Serial.println(m_param);
-				goto end_loop;
+				continue;
 			}
-			char m_int_raw[] = "TmdTwdf_cpu";
-			Std::array<const char * ,3> int_params
-				(m_int_raw,m_int_raw+3,m_int_raw+3*2);
+			Std::array<Std::string_view ,3> int_params
+				("Tmd"sv,"Twd"sv,"f_cpu"sv);
 
 			uint8_t is_int = int_params.find(m_pname);
 			if(is_int < int_params.size()){
 				uint_least32_t m_param = get_uint32_param(static_cast<uint32_pname>(is_float));
-				Serial.print(int_params[is_int]);
+				print_sw(int_params[is_int]);
 				Serial.print(" = ");
 				Serial.println(m_param);
-				goto end_loop;
+				continue;
 			}
 			if(m_pname == "clock"){
 				Serial.print("Time = ");
 				print_clock(clocks.get([](Clocks const & clk){return clk.current();}));
 				Serial.println();
-				goto end_loop;
+				continue;
 			}
 			if(m_pname == "plan"){
 				print_plan();
-				goto end_loop;
+				continue;
 			}
 			if(m_pname == "every"){
 				print_every();
-				goto end_loop;
+				continue;
 			}
 			{
 				char error_code[] = "unknown argument of command get";
 				Serial.println(error_code);
 			}
-			goto end_loop;
+			continue;
 		}
 		
 		end_loop:;

@@ -11,23 +11,6 @@
 #include "global.h"
 #include <avr/interrupt.h>
 
-void vLEDBlink_task(void *) {
-	
-		
-	pins::pin<7> m_pin(pins::OutputMode);
-	
-	TickType_t xNextWakeTime = xTaskGetTickCount();
-	const int delayTime = 1000;
-	Serial.begin(112500);
-	for(;;) {
-		int tmp_t = xTaskGetTickCount();
-		PORTB = ~PORTB;
-		vTaskDelayUntil(&xNextWakeTime, delayTime);
-		Serial.println('i');
-	}
-}
-
-
 void start_clock();
 
 void update_clock(void *);

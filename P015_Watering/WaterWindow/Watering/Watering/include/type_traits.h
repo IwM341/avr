@@ -149,7 +149,7 @@ namespace Std{
 	
 	namespace __detail
 	{
-		template<class T> // Note that “cv void&” is a substitution failure
+		template<class T> // Note that ï¿½cv void&ï¿½ is a substitution failure
 		auto try_add_lvalue_reference(int) -> type_identity<T&>;
 		template<class T> // Handle T = cv void case
 		auto try_add_lvalue_reference(...) -> type_identity<T>;
@@ -194,6 +194,7 @@ namespace Std{
 
 	template <typename T>
 	constexpr T&& forward(remove_reference_t<T>&& arg) noexcept {
+		
 		static_assert(is_lvalue_reference_v<T>, "Forwarding an rvalue as an lvalue is not allowed.");
 		return static_cast<T&&>(arg);
 	}
@@ -205,15 +206,17 @@ namespace Std{
 		T _data[N];
 		
 		array(){}
-		constexpr inline array(T * m_data){
+		constexpr inline array from_ptr(T * m_data){
+			array ret;
 			for (size_t i=0;i<N;++i)
 			{
-				_data[i] = m_data[i];
+				ret._data[i] = m_data[i];
 			}
+			return ret;
 		}
 		template <typename...Args>
-		inline array(Args &&... args){
-			
+		inline array(T _first,Args &&... args){
+			_fill_args(integral_constant<size_t,0>{},move(_first),forward<Args>(args)...);
 		}
 		
 		inline constexpr size_t size()const{
@@ -261,14 +264,14 @@ namespace Std{
 
 		private:
 		template <size_t idx,typename _T,typename...Args>
-		inline void _fill_args(_T && _first,Args&&...other,integral_constant<size_t,idx>){
-			_data[idx] = forward<T>(_first);
-			_fill_args(forward<Args>(other)...,integral_constant<size_t,idx+1>{});
+		inline void _fill_args(integral_constant<size_t,idx>,_T && _first,Args&&...other){
+			_data[idx] = forward<_T>(_first);
+			_fill_args(integral_constant<size_t,idx+1>{},forward<Args>(other)...);
 		}
 		
 		template <size_t idx>
 		inline void _fill_args(integral_constant<size_t,idx>){
-			static_assert(idx < N,"out of range");
+			static_assert(idx <= N,"out of range");
 		}
 	};
 };
