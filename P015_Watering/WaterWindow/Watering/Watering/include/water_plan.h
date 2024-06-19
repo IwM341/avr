@@ -1,43 +1,47 @@
 #pragma once
 #include "stdint.h"
 #include "data_time.h"
-#include <cstdlib>
 
-struct water_plan {
+struct WaterPlanItem {
     bool actual;
-    hh_mm_ss_dd m_time;
+	bool force;
+    hh_mm_ss_dd ptime;
+	uint32_t duration;
     
     inline void set_time(
+		uint32_t _duration,
         uint_least8_t _hh,uint_least8_t _mm,
         uint_least8_t _ss,uint_least8_t _days_delay = 0)
     {
-        actual = true;
-        m_time.hh=_hh;
-        m_time.mm=_mm;
-        m_time.ss=_ss;
-        m_time.days= _days_delay;
+        actual = false;
+		force = false;
+		duration = _duration;
+        ptime.hh=_hh;
+        ptime.mm=_mm;
+        ptime.ss=_ss;
+        ptime.days= _days_delay;
     }
     void next_day(){
-        if(m_time.days > 0)
-            m_time.days--;
+        if(ptime.days > 0)
+            ptime.days--;
     }
 
     bool is_ready(uint_least8_t tmp_hh,uint_least8_t tmp_mm,uint_least8_t tmp_ss){
-        if(m_time.days > 0){
+        if(ptime.days > 0){
             return false;
         }
-        if(m_time.hh > tmp_hh){
+        if(ptime.hh > tmp_hh){
             return false;
-        } else if (m_time.hh < tmp_hh ) {
+        } else if (ptime.hh < tmp_hh ) {
             return true;
         }
 
-        if(m_time.mm > tmp_mm){
+        if(ptime.mm > tmp_mm){
             return false;
-        } else if (m_time.mm < tmp_mm) {
+        } else if (ptime.mm < tmp_mm) {
             return true;
         }
-        return tmp_ss >= m_time.ss;
+        return tmp_ss >= ptime.ss;
     }
     void after_water(){
         actual = false;

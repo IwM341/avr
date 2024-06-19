@@ -1,5 +1,6 @@
 #pragma once
 #include <string.h>
+#include "type_traits.h"
 namespace Std{
 
     struct string_view{
@@ -15,8 +16,12 @@ namespace Std{
             _data(_data), _size(_size)
         {
         }
+		
+		template <size_t N>
+		constexpr string_view(Std::array<char,N> const & m_char_array):
+			_data(m_char_array.data()),_size(N){}
 
-        inline size_t size(){
+        inline size_t size()const{
             return _size;
         }
         constexpr  char operator [](size_t i) const{
@@ -35,9 +40,9 @@ namespace Std{
                     return _data[i] == 0;
                 }else if(_other[i] != _data[i]){
                     return false;
-                }
-                return true;
+				}
             }
+			 return true;
         }
         constexpr bool operator !=(const char * _other)const{
             return !(this->operator==(_other));
@@ -48,7 +53,7 @@ namespace Std{
         friend constexpr bool operator !=(const char * _other,string_view const &_this){
             return _this !=_other;
         }
-        constexpr bool  operator ==(string_view const &_other){
+        constexpr bool  operator ==(string_view const &_other)const{
             if(_size != _other._size){
                 return false;
             }
@@ -59,24 +64,33 @@ namespace Std{
             }
             return true;
         }
-        constexpr bool  operator !=(string_view const &_other){
+        constexpr bool  operator !=(string_view const &_other)const{
             return !((*this) == _other);
         }
 
-        constexpr string_view substr(size_t start,size_t _n_size){
+        constexpr string_view substr(size_t start,size_t _n_size)const{
             return string_view(_data + start,_n_size);
         }
-        constexpr string_view substr(size_t start){
+        constexpr string_view substr(size_t start)const{
             return string_view(_data + start,_size-start);
         }
 
-        const char * begin(){
+        const char * begin()const{
             return _data;
         }
-        const char * end(){
+		const char * cbegin()const{
+			return _data;
+		}
+		const char * data()const{
+			return _data;
+		}
+        const char * end()const{
             return _data+_size;
         }
-
+		const char * cend()const{
+			return _data+_size;
+		}
+		
         void step(){
             _size--;
             _data++;

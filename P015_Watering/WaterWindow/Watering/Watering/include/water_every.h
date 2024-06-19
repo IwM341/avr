@@ -1,13 +1,15 @@
 #pragma once
 #include "stdint.h"
-#include <cstdlib>
 
-struct water_every_item{
+struct WaterEveryItem{
     bool exist_flag;
     uint_least8_t days_delay;
     uint_least8_t tmp_delayed_days;
     uint_least8_t hh,mm,ss;
-
+	
+	uint_least32_t duration;
+	
+	WaterEveryItem():exist_flag(0){}
     inline void destroy(){
         exist_flag = false;
     }
@@ -15,10 +17,12 @@ struct water_every_item{
         exist_flag = true;
     }
     inline void set_time(
+	uint_least32_t _duration,
         uint_least8_t _hh,uint_least8_t _mm,
         uint_least8_t _ss,uint_least8_t _days_delay = 1)
     {
         construct();
+		duration = _duration;
         hh=_hh;
         mm=_mm;
         ss=_ss;

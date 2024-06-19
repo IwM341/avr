@@ -1,0 +1,1436 @@
+Archive member included to satisfy reference by file (symbol)
+
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                              task_command.o (__divsf3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o) (__divsf3x)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_inf)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_nan)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_pscA)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_pscB)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o) (__fp_round)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_split3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o) (__fp_szero)
+D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+                              clock.o (xQueueGenericSend)
+D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                              main.o (xTaskCreate)
+D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o) (pvPortMalloc)
+D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(list.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o) (vListInitialise)
+D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(port.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o) (pxPortInitialiseStack)
+D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+                              main.o (_ZN14HardwareSerial5beginEmh)
+D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+                              main.o (Serial)
+D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o) (_ZN5Print5writeEPKhj)
+D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+                              task_command.o (_ZN6Stream14readBytesUntilEcPcj)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o) (__subsf3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o) (__addsf3x)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o) (__ltsf2)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o) (__fixunssfsi)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o) (__floatunsisf)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o) (__fp_cmp)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o) (__gtsf2)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o) (__mulsf3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o) (__mulsf3x)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o) (__unordsf2)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+                              clock.o (__mulsi3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                              clock.o (__udivmodsi4)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                              D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o (exit)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                              main.o (__do_copy_data)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                              global.o (__do_clear_bss)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                              global.o (__do_global_ctors)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+                              clock.o (__muluhisi3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
+                              clock.o (__umulsidi3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
+                              clock.o (__umoddi3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o) (__udivmod64)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashldi3.o)
+                              clock.o (__ashldi3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashrdi3.o)
+                              clock.o (__lshrdi3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3.o)
+                              task_watering.o (__adddi3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3_s8.o)
+                              clock.o (__adddi3_s8)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_subdi3.o)
+                              clock.o (__subdi3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
+                              clock.o (__cmpdi2)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o) (__tablejump2__)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o) (__umulhisi3)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
+                              d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o) (__muldi3_6)
+d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                              D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o) (memcpy)
+D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+                              global.o (eeprom_read_block)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .bss           0x00000000        0x0 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .text          0x00000000        0x0 global.o
+ .data          0x00000000        0x0 global.o
+ .bss           0x00000000        0x0 global.o
+ .bss.water_impl
+                0x00000000        0x2 global.o
+ .text          0x00000000        0x0 main.o
+ .data          0x00000000        0x0 main.o
+ .bss           0x00000000        0x0 main.o
+ .text._Z14vLEDBlink_taskPv
+                0x00000000       0x48 main.o
+ .text          0x00000000        0x0 clock.o
+ .data          0x00000000        0x0 clock.o
+ .bss           0x00000000        0x0 clock.o
+ .text._Z11start_clockv
+                0x00000000      0x124 clock.o
+ .text          0x00000000        0x0 task_command.o
+ .data          0x00000000        0x0 task_command.o
+ .bss           0x00000000        0x0 task_command.o
+ .text._ZN3Stdli2svEPKcj
+                0x00000000        0xc task_command.o
+ .text._Z14parse_hh_mm_ddRN3Std11string_viewER11hh_mm_ss_dd
+                0x00000000      0x3b4 task_command.o
+ .text          0x00000000        0x0 task_watering.o
+ .data          0x00000000        0x0 task_watering.o
+ .bss           0x00000000        0x0 task_watering.o
+ .text          0x00000000        0x0 task_window.o
+ .data          0x00000000        0x0 task_window.o
+ .bss           0x00000000        0x0 task_window.o
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+ .text          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .data          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .bss           0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.xQueueGenericReset
+                0x00000000       0x74 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.xQueueGenericCreate
+                0x00000000       0x50 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.xQueueGenericSendFromISR
+                0x00000000       0x5e D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.xQueueGiveFromISR
+                0x00000000       0x46 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.xQueueReceiveFromISR
+                0x00000000       0x5e D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.xQueuePeekFromISR
+                0x00000000       0x2e D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.uxQueueMessagesWaiting
+                0x00000000       0x10 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.uxQueueSpacesAvailable
+                0x00000000       0x14 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.uxQueueMessagesWaitingFromISR
+                0x00000000        0x6 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.vQueueDelete
+                0x00000000        0x4 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.xQueueIsQueueEmptyFromISR
+                0x00000000        0xc D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.xQueueIsQueueFullFromISR
+                0x00000000        0xe D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .data          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss           0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.vTaskDelete
+                0x00000000       0xaa D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.vTaskResume
+                0x00000000       0x90 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.xTaskResumeFromISR
+                0x00000000       0x90 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.vTaskEndScheduler
+                0x00000000        0xa D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.xTaskGetTickCount
+                0x00000000       0x14 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.xTaskGetTickCountFromISR
+                0x00000000        0xa D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.uxTaskGetNumberOfTasks
+                0x00000000        0x6 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.pcTaskGetName
+                0x00000000       0x10 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.vTaskDelayUntil
+                0x00000000       0x70 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.vTaskSuspend
+                0x00000000       0xa4 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.vTaskPlaceOnUnorderedEventList
+                0x00000000       0x30 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.xTaskRemoveFromUnorderedEventList
+                0x00000000       0x68 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.uxTaskResetEventItemValue
+                0x00000000       0x2e D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.ulTaskNotifyTake
+                0x00000000       0xa2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.xTaskNotifyWait
+                0x00000000      0x110 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.xTaskGenericNotify
+                0x00000000       0xd2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.xTaskGenericNotifyFromISR
+                0x00000000       0xf4 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.vTaskNotifyGiveFromISR
+                0x00000000       0xa4 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.xTaskNotifyStateClear
+                0x00000000       0x28 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+ .data          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+ .bss           0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+ .text.vPortInitialiseBlocks
+                0x00000000        0xa D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+ .text.xPortGetFreeHeapSize
+                0x00000000       0x12 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+ .text          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(list.o)
+ .data          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(list.o)
+ .bss           0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(list.o)
+ .text          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(port.o)
+ .data          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(port.o)
+ .bss           0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(port.o)
+ .text.vPortEndScheduler
+                0x00000000        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(port.o)
+ .group         0x00000000        0x8 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+ .text          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+ .data          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+ .bss           0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+ .text._Z14serialEventRunv
+                0x00000000       0x1c D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+ .text._ZN14HardwareSerial5beginEmh
+                0x00000000      0x11e D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+ .text._ZN14HardwareSerial3endEv
+                0x00000000       0x44 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+ .group         0x00000000        0x8 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+ .group         0x00000000        0x8 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+ .text          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+ .data          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+ .bss           0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+ .text._ZN5Print17availableForWriteEv
+                0x00000000        0x6 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+ .text._ZN5Print5flushEv
+                0x00000000        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+ .text._Z17Serial0_availablev
+                0x00000000       0x14 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+ .group         0x00000000        0x8 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .group         0x00000000        0x8 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .group         0x00000000        0x8 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .data          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .bss           0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text._ZN5Print17availableForWriteEv
+                0x00000000        0x6 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text._ZN5Print5flushEv
+                0x00000000        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text._ZN5Print7printlnEc
+                0x00000000       0x3c D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text._ZN5Print5printEhi
+                0x00000000        0xe D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text._ZN5Print7printlnEhi
+                0x00000000       0x3e D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text._ZN5Print5printEji
+                0x00000000        0xc D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text._ZN5Print7printlnEji
+                0x00000000       0x3c D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text._ZN5Print7printlnEii
+                0x00000000       0x3e D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text._ZN5Print7printlnEli
+                0x00000000       0x34 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text._ZN5Print5printEdi
+                0x00000000        0x4 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .rodata._ZTV5Print
+                0x00000000        0xc D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .text          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .data          0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .bss           0x00000000        0x0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text._ZN6Stream13peekNextDigitE13LookaheadModeb
+                0x00000000       0x80 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text._ZN6Stream10setTimeoutEm
+                0x00000000        0xc D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text._ZN6Stream8parseIntE13LookaheadModec
+                0x00000000       0xf2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text._ZN6Stream10parseFloatE13LookaheadModec
+                0x00000000      0x152 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text._ZN6Stream9readBytesEPcj
+                0x00000000       0x4e D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text._ZN6Stream9findMultiEPNS_11MultiTargetEi
+                0x00000000      0x16c D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text._ZN6Stream9findUntilEPcjS0_j.part.0.constprop.1
+                0x00000000       0x4a D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text._ZN6Stream4findEPcj
+                0x00000000        0x4 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text._ZN6Stream4findEPc
+                0x00000000       0x14 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text._ZN6Stream9findUntilEPcjS0_j
+                0x00000000       0x76 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text._ZN6Stream9findUntilEPcS0_
+                0x00000000       0x30 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc.mul
+                0x00000000       0x56 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulsidi3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashldi3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashldi3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashldi3.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashldi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashldi3.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashldi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashldi3.o)
+ .text.libgcc.builtins
+                0x00000000       0x32 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashldi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashldi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashldi3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashrdi3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashrdi3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.builtins
+                0x00000000       0x3c d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashrdi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ashrdi3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3_s8.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3_s8.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3_s8.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_subdi3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_subdi3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_subdi3.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_subdi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_subdi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_subdi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_subdi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_subdi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_subdi3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc.mul
+                0x00000000       0x12 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc.div
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc   0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muldi3_6.o)
+ .text          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .data          0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .bss           0x00000000        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+ .text          0x00000000        0x0 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+ .data          0x00000000        0x0 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+ .bss           0x00000000        0x0 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00008000         xr
+data             0x00800100         0x00000800         rw !x
+eeprom           0x00810000         0x00000400         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+LOAD global.o
+LOAD main.o
+LOAD clock.o
+LOAD task_command.o
+LOAD task_watering.o
+LOAD task_window.o
+START GROUP
+LOAD d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a
+LOAD D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a
+END GROUP
+LOAD d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+START GROUP
+LOAD d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a
+LOAD D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5\libatmega328p.a
+END GROUP
+                0x00000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x00800100]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x00008000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x00000800]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x00000400]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x33be
+ *(.vectors)
+ .vectors       0x00000000       0x68 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+ .ctors         0x00000068        0x2 global.o
+ .ctors         0x0000006a        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+                0x0000006c                __ctors_end = .
+                0x0000006c                __dtors_start = .
+ *(.dtors)
+                0x0000006c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000006c        0x0 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x0000006c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000006c        0xc D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000078       0x16 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000078                __do_copy_data
+ .init4         0x0000008e       0x10 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000008e                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x0000009e       0x16 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_ctors.o)
+                0x0000009e                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000b4        0x8 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000bc        0x4 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+                0x000000bc                __vector_22
+                0x000000bc                __vector_1
+                0x000000bc                __vector_24
+                0x000000bc                __vector_12
+                0x000000bc                __bad_interrupt
+                0x000000bc                __vector_6
+                0x000000bc                __vector_3
+                0x000000bc                __vector_23
+                0x000000bc                __vector_25
+                0x000000bc                __vector_13
+                0x000000bc                __vector_17
+                0x000000bc                __vector_7
+                0x000000bc                __vector_5
+                0x000000bc                __vector_4
+                0x000000bc                __vector_9
+                0x000000bc                __vector_2
+                0x000000bc                __vector_21
+                0x000000bc                __vector_15
+                0x000000bc                __vector_8
+                0x000000bc                __vector_14
+                0x000000bc                __vector_10
+                0x000000bc                __vector_20
+                0x000000c0                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup._GLOBAL__sub_I_Temp
+                0x000000c0      0x14a global.o
+ .text.startup.main
+                0x0000020a       0x5c main.o
+                0x0000020a                main
+ .text._Z12update_clockPv
+                0x00000266      0x262 clock.o
+                0x00000266                _Z12update_clockPv
+ .text.__vector_16
+                0x000004c8       0x6a clock.o
+                0x000004c8                __vector_16
+ .text._Z13parse_commandRN3Std11string_viewE
+                0x00000532       0x98 task_command.o
+                0x00000532                _Z13parse_commandRN3Std11string_viewE
+ .text._Z14parse_variableRN3Std11string_viewE
+                0x000005ca       0xa8 task_command.o
+                0x000005ca                _Z14parse_variableRN3Std11string_viewE
+ .text._Z11print_clockRK11hh_mm_ss_dd
+                0x00000672       0x48 task_command.o
+                0x00000672                _Z11print_clockRK11hh_mm_ss_dd
+ .text._Z15get_float_param11float_pname
+                0x000006ba      0x124 task_command.o
+                0x000006ba                _Z15get_float_param11float_pname
+ .text._Z16get_uint32_param12uint32_pname
+                0x000007de       0xc8 task_command.o
+                0x000007de                _Z16get_uint32_param12uint32_pname
+ .text._Z14print_durationm
+                0x000008a6       0xdc task_command.o
+                0x000008a6                _Z14print_durationm
+ .text._Z10print_planv
+                0x00000982       0x7c task_command.o
+                0x00000982                _Z10print_planv
+ .text._Z11print_everyv
+                0x000009fe       0xb0 task_command.o
+                0x000009fe                _Z11print_everyv
+ .text._Z21task_command_executorPv
+                0x00000aae      0x386 task_command.o
+                0x00000aae                _Z21task_command_executorPv
+ .text._Z18NextDayUpdatePlansv
+                0x00000e34       0xa6 task_watering.o
+                0x00000e34                _Z18NextDayUpdatePlansv
+ .text._Z13water_processRK11hh_mm_ss_ddm
+                0x00000eda      0x26c task_watering.o
+                0x00000eda                _Z13water_processRK11hh_mm_ss_ddm
+ .text._Z13task_wateringPv
+                0x00001146      0x360 task_watering.o
+                0x00001146                _Z13task_wateringPv
+ .text._Z11task_windowPv
+                0x000014a6        0xa task_window.o
+                0x000014a6                _Z11task_windowPv
+ .text.avr-libc.fplib
+                0x000014b0        0x8 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3.o)
+                0x000014b0                __divsf3
+ .text.avr-libc.fplib
+                0x000014b8       0xdc d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(divsf3x.o)
+                0x000014d8                __divsf3x
+                0x000014de                __divsf3_pse
+ .text.avr-libc.fplib
+                0x00001594        0xc d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_inf.o)
+                0x00001594                __fp_inf
+ .text.avr-libc.fplib
+                0x000015a0        0x6 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_nan.o)
+                0x000015a0                __fp_nan
+ .text.avr-libc.fplib
+                0x000015a6        0xe d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscA.o)
+                0x000015a6                __fp_pscA
+ .text.avr-libc.fplib
+                0x000015b4        0xe d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_pscB.o)
+                0x000015b4                __fp_pscB
+ .text.avr-libc.fplib
+                0x000015c2       0x22 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_round.o)
+                0x000015c2                __fp_round
+ .text.avr-libc.fplib
+                0x000015e4       0x44 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_split3.o)
+                0x000015e4                __fp_split3
+                0x000015f4                __fp_splitA
+ .text.avr-libc.fplib
+                0x00001628        0xe d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_zero.o)
+                0x00001628                __fp_zero
+                0x0000162a                __fp_szero
+ .text.prvCopyDataToQueue
+                0x00001636       0x90 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.prvCopyDataFromQueue
+                0x000016c6       0x34 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.prvUnlockQueue
+                0x000016fa       0x7c D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .text.xQueueGenericSend
+                0x00001776      0x12c D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+                0x00001776                xQueueGenericSend
+ .text.xQueueGenericReceive
+                0x000018a2      0x158 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+                0x000018a2                xQueueGenericReceive
+ .text.prvResetNextTaskUnblockTime
+                0x000019fa       0x36 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.prvAddCurrentTaskToDelayedList
+                0x00001a30       0xb8 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.xTaskCreate
+                0x00001ae8      0x202 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x00001ae8                xTaskCreate
+ .text.vTaskStartScheduler
+                0x00001cea       0x54 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x00001cea                vTaskStartScheduler
+ .text.vTaskSuspendAll
+                0x00001d3e        0xc D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x00001d3e                vTaskSuspendAll
+ .text.xTaskIncrementTick
+                0x00001d4a      0x158 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x00001d4a                xTaskIncrementTick
+ .text.xTaskResumeAll
+                0x00001ea2       0xde D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x00001ea2                xTaskResumeAll
+ .text.vTaskDelay
+                0x00001f80       0x2a D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x00001f80                vTaskDelay
+ .text.prvIdleTask
+                0x00001faa       0x68 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .text.vTaskSwitchContext
+                0x00002012       0x86 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x00002012                vTaskSwitchContext
+ .text.vTaskPlaceOnEventList
+                0x00002098       0x22 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x00002098                vTaskPlaceOnEventList
+ .text.xTaskRemoveFromEventList
+                0x000020ba       0x80 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x000020ba                xTaskRemoveFromEventList
+ .text.vTaskSetTimeOutState
+                0x0000213a       0x16 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x0000213a                vTaskSetTimeOutState
+ .text.xTaskCheckForTimeOut
+                0x00002150       0x64 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x00002150                xTaskCheckForTimeOut
+ .text.vTaskMissedYield
+                0x000021b4        0x8 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x000021b4                vTaskMissedYield
+ .text.pvPortMalloc
+                0x000021bc       0x64 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+                0x000021bc                pvPortMalloc
+ .text.vPortFree
+                0x00002220        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+                0x00002220                vPortFree
+ .text.vListInitialise
+                0x00002222       0x1c D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(list.o)
+                0x00002222                vListInitialise
+ .text.vListInitialiseItem
+                0x0000223e        0x8 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(list.o)
+                0x0000223e                vListInitialiseItem
+ .text.vListInsertEnd
+                0x00002246       0x42 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(list.o)
+                0x00002246                vListInsertEnd
+ .text.vListInsert
+                0x00002288       0x70 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(list.o)
+                0x00002288                vListInsert
+ .text.uxListRemove
+                0x000022f8       0x46 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(list.o)
+                0x000022f8                uxListRemove
+ .text.pxPortInitialiseStack
+                0x0000233e       0xd8 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(port.o)
+                0x0000233e                pxPortInitialiseStack
+ .text.xPortStartScheduler
+                0x00002416       0x78 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(port.o)
+                0x00002416                xPortStartScheduler
+ .text.vPortYield
+                0x0000248e       0xb2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(port.o)
+                0x0000248e                vPortYield
+ .text.vPortYieldFromTick
+                0x00002540       0xb8 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(port.o)
+                0x00002540                vPortYieldFromTick
+ .text.__vector_11
+                0x000025f8        0x6 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(port.o)
+                0x000025f8                __vector_11
+ .text._ZN14HardwareSerial9availableEv
+                0x000025fe       0x18 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+                0x000025fe                _ZN14HardwareSerial9availableEv
+ .text._ZN14HardwareSerial4peekEv
+                0x00002616       0x1c D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+                0x00002616                _ZN14HardwareSerial4peekEv
+ .text._ZN14HardwareSerial4readEv
+                0x00002632       0x28 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+                0x00002632                _ZN14HardwareSerial4readEv
+ .text._ZN14HardwareSerial17availableForWriteEv
+                0x0000265a       0x24 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+                0x0000265a                _ZN14HardwareSerial17availableForWriteEv
+ .text._ZN14HardwareSerial5writeEh
+                0x0000267e       0xca D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+                0x0000267e                _ZN14HardwareSerial5writeEh
+ .text._ZN14HardwareSerial5flushEv
+                0x00002748       0xa6 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+                0x00002748                _ZN14HardwareSerial5flushEv
+ .text.__vector_18
+                0x000027ee       0x64 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+                0x000027ee                __vector_18
+ .text.__vector_19
+                0x00002852       0x78 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+                0x00002852                __vector_19
+ .text.startup._GLOBAL__sub_I___vector_18
+                0x000028ca       0x72 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+ .text._ZN5Print5writeEPKhj
+                0x0000293c       0x5e D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x0000293c                _ZN5Print5writeEPKhj
+ .text._ZN5Print5printEPKc
+                0x0000299a       0x2a D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x0000299a                _ZN5Print5printEPKc
+ .text._ZN5Print5printEc
+                0x000029c4        0xe D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x000029c4                _ZN5Print5printEc
+ .text._ZN5Print7printlnEv
+                0x000029d2       0x16 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x000029d2                _ZN5Print7printlnEv
+ .text._ZN5Print7printlnEPKc
+                0x000029e8       0x58 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x000029e8                _ZN5Print7printlnEPKc
+ .text._ZN5Print11printNumberEmh
+                0x00002a40       0xd0 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x00002a40                _ZN5Print11printNumberEmh
+ .text._ZN5Print5printEmi
+                0x00002b10       0x1a D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x00002b10                _ZN5Print5printEmi
+ .text._ZN5Print7printlnEmi
+                0x00002b2a       0x34 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x00002b2a                _ZN5Print7printlnEmi
+ .text._ZN5Print5printEli
+                0x00002b5e       0x9a D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x00002b5e                _ZN5Print5printEli
+ .text._ZN5Print5printEii
+                0x00002bf8        0xe D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x00002bf8                _ZN5Print5printEii
+ .text._ZN5Print10printFloatEdh
+                0x00002c06      0x23c D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x00002c06                _ZN5Print10printFloatEdh
+ .text._ZN5Print7printlnEdi
+                0x00002e42       0x34 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+                0x00002e42                _ZN5Print7printlnEdi
+ .text._ZN6Stream14readBytesUntilEcPcj
+                0x00002e76       0x70 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+                0x00002e76                _ZN6Stream14readBytesUntilEcPcj
+ .text.avr-libc.fplib
+                0x00002ee6        0xe d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3.o)
+                0x00002ee6                __subsf3
+                0x00002ee8                __addsf3
+ .text.avr-libc.fplib
+                0x00002ef4       0xcc d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(addsf3x.o)
+                0x00002f16                __addsf3x
+ .text.avr-libc.fplib
+                0x00002fc0        0xa d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(cmpsf2.o)
+                0x00002fc0                __nesf2
+                0x00002fc0                __eqsf2
+                0x00002fc0                __cmpsf2
+                0x00002fc0                __ltsf2
+                0x00002fc0                __lesf2
+ .text.avr-libc.fplib
+                0x00002fca       0x5e d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fixunssfsi.o)
+                0x00002fca                __fixunssfsi
+ .text.avr-libc.fplib
+                0x00003028       0x7a d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(floatsisf.o)
+                0x00003028                __floatunsisf
+                0x0000302c                __floatsisf
+ .text.avr-libc.fplib
+                0x000030a2       0x48 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(fp_cmp.o)
+                0x000030a2                __fp_cmp
+ .text.avr-libc.fplib
+                0x000030ea        0xa d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(gesf2.o)
+                0x000030ea                __gesf2
+                0x000030ea                __gtsf2
+ .text.avr-libc.fplib
+                0x000030f4        0x8 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3.o)
+                0x000030f4                __mulsf3
+ .text.avr-libc.fplib
+                0x000030fc       0xd2 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(mulsf3x.o)
+                0x0000311a                __mulsf3x
+                0x00003120                __mulsf3_pse
+ .text.avr-libc.fplib
+                0x000031ce        0xa d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a(unordsf2.o)
+                0x000031ce                __unordsf2
+ .text.libgcc.mul
+                0x000031d8       0x20 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_mulsi3.o)
+                0x000031d8                __mulsi3
+ .text.libgcc.div
+                0x000031f8       0x44 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x000031f8                __udivmodsi4
+ .text.libgcc.mul
+                0x0000323c       0x16 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+                0x0000323c                __muluhisi3
+ .text.libgcc.div
+                0x00003252       0x1c d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivdi3.o)
+                0x00003252                __umoddi3
+                0x00003256                __udivdi3
+                0x00003258                __udivdi3_umoddi3
+ .text.libgcc.div
+                0x0000326e       0xa2 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmod64.o)
+                0x0000326e                __udivmod64
+ .text.libgcc   0x00003310       0x12 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3.o)
+                0x00003310                __adddi3
+ .text.libgcc   0x00003322       0x18 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_adddi3_s8.o)
+                0x00003322                __adddi3_s8
+ .text.libgcc   0x0000333a       0x12 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_subdi3.o)
+                0x0000333a                __subdi3
+ .text.libgcc   0x0000334c       0x12 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_cmpdi2.o)
+                0x0000334c                __cmpdi2
+ .text.libgcc   0x0000335e        0xc d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_tablejump2.o)
+                0x0000335e                __tablejump2__
+ .text.libgcc.mul
+                0x0000336a       0x1e d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                0x0000336a                __umulhisi3
+ .text.avr-libc
+                0x00003388       0x12 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x00003388                memcpy
+ .text.avr-libc
+                0x0000339a       0x20 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+                0x0000339a                eeprom_read_block
+                0x0000339e                eeprom_read_blraw
+                0x000033ba                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000033ba        0x0 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000033ba                _exit
+                0x000033ba                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000033ba        0x4 d:/soft/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000033be                _etext = .
+
+.data           0x00800100       0xd8 load address 0x000033be
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.str1.1
+                0x00800100       0x3c main.o
+ .rodata.str1.1
+                0x0080013c       0x76 task_command.o
+                                 0x7e (size before relaxing)
+ .rodata.str1.1
+                0x008001b2        0x5 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .rodata._ZTV14HardwareSerial
+                0x008001b7       0x12 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+                0x008001b7                _ZTV14HardwareSerial
+ .rodata.str1.1
+                0x008001c9        0xf D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ *(.gnu.linkonce.r*)
+                0x008001d8                . = ALIGN (0x2)
+                0x008001d8                _edata = .
+                0x008001d8                PROVIDE (__data_end, .)
+
+.bss            0x008001d8      0x7cf
+                0x008001d8                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.clocks    0x008001d8       0x31 global.o
+                0x008001d8                clocks
+ .bss.settings  0x00800209       0x1e global.o
+                0x00800209                settings
+ .bss.water_every
+                0x00800227       0x2a global.o
+                0x00800227                water_every
+ .bss.water_plan
+                0x00800251       0x6a global.o
+                0x00800251                water_plan
+ .bss.Temp      0x008002bb        0x5 global.o
+                0x008002bb                Temp
+ .bss.uxSchedulerSuspended
+                0x008002c0        0x1 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.xIdleTaskHandle
+                0x008002c1        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.xNextTaskUnblockTime
+                0x008002c3        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.uxTaskNumber
+                0x008002c5        0x1 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.xNumOfOverflows
+                0x008002c6        0x1 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.xYieldPending
+                0x008002c7        0x1 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.uxPendedTicks
+                0x008002c8        0x1 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.xSchedulerRunning
+                0x008002c9        0x1 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.uxTopReadyPriority
+                0x008002ca        0x1 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.xTickCount
+                0x008002cb        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.uxCurrentNumberOfTasks
+                0x008002cd        0x1 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.xSuspendedTaskList
+                0x008002ce        0x9 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.uxDeletedTasksWaitingCleanUp
+                0x008002d7        0x1 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.xTasksWaitingTermination
+                0x008002d8        0x9 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.xPendingReadyList
+                0x008002e1        0x9 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.pxOverflowDelayedTaskList
+                0x008002ea        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.pxDelayedTaskList
+                0x008002ec        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.xDelayedTaskList2
+                0x008002ee        0x9 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.xDelayedTaskList1
+                0x008002f7        0x9 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.pxReadyTasksLists
+                0x00800300       0x24 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .bss.pxCurrentTCB
+                0x00800324        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+                0x00800324                pxCurrentTCB
+ .bss.pucAlignedHeap.2068
+                0x00800326        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+ .bss.xNextFreeByte
+                0x00800328        0x2 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+ .bss.ucHeap    0x0080032a      0x5dc D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+ .bss.Serial    0x00800906       0xa1 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+                0x00800906                Serial
+ *(COMMON)
+                0x008009a7                PROVIDE (__bss_end, .)
+                0x000033be                __data_load_start = LOADADDR (.data)
+                0x00003496                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008009a7        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x008009a7                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 global.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 main.o
+ .comment       0x00000030       0x31 clock.o
+ .comment       0x00000030       0x31 task_command.o
+ .comment       0x00000030       0x31 task_watering.o
+ .comment       0x00000030       0x31 task_window.o
+ .comment       0x00000030       0x31 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(queue.o)
+ .comment       0x00000030       0x31 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(tasks.o)
+ .comment       0x00000030       0x31 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(heap_1.o)
+ .comment       0x00000030       0x31 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(list.o)
+ .comment       0x00000030       0x31 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\FreeRTOS\Release\libFreeRTOS.a(port.o)
+ .comment       0x00000030       0x31 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial.o)
+ .comment       0x00000030       0x31 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(HardwareSerial0.o)
+ .comment       0x00000030       0x31 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Print.o)
+ .comment       0x00000030       0x31 D:\Tmp\avr\P015_Watering\WaterWindow\Watering\Uart\Release\libUart.a(Stream.o)
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x20
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000      0x68f
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_info    0x000005f4       0x9b D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+
+.debug_abbrev   0x00000000      0x5b6
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_abbrev  0x000005a2       0x14 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+
+.debug_line     0x00000000      0x1df
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000      0x134 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+ .debug_line    0x00000134       0xab D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5\libatmega328p.a(eerd_block.o)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x00000000      0x208
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 D:/Soft/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(Watering.elf elf32-avr)
+LOAD linker stubs

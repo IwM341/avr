@@ -93,7 +93,7 @@ _Z41__static_initialization_and_destruction_0ii:
 .LBE26:
 .LBE25:
 	.file 4 ".././HardwareSerial.h"
-	.loc 4 135 0
+	.loc 4 139 0
 	ldi r24,lo8(_ZTV14HardwareSerial+4)
 	ldi r25,hi8(_ZTV14HardwareSerial+4)
 	std Z+1,r25
@@ -130,10 +130,10 @@ _Z41__static_initialization_and_destruction_0ii:
 	ldi r25,lo8(36)
 	ldi r26,lo8(-12)
 	ldi r27,0
-	sts Serial+157,r24
-	sts Serial+157+1,r25
-	sts Serial+157+2,r26
-	sts Serial+157+3,r27
+	sts Serial+61,r24
+	sts Serial+61+1,r25
+	sts Serial+61+2,r26
+	sts Serial+61+3,r27
 .LVL8:
 .L3:
 	ret
@@ -195,46 +195,46 @@ __vector_18:
 .LVL9:
 .LBB29:
 .LBB30:
-	.loc 4 159 0
+	.loc 4 163 0
 	lds r30,Serial+16
 	lds r31,Serial+16+1
-	.loc 4 159 0
+	.loc 4 163 0
 	ld r24,Z
-	.loc 4 159 0
+	.loc 4 163 0
 	sbrc r24,2
 	rjmp .L6
 .LBB31:
-	.loc 4 162 0
+	.loc 4 166 0
 	ldi r30,lo8(Serial)
 	ldi r31,hi8(Serial)
 	ldd r26,Z+22
 	ldd r27,Z+23
 	ld r18,X
 .LVL10:
-	.loc 4 163 0
+	.loc 4 167 0
 	ldd r24,Z+25
 	subi r24,lo8(-(1))
-	andi r24,lo8(63)
+	andi r24,lo8(15)
 .LVL11:
-	.loc 4 169 0
+	.loc 4 173 0
 	ldd r25,Z+26
 	cp r24,r25
 	breq .L5
-	.loc 4 170 0
+	.loc 4 174 0
 	movw r26,r30
 	ldd r30,Z+25
 	ldi r31,0
 	subi r30,lo8(-(Serial))
 	sbci r31,hi8(-(Serial))
 	std Z+29,r18
-	.loc 4 171 0
+	.loc 4 175 0
 	adiw r26,25
 	st X,r24
 	rjmp .L5
 .LVL12:
 .L6:
 .LBE31:
-	.loc 4 175 0
+	.loc 4 179 0
 	lds r30,Serial+22
 	lds r31,Serial+22+1
 	ld r24,Z
@@ -312,55 +312,55 @@ __vector_19:
 .LVL14:
 .LBB34:
 .LBB35:
-	.loc 4 181 0
+	.loc 4 185 0
 	ldi r26,lo8(Serial)
 	ldi r27,hi8(Serial)
 	adiw r26,28
 	ld r30,X
 	sbiw r26,28
 	ldi r31,0
-	subi r30,lo8(-(Serial+93))
-	sbci r31,hi8(-(Serial+93))
-	ld r18,Z
+	subi r30,lo8(-(Serial))
+	sbci r31,hi8(-(Serial))
+	ldd r18,Z+45
 .LVL15:
-	.loc 4 182 0
+	.loc 4 186 0
 	adiw r26,28
 	ld r24,X
 	ldi r25,0
 	adiw r24,1
-	andi r24,63
+	andi r24,15
 	andi r25,128
 	tst r25
 	brge .L9
 	sbiw r24,1
-	ori r24,192
+	ori r24,240
 	ori r25,255
 	adiw r24,1
 .L9:
 	ldi r30,lo8(Serial)
 	ldi r31,hi8(Serial)
 	std Z+28,r24
-	.loc 4 184 0
+	.loc 4 188 0
 	ldd r26,Z+22
 	ldd r27,Z+23
 	st X,r18
-	.loc 4 192 0
+	.loc 4 196 0
 	ldd r26,Z+16
 	ldd r27,Z+17
-	.loc 4 192 0
+	.loc 4 196 0
 	ld r24,X
 	andi r24,lo8(3)
 	ori r24,lo8(64)
 	st X,r24
-	.loc 4 197 0
+	.loc 4 201 0
 	ldd r25,Z+27
 	ldd r24,Z+28
 	cpse r25,r24
 	rjmp .L8
-	.loc 4 199 0
+	.loc 4 203 0
 	lds r30,Serial+18
 	lds r31,Serial+18+1
-	.loc 4 199 0
+	.loc 4 203 0
 	ld r24,Z
 	andi r24,lo8(-33)
 	st Z,r24
@@ -454,9 +454,9 @@ _ZTV6Stream:
 .global	Serial
 	.section	.bss.Serial,"aw",@nobits
 	.type	Serial, @object
-	.size	Serial, 161
+	.size	Serial, 65
 Serial:
-	.zero	161
+	.zero	65
 	.text
 .Letext0:
 	.file 5 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdint.h"
@@ -1138,7 +1138,7 @@ Serial:
 	.uleb128 0x3
 	.long	.LASF64
 	.byte	0x4
-	.byte	0x41
+	.byte	0x45
 	.long	0x30
 	.uleb128 0x17
 	.long	.LASF65
@@ -1146,13 +1146,13 @@ Serial:
 	.long	0x668
 	.uleb128 0x18
 	.byte	0x4
-	.byte	0x66
+	.byte	0x6a
 	.long	0x672
 	.uleb128 0x13
 	.byte	0x1
 	.long	.LASF65
 	.byte	0x4
-	.byte	0x7e
+	.byte	0x82
 	.long	.LASF66
 	.byte	0x1
 	.long	0x5f9
@@ -1177,7 +1177,7 @@ Serial:
 	.byte	0x1
 	.long	.LASF67
 	.byte	0x4
-	.byte	0x9e
+	.byte	0xa2
 	.long	.LASF68
 	.byte	0x1
 	.long	0x633
@@ -1190,7 +1190,7 @@ Serial:
 	.byte	0x1
 	.long	.LASF69
 	.byte	0x4
-	.byte	0xb2
+	.byte	0xb6
 	.long	.LASF70
 	.byte	0x1
 	.long	0x64f
@@ -1205,7 +1205,7 @@ Serial:
 	.long	.LASF98
 	.long	.LASF28
 	.byte	0x4
-	.byte	0x90
+	.byte	0x94
 	.long	.LASF98
 	.byte	0
 	.uleb128 0x17
@@ -1352,32 +1352,32 @@ Serial:
 	.uleb128 0x1f
 	.long	.LASF82
 	.byte	0x4
-	.byte	0x7f
+	.byte	0x83
 	.long	0x77a
 	.uleb128 0x1f
 	.long	.LASF83
 	.byte	0x4
-	.byte	0x7f
+	.byte	0x83
 	.long	0x77a
 	.uleb128 0x1f
 	.long	.LASF84
 	.byte	0x4
-	.byte	0x80
+	.byte	0x84
 	.long	0x77a
 	.uleb128 0x1f
 	.long	.LASF85
 	.byte	0x4
-	.byte	0x80
+	.byte	0x84
 	.long	0x77a
 	.uleb128 0x1f
 	.long	.LASF86
 	.byte	0x4
-	.byte	0x81
+	.byte	0x85
 	.long	0x77a
 	.uleb128 0x20
 	.string	"udr"
 	.byte	0x4
-	.byte	0x81
+	.byte	0x85
 	.long	0x77a
 	.byte	0
 	.uleb128 0x16
@@ -1395,12 +1395,12 @@ Serial:
 	.uleb128 0x22
 	.string	"c"
 	.byte	0x4
-	.byte	0xa2
+	.byte	0xa6
 	.long	0x3b
 	.uleb128 0x22
 	.string	"i"
 	.byte	0x4
-	.byte	0xa3
+	.byte	0xa7
 	.long	0x5c8
 	.byte	0
 	.byte	0
@@ -1504,7 +1504,7 @@ Serial:
 	.long	.LBB25
 	.long	.LBE25
 	.byte	0x4
-	.byte	0x87
+	.byte	0x8b
 	.uleb128 0x2b
 	.long	0x764
 	.uleb128 0x29
@@ -1561,7 +1561,7 @@ Serial:
 	.uleb128 0x22
 	.string	"c"
 	.byte	0x4
-	.byte	0xb5
+	.byte	0xb9
 	.long	0x3b
 	.byte	0
 	.uleb128 0x2c

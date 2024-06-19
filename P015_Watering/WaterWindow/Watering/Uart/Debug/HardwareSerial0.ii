@@ -725,14 +725,14 @@ class Stream : public Print
   int findMulti(struct MultiTarget *targets, int tCount);
 };
 # 31 ".././HardwareSerial.h" 2
-# 60 ".././HardwareSerial.h"
+# 64 ".././HardwareSerial.h"
 typedef uint8_t tx_buffer_index_t;
 
 
 
 
 typedef uint8_t rx_buffer_index_t;
-# 102 ".././HardwareSerial.h"
+# 106 ".././HardwareSerial.h"
 class HardwareSerial : public Stream
 {
   protected:
@@ -753,8 +753,8 @@ class HardwareSerial : public Stream
 
 
 
-    unsigned char _rx_buffer[64];
-    unsigned char _tx_buffer[64];
+    unsigned char _rx_buffer[16];
+    unsigned char _tx_buffer[16];
  uint_least32_t _f_cpu;
   public:
     HardwareSerial(
@@ -791,18 +791,18 @@ class HardwareSerial : public Stream
 
     inline void _rx_complete_irq(void){
      if (
-# 159 ".././HardwareSerial.h" 3
+# 163 ".././HardwareSerial.h" 3
         (!((*(volatile uint8_t *)(((uint16_t) &(
-# 159 ".././HardwareSerial.h"
+# 163 ".././HardwareSerial.h"
         *_ucsra
-# 159 ".././HardwareSerial.h" 3
+# 163 ".././HardwareSerial.h" 3
         )))) & (1 << (2))))
-# 159 ".././HardwareSerial.h"
+# 163 ".././HardwareSerial.h"
                                    ) {
 
 
       unsigned char c = *_udr;
-      rx_buffer_index_t i = (unsigned int)(_rx_buffer_head + 1) % 64;
+      rx_buffer_index_t i = (unsigned int)(_rx_buffer_head + 1) % 16;
 
 
 
@@ -821,7 +821,7 @@ class HardwareSerial : public Stream
 
 
      unsigned char c = _tx_buffer[_tx_buffer_tail];
-     _tx_buffer_tail = (_tx_buffer_tail + 1) % 64;
+     _tx_buffer_tail = (_tx_buffer_tail + 1) % 16;
 
      *_udr = c;
 
@@ -832,17 +832,17 @@ class HardwareSerial : public Stream
 
 
      *_ucsra = ((*_ucsra) & ((1 << 
-# 192 ".././HardwareSerial.h" 3
+# 196 ".././HardwareSerial.h" 3
                                   1
-# 192 ".././HardwareSerial.h"
+# 196 ".././HardwareSerial.h"
                                       ) | (1 << 
-# 192 ".././HardwareSerial.h" 3
+# 196 ".././HardwareSerial.h" 3
                                                 0
-# 192 ".././HardwareSerial.h"
+# 196 ".././HardwareSerial.h"
                                                      ))) | (1 << 
-# 192 ".././HardwareSerial.h" 3
+# 196 ".././HardwareSerial.h" 3
                                                                  6
-# 192 ".././HardwareSerial.h"
+# 196 ".././HardwareSerial.h"
                                                                      );
 
 
@@ -851,17 +851,17 @@ class HardwareSerial : public Stream
      if (_tx_buffer_head == _tx_buffer_tail) {
 
       (
-# 199 ".././HardwareSerial.h" 3
+# 203 ".././HardwareSerial.h" 3
      (*(volatile uint8_t *)(((uint16_t) &(
-# 199 ".././HardwareSerial.h"
+# 203 ".././HardwareSerial.h"
      *_ucsrb
-# 199 ".././HardwareSerial.h" 3
+# 203 ".././HardwareSerial.h" 3
      )))) 
-# 199 ".././HardwareSerial.h"
+# 203 ".././HardwareSerial.h"
      &= ~
-# 199 ".././HardwareSerial.h" 3
+# 203 ".././HardwareSerial.h" 3
      (1 << (5))
-# 199 ".././HardwareSerial.h"
+# 203 ".././HardwareSerial.h"
      );
      }
     }

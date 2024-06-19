@@ -1,0 +1,929 @@
+# 1 ".././Stream.cpp"
+# 1 "D:\\Tmp\\avr\\P015_Watering\\WaterWindow\\Watering\\Uart\\Debug//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 ".././Stream.cpp"
+# 24 ".././Stream.cpp"
+# 1 ".././Stream.h" 1
+# 25 ".././Stream.h"
+# 1 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\inttypes.h" 1 3
+# 37 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\inttypes.h" 3
+# 1 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\lib\\gcc\\avr\\5.4.0\\include\\stdint.h" 1 3 4
+# 9 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\lib\\gcc\\avr\\5.4.0\\include\\stdint.h" 3 4
+# 1 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdint.h" 1 3 4
+# 125 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdint.h" 3 4
+
+# 125 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdint.h" 3 4
+typedef signed int int8_t __attribute__((__mode__(__QI__)));
+typedef unsigned int uint8_t __attribute__((__mode__(__QI__)));
+typedef signed int int16_t __attribute__ ((__mode__ (__HI__)));
+typedef unsigned int uint16_t __attribute__ ((__mode__ (__HI__)));
+typedef signed int int32_t __attribute__ ((__mode__ (__SI__)));
+typedef unsigned int uint32_t __attribute__ ((__mode__ (__SI__)));
+
+typedef signed int int64_t __attribute__((__mode__(__DI__)));
+typedef unsigned int uint64_t __attribute__((__mode__(__DI__)));
+# 146 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdint.h" 3 4
+typedef int16_t intptr_t;
+
+
+
+
+typedef uint16_t uintptr_t;
+# 163 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdint.h" 3 4
+typedef int8_t int_least8_t;
+
+
+
+
+typedef uint8_t uint_least8_t;
+
+
+
+
+typedef int16_t int_least16_t;
+
+
+
+
+typedef uint16_t uint_least16_t;
+
+
+
+
+typedef int32_t int_least32_t;
+
+
+
+
+typedef uint32_t uint_least32_t;
+
+
+
+
+
+
+
+typedef int64_t int_least64_t;
+
+
+
+
+
+
+typedef uint64_t uint_least64_t;
+# 217 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdint.h" 3 4
+typedef int8_t int_fast8_t;
+
+
+
+
+typedef uint8_t uint_fast8_t;
+
+
+
+
+typedef int16_t int_fast16_t;
+
+
+
+
+typedef uint16_t uint_fast16_t;
+
+
+
+
+typedef int32_t int_fast32_t;
+
+
+
+
+typedef uint32_t uint_fast32_t;
+
+
+
+
+
+
+
+typedef int64_t int_fast64_t;
+
+
+
+
+
+
+typedef uint64_t uint_fast64_t;
+# 277 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdint.h" 3 4
+typedef int64_t intmax_t;
+
+
+
+
+typedef uint64_t uintmax_t;
+# 10 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\lib\\gcc\\avr\\5.4.0\\include\\stdint.h" 2 3 4
+# 38 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\inttypes.h" 2 3
+# 77 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\inttypes.h" 3
+typedef int32_t int_farptr_t;
+
+
+
+typedef uint32_t uint_farptr_t;
+# 26 ".././Stream.h" 2
+# 1 ".././Print.h" 1
+# 24 ".././Print.h"
+# 1 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 1 3
+# 45 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+# 1 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\lib\\gcc\\avr\\5.4.0\\include\\stdarg.h" 1 3 4
+# 40 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\lib\\gcc\\avr\\5.4.0\\include\\stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 98 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\lib\\gcc\\avr\\5.4.0\\include\\stdarg.h" 3 4
+typedef __gnuc_va_list va_list;
+# 46 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 2 3
+
+
+
+
+# 1 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\lib\\gcc\\avr\\5.4.0\\include\\stddef.h" 1 3 4
+# 216 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\lib\\gcc\\avr\\5.4.0\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 51 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 2 3
+# 244 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+struct __file {
+ char *buf;
+ unsigned char unget;
+ uint8_t flags;
+# 263 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+ int size;
+ int len;
+ int (*put)(char, struct __file *);
+ int (*get)(struct __file *);
+ void *udata;
+};
+# 277 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+typedef struct __file FILE;
+# 399 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern "C" {
+
+
+
+
+
+
+
+extern struct __file *__iob[];
+# 419 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern FILE *fdevopen(int (*__put)(char, FILE*), int (*__get)(FILE*));
+# 436 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern int fclose(FILE *__stream);
+# 610 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern int vfprintf(FILE *__stream, const char *__fmt, va_list __ap);
+
+
+
+
+
+extern int vfprintf_P(FILE *__stream, const char *__fmt, va_list __ap);
+
+
+
+
+
+
+extern int fputc(int __c, FILE *__stream);
+
+
+
+
+extern int putc(int __c, FILE *__stream);
+
+
+extern int putchar(int __c);
+# 651 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern int printf(const char *__fmt, ...);
+
+
+
+
+
+extern int printf_P(const char *__fmt, ...);
+
+
+
+
+
+
+
+extern int vprintf(const char *__fmt, va_list __ap);
+
+
+
+
+
+extern int sprintf(char *__s, const char *__fmt, ...);
+
+
+
+
+
+extern int sprintf_P(char *__s, const char *__fmt, ...);
+# 687 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern int snprintf(char *__s, size_t __n, const char *__fmt, ...);
+
+
+
+
+
+extern int snprintf_P(char *__s, size_t __n, const char *__fmt, ...);
+
+
+
+
+
+extern int vsprintf(char *__s, const char *__fmt, va_list ap);
+
+
+
+
+
+extern int vsprintf_P(char *__s, const char *__fmt, va_list ap);
+# 715 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern int vsnprintf(char *__s, size_t __n, const char *__fmt, va_list ap);
+
+
+
+
+
+extern int vsnprintf_P(char *__s, size_t __n, const char *__fmt, va_list ap);
+
+
+
+
+extern int fprintf(FILE *__stream, const char *__fmt, ...);
+
+
+
+
+
+extern int fprintf_P(FILE *__stream, const char *__fmt, ...);
+
+
+
+
+
+
+extern int fputs(const char *__str, FILE *__stream);
+
+
+
+
+extern int fputs_P(const char *__str, FILE *__stream);
+
+
+
+
+
+extern int puts(const char *__str);
+
+
+
+
+extern int puts_P(const char *__str);
+# 764 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern size_t fwrite(const void *__ptr, size_t __size, size_t __nmemb,
+         FILE *__stream);
+
+
+
+
+
+
+
+extern int fgetc(FILE *__stream);
+
+
+
+
+extern int getc(FILE *__stream);
+
+
+extern int getchar(void);
+# 812 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern int ungetc(int __c, FILE *__stream);
+# 824 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern char *fgets(char *__str, int __size, FILE *__stream);
+
+
+
+
+
+
+extern char *gets(char *__str);
+# 842 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern size_t fread(void *__ptr, size_t __size, size_t __nmemb,
+        FILE *__stream);
+
+
+
+
+extern void clearerr(FILE *__stream);
+# 859 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern int feof(FILE *__stream);
+# 870 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+extern int ferror(FILE *__stream);
+
+
+
+
+
+
+extern int vfscanf(FILE *__stream, const char *__fmt, va_list __ap);
+
+
+
+
+extern int vfscanf_P(FILE *__stream, const char *__fmt, va_list __ap);
+
+
+
+
+
+
+
+extern int fscanf(FILE *__stream, const char *__fmt, ...);
+
+
+
+
+extern int fscanf_P(FILE *__stream, const char *__fmt, ...);
+
+
+
+
+
+
+extern int scanf(const char *__fmt, ...);
+
+
+
+
+extern int scanf_P(const char *__fmt, ...);
+
+
+
+
+
+
+
+extern int vscanf(const char *__fmt, va_list __ap);
+
+
+
+
+
+
+
+extern int sscanf(const char *__buf, const char *__fmt, ...);
+
+
+
+
+extern int sscanf_P(const char *__buf, const char *__fmt, ...);
+# 940 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\stdio.h" 3
+static __inline__ int fflush(FILE *stream __attribute__((unused)))
+{
+ return 0;
+}
+
+
+
+
+
+
+__extension__ typedef long long fpos_t;
+extern int fgetpos(FILE *stream, fpos_t *pos);
+extern FILE *fopen(const char *path, const char *mode);
+extern FILE *freopen(const char *path, const char *mode, FILE *stream);
+extern FILE *fdopen(int, const char *);
+extern int fseek(FILE *stream, long offset, int whence);
+extern int fsetpos(FILE *stream, fpos_t *pos);
+extern long ftell(FILE *stream);
+extern int fileno(FILE *);
+extern void perror(const char *s);
+extern int remove(const char *pathname);
+extern int rename(const char *oldpath, const char *newpath);
+extern void rewind(FILE *stream);
+extern void setbuf(FILE *stream, char *buf);
+extern int setvbuf(FILE *stream, char *buf, int mode, size_t size);
+extern FILE *tmpfile(void);
+extern char *tmpnam (char *s);
+
+
+
+}
+# 25 ".././Print.h" 2
+# 1 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 1 3
+# 46 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+# 1 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\lib\\gcc\\avr\\5.4.0\\include\\stddef.h" 1 3 4
+# 47 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 2 3
+# 58 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern "C" {
+# 125 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern int ffs(int __val) __attribute__((__const__));
+
+
+
+
+
+extern int ffsl(long __val) __attribute__((__const__));
+
+
+
+
+
+__extension__ extern int ffsll(long long __val) __attribute__((__const__));
+# 150 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern void *memccpy(void *, const void *, int, size_t);
+# 162 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern void *memchr(const void *, int, size_t) __attribute__((__pure__));
+# 180 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern int memcmp(const void *, const void *, size_t) __attribute__((__pure__));
+# 191 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern void *memcpy(void *, const void *, size_t);
+# 203 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern void *memmem(const void *, size_t, const void *, size_t) __attribute__((__pure__));
+# 213 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern void *memmove(void *, const void *, size_t);
+# 225 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern void *memrchr(const void *, int, size_t) __attribute__((__pure__));
+# 235 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern void *memset(void *, int, size_t);
+# 248 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strcat(char *, const char *);
+# 262 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strchr(const char *, int) __attribute__((__pure__));
+# 274 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strchrnul(const char *, int) __attribute__((__pure__));
+# 287 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern int strcmp(const char *, const char *) __attribute__((__pure__));
+# 305 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strcpy(char *, const char *);
+# 320 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern int strcasecmp(const char *, const char *) __attribute__((__pure__));
+# 333 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strcasestr(const char *, const char *) __attribute__((__pure__));
+# 344 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern size_t strcspn(const char *__s, const char *__reject) __attribute__((__pure__));
+# 364 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strdup(const char *s1);
+# 377 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern size_t strlcat(char *, const char *, size_t);
+# 388 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern size_t strlcpy(char *, const char *, size_t);
+# 399 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern size_t strlen(const char *) __attribute__((__pure__));
+# 411 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strlwr(char *);
+# 422 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strncat(char *, const char *, size_t);
+# 434 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern int strncmp(const char *, const char *, size_t) __attribute__((__pure__));
+# 449 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strncpy(char *, const char *, size_t);
+# 464 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern int strncasecmp(const char *, const char *, size_t) __attribute__((__pure__));
+# 478 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern size_t strnlen(const char *, size_t) __attribute__((__pure__));
+# 491 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strpbrk(const char *__s, const char *__accept) __attribute__((__pure__));
+# 505 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strrchr(const char *, int) __attribute__((__pure__));
+# 515 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strrev(char *);
+# 533 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strsep(char **, const char *);
+# 544 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern size_t strspn(const char *__s, const char *__accept) __attribute__((__pure__));
+# 557 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strstr(const char *, const char *) __attribute__((__pure__));
+# 576 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strtok(char *, const char *);
+# 593 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strtok_r(char *, const char *, char **);
+# 606 "d:\\soft\\7.0\\toolchain\\avr8\\avr8-gnu-toolchain\\avr\\include\\string.h" 3
+extern char *strupr(char *);
+
+
+
+extern int strcoll(const char *s1, const char *s2);
+extern char *strerror(int errnum);
+extern size_t strxfrm(char *dest, const char *src, size_t n);
+
+
+
+}
+# 26 ".././Print.h" 2
+# 36 ".././Print.h"
+
+# 36 ".././Print.h"
+class Print
+{
+  private:
+    int write_error;
+    size_t printNumber(unsigned long, uint8_t);
+    size_t printFloat(double, uint8_t);
+  protected:
+    void setWriteError(int err = 1) { write_error = err; }
+  public:
+    Print() : write_error(0) {}
+
+    int getWriteError() { return write_error; }
+    void clearWriteError() { setWriteError(0); }
+
+    virtual size_t write(uint8_t) = 0;
+    size_t write(const char *str) {
+      if (str == 
+# 52 ".././Print.h" 3 4
+                __null
+# 52 ".././Print.h"
+                    ) return 0;
+      return write((const uint8_t *)str, strlen(str));
+    }
+    virtual size_t write(const uint8_t *buffer, size_t size);
+    size_t write(const char *buffer, size_t size) {
+      return write((const uint8_t *)buffer, size);
+    }
+
+
+
+    virtual int availableForWrite() { return 0; }
+
+
+    size_t print(const char[]);
+    size_t print(char);
+    size_t print(unsigned char, int = 10);
+    size_t print(int, int = 10);
+    size_t print(unsigned int, int = 10);
+    size_t print(long, int = 10);
+    size_t print(unsigned long, int = 10);
+    size_t print(double, int = 2);
+
+
+    size_t println(const char[]);
+    size_t println(char);
+    size_t println(unsigned char, int = 10);
+    size_t println(int, int = 10);
+    size_t println(unsigned int, int = 10);
+    size_t println(long, int = 10);
+    size_t println(unsigned long, int = 10);
+    size_t println(double, int = 2);
+    size_t println(void);
+
+    virtual void flush() { }
+};
+# 27 ".././Stream.h" 2
+# 41 ".././Stream.h"
+enum LookaheadMode{
+    SKIP_ALL,
+    SKIP_NONE,
+    SKIP_WHITESPACE
+};
+
+
+
+class Stream : public Print
+{
+  protected:
+    unsigned long _timeout;
+    unsigned long _startMillis;
+    int timedRead();
+    int timedPeek();
+    int peekNextDigit(LookaheadMode lookahead, bool detectDecimal);
+
+  public:
+    virtual int available() = 0;
+    virtual int read() = 0;
+    virtual int peek() = 0;
+
+    Stream() {_timeout=1000;}
+
+
+
+  void setTimeout(unsigned long timeout);
+  unsigned long getTimeout(void) { return _timeout; }
+
+  bool find(char *target);
+  bool find(uint8_t *target) { return find ((char *)target); }
+
+
+  bool find(char *target, size_t length);
+  bool find(uint8_t *target, size_t length) { return find ((char *)target, length); }
+
+
+  bool find(char target) { return find (&target, 1); }
+
+  bool findUntil(char *target, char *terminator);
+  bool findUntil(uint8_t *target, char *terminator) { return findUntil((char *)target, terminator); }
+
+  bool findUntil(char *target, size_t targetLen, char *terminate, size_t termLen);
+  bool findUntil(uint8_t *target, size_t targetLen, char *terminate, size_t termLen) {return findUntil((char *)target, targetLen, terminate, termLen); }
+
+  long parseInt(LookaheadMode lookahead = SKIP_ALL, char ignore = '\x01');
+
+
+
+
+
+
+  float parseFloat(LookaheadMode lookahead = SKIP_ALL, char ignore = '\x01');
+
+
+  size_t readBytes( char *buffer, size_t length);
+  size_t readBytes( uint8_t *buffer, size_t length) { return readBytes((char *)buffer, length); }
+
+
+
+  size_t readBytesUntil( char terminator, char *buffer, size_t length);
+  size_t readBytesUntil( char terminator, uint8_t *buffer, size_t length) { return readBytesUntil(terminator, (char *)buffer, length); }
+
+
+
+
+  protected:
+  long parseInt(char ignore) { return parseInt(SKIP_ALL, ignore); }
+  float parseFloat(char ignore) { return parseFloat(SKIP_ALL, ignore); }
+
+
+
+
+  struct MultiTarget {
+    const char *str;
+    size_t len;
+    size_t index;
+  };
+
+
+
+  int findMulti(struct MultiTarget *targets, int tCount);
+};
+# 25 ".././Stream.cpp" 2
+
+
+
+
+
+int Stream::peekNextDigit(LookaheadMode lookahead, bool detectDecimal)
+{
+  int c;
+  while (1) {
+    c = timedPeek();
+
+    if( c < 0 ||
+        c == '-' ||
+        (c >= '0' && c <= '9') ||
+        (detectDecimal && c == '.')) return c;
+
+    switch( lookahead ){
+        case SKIP_NONE: return -1;
+        case SKIP_WHITESPACE:
+            switch( c ){
+                case ' ':
+                case '\t':
+                case '\r':
+                case '\n': break;
+                default: return -1;
+            }
+        case SKIP_ALL:
+            break;
+    }
+    read();
+  }
+}
+
+
+
+
+void Stream::setTimeout(unsigned long timeout)
+{
+  _timeout = timeout;
+}
+
+
+bool Stream::find(char *target)
+{
+  return findUntil(target, strlen(target), 
+# 69 ".././Stream.cpp" 3 4
+                                          __null
+# 69 ".././Stream.cpp"
+                                              , 0);
+}
+
+
+
+bool Stream::find(char *target, size_t length)
+{
+  return findUntil(target, length, 
+# 76 ".././Stream.cpp" 3 4
+                                  __null
+# 76 ".././Stream.cpp"
+                                      , 0);
+}
+
+
+bool Stream::findUntil(char *target, char *terminator)
+{
+  return findUntil(target, strlen(target), terminator, strlen(terminator));
+}
+
+
+
+
+bool Stream::findUntil(char *target, size_t targetLen, char *terminator, size_t termLen)
+{
+  if (terminator == 
+# 90 ".././Stream.cpp" 3 4
+                   __null
+# 90 ".././Stream.cpp"
+                       ) {
+    MultiTarget t[1] = {{target, targetLen, 0}};
+    return findMulti(t, 1) == 0 ? true : false;
+  } else {
+    MultiTarget t[2] = {{target, targetLen, 0}, {terminator, termLen, 0}};
+    return findMulti(t, 2) == 0 ? true : false;
+  }
+}
+
+
+
+
+
+
+long Stream::parseInt(LookaheadMode lookahead, char ignore)
+{
+  bool isNegative = false;
+  long value = 0;
+  int c;
+
+  c = peekNextDigit(lookahead, false);
+
+  if(c < 0)
+    return 0;
+
+  do{
+    if(c == ignore)
+      ;
+    else if(c == '-')
+      isNegative = true;
+    else if(c >= '0' && c <= '9')
+      value = value * 10 + c - '0';
+    read();
+    c = timedPeek();
+  }
+  while( (c >= '0' && c <= '9') || c == ignore );
+
+  if(isNegative)
+    value = -value;
+  return value;
+}
+
+
+float Stream::parseFloat(LookaheadMode lookahead, char ignore)
+{
+  bool isNegative = false;
+  bool isFraction = false;
+  long value = 0;
+  int c;
+  float fraction = 1.0;
+
+  c = peekNextDigit(lookahead, true);
+
+  if(c < 0)
+    return 0;
+
+  do{
+    if(c == ignore)
+      ;
+    else if(c == '-')
+      isNegative = true;
+    else if (c == '.')
+      isFraction = true;
+    else if(c >= '0' && c <= '9') {
+      value = value * 10 + c - '0';
+      if(isFraction)
+         fraction *= 0.1;
+    }
+    read();
+    c = timedPeek();
+  }
+  while( (c >= '0' && c <= '9') || (c == '.' && !isFraction) || c == ignore );
+
+  if(isNegative)
+    value = -value;
+  if(isFraction)
+    return value * fraction;
+  else
+    return value;
+}
+
+
+
+
+
+
+size_t Stream::readBytes(char *buffer, size_t length)
+{
+  size_t count = 0;
+  while (count < length) {
+    int c = timedRead();
+    if (c < 0) break;
+    *buffer++ = (char)c;
+    count++;
+  }
+  return count;
+}
+
+
+
+
+
+
+size_t Stream::readBytesUntil(char terminator, char *buffer, size_t length)
+{
+  size_t index = 0;
+  while (index < length) {
+    int c = read();
+    if (c < 0 || c == terminator) break;
+    *buffer++ = (char)c;
+    index++;
+  }
+  return index;
+}
+
+
+
+
+
+int Stream::findMulti( struct Stream::MultiTarget *targets, int tCount) {
+
+
+  for (struct MultiTarget *t = targets; t < targets+tCount; ++t) {
+    if (t->len <= 0)
+      return t - targets;
+  }
+
+  while (1) {
+    int c = timedRead();
+    if (c < 0)
+      return -1;
+
+    for (struct MultiTarget *t = targets; t < targets+tCount; ++t) {
+
+      if (c == t->str[t->index]) {
+        if (++t->index == t->len)
+          return t - targets;
+        else
+          continue;
+      }
+
+
+
+
+
+      if (t->index == 0)
+        continue;
+
+      int origIndex = t->index;
+      do {
+        --t->index;
+
+        if (c != t->str[t->index])
+          continue;
+
+
+        if (t->index == 0) {
+          t->index++;
+          break;
+        }
+
+
+        int diff = origIndex - t->index;
+        size_t i;
+        for (i = 0; i < t->index; ++i) {
+          if (t->str[i] != t->str[i + diff])
+            break;
+        }
+
+
+
+        if (i == t->index) {
+          t->index++;
+          break;
+        }
+
+
+      } while (t->index);
+    }
+  }
+
+  return -1;
+}

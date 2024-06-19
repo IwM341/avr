@@ -6,13 +6,12 @@
  */ 
 
 #include <avr/io.h>
-#include "../FreeRTOS/FreeRTOS.h"
-#include "../FreeRTOS/task.h"
+
 #include "include/ports.h"
-#include "../Uart/HardwareSerial.h"
 #include "global.h"
 #include <avr/interrupt.h>
-static void vLEDBlink_task(void *) {
+
+void vLEDBlink_task(void *) {
 	
 		
 	pins::pin<7> m_pin(pins::OutputMode);
@@ -28,10 +27,20 @@ static void vLEDBlink_task(void *) {
 	}
 }
 
+
+void start_clock();
+
+void update_clock(void *);
+void task_watering(void *);
+void task_window(void *);
+void task_command_executor(void *);
+
 int main(void)
 {
-	volatile uint32_t x = __cplusplus;
-    xTaskCreate(vLEDBlink_task, "LED Blink", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
+	xTaskCreate(update_clock,"u",configMINIMAL_STACK_SIZE,NULL,1,NULL);
+	xTaskCreate(task_watering, "w", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
+	xTaskCreate(task_window, "o", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
+	xTaskCreate(task_command_executor, "c", 2*configMINIMAL_STACK_SIZE, NULL, 1, NULL);
 	
 	vTaskStartScheduler();
 	

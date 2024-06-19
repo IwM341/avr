@@ -96,25 +96,26 @@ namespace pins{
 	template <uint8_t m_pin>
 	inline constexpr uint8_t getBit(){
 		static_assert(m_pin < 20,"pin > 20, not existing pin");
-		if (m_pin < 8 ){
-			return m_pin;
-		} else if (m_pin < 14){
-			return m_pin-8;
-		} else{
-			return m_pin-14;
-		} 
+		return (m_pin < 8) ?
+					m_pin:
+					(
+						(m_pin < 14) ?
+							(m_pin-8):
+							(m_pin-14)
+					);
 	}
 	
 	template <uint8_t m_pin>
 	inline constexpr uint8_t getMask(){
 		static_assert(m_pin < 20,"pin > 20, not existing pin");
-		if (m_pin < 8 ){
-			return 1 << m_pin;
-		} else if (m_pin < 14){
-			return 1<<(m_pin-8);
-		} else{
-			return 1<<(m_pin-14);
-		} 
+		
+		return (m_pin < 8) ? 
+					(1 << m_pin):
+					(
+						(m_pin < 14) ?
+							(1<<(m_pin-8)):
+							(1<<(m_pin-14))
+					);
 	}
 
 
@@ -147,15 +148,15 @@ namespace pins{
 		}
 		
 		inline bool Read() const{
-			return (PinInfo::port() & mask  != 0);
+			return ((PinInfo::port() & mask)  != 0);
 		}
-		inline bool Write(bool Value){
+		inline void Write(bool Value){
 			return set_port_bit(PinInfo::port(),bit_num,Value);
 		}
-		inline bool Write_0(){
+		inline void Write_0(){
 			return set_port_bit(PinInfo::port(),bit_num,0);
 		}
-		inline bool Write_1(){
+		inline void Write_1(){
 			return set_port_bit(PinInfo::port(),bit_num,1);
 		}
 	};	

@@ -24,7 +24,7 @@ _ZN14HardwareSerial9availableEv:
 	movw r30,r24
 	ldd r18,Z+25
 	ldi r19,0
-	subi r18,-64
+	subi r18,-16
 	sbci r19,-1
 	ldd r24,Z+26
 .LVL1:
@@ -33,7 +33,7 @@ _ZN14HardwareSerial9availableEv:
 	sbc r21,__zero_reg__
 	movw r24,r20
 	.loc 1 142 0
-	andi r24,63
+	andi r24,15
 	clr r25
 	ret
 	.cfi_endproc
@@ -108,7 +108,7 @@ _ZN14HardwareSerial4readEv:
 	.loc 1 160 0
 	ldd r25,Z+26
 	subi r25,lo8(-(1))
-	andi r25,lo8(63)
+	andi r25,lo8(15)
 	std Z+26,r25
 	.loc 1 161 0
 	ldi r25,0
@@ -148,7 +148,7 @@ _ZN14HardwareSerial17availableForWriteEv:
 	cp r18,r19
 	brlo .L9
 	.loc 1 174 0 is_stmt 0 discriminator 1
-	ldi r24,lo8(63)
+	ldi r24,lo8(15)
 	ldi r25,0
 .LVL13:
 	sub r24,r18
@@ -274,12 +274,12 @@ _ZN14HardwareSerial5writeEh:
 	ldd r24,Z+27
 	ldi r25,0
 	adiw r24,1
-	andi r24,63
+	andi r24,15
 	andi r25,128
 	tst r25
 	brge .L17
 	sbiw r24,1
-	ori r24,192
+	ori r24,240
 	ori r25,255
 	adiw r24,1
 .L17:
@@ -306,54 +306,53 @@ _ZN14HardwareSerial5writeEh:
 .LBB37:
 .LBB38:
 	.file 3 ".././HardwareSerial.h"
-	.loc 3 181 0
+	.loc 3 185 0
 	ldd r24,Z+28
 	movw r26,r30
 	add r26,r24
 	adc r27,__zero_reg__
-	subi r26,-93
-	sbci r27,-1
+	adiw r26,45
 	ld r24,X
 .LVL27:
-	.loc 3 182 0
+	.loc 3 186 0
 	ldd r18,Z+28
 	ldi r19,0
 	subi r18,-1
 	sbci r19,-1
-	andi r18,63
+	andi r18,15
 	andi r19,128
 	tst r19
 	brge .L21
 	subi r18,1
 	sbc r19,__zero_reg__
-	ori r18,192
+	ori r18,240
 	ori r19,255
 	subi r18,-1
 	sbci r19,-1
 .L21:
 	std Z+28,r18
-	.loc 3 184 0
+	.loc 3 188 0
 	ldd r26,Z+22
 	ldd r27,Z+23
 	st X,r24
-	.loc 3 192 0
+	.loc 3 196 0
 	ldd r26,Z+16
 	ldd r27,Z+17
-	.loc 3 192 0
+	.loc 3 196 0
 	ld r24,X
 .LVL28:
 	andi r24,lo8(3)
 	ori r24,lo8(64)
 	st X,r24
-	.loc 3 197 0
+	.loc 3 201 0
 	ldd r18,Z+27
 	ldd r24,Z+28
 	cpse r18,r24
 	rjmp .L19
-	.loc 3 199 0
+	.loc 3 203 0
 	ldd r26,Z+18
 	ldd r27,Z+19
-	.loc 3 199 0
+	.loc 3 203 0
 	ld r24,X
 	andi r24,lo8(-33)
 	st X,r24
@@ -367,8 +366,7 @@ _ZN14HardwareSerial5writeEh:
 	movw r26,r30
 	add r26,r24
 	adc r27,__zero_reg__
-	subi r26,-93
-	sbci r27,-1
+	adiw r26,45
 	st X,r22
 .LBB39:
 	.loc 1 246 0
@@ -518,31 +516,29 @@ _ZN14HardwareSerial5flushEv:
 .LVL38:
 .LBB46:
 .LBB47:
-	.loc 3 181 0
+	.loc 3 185 0
 	adiw r26,28
 	ld r25,X
 	sbiw r26,28
 	movw r30,r26
 	add r30,r25
 	adc r31,__zero_reg__
-	subi r30,-93
-	sbci r31,-1
-	ld r25,Z
+	ldd r25,Z+45
 .LVL39:
-	.loc 3 182 0
+	.loc 3 186 0
 	adiw r26,28
 	ld r18,X
 	sbiw r26,28
 	ldi r19,0
 	subi r18,-1
 	sbci r19,-1
-	andi r18,63
+	andi r18,15
 	andi r19,128
 	tst r19
 	brge .L34
 	subi r18,1
 	sbc r19,__zero_reg__
-	ori r18,192
+	ori r18,240
 	ori r19,255
 	subi r18,-1
 	sbci r19,-1
@@ -550,24 +546,24 @@ _ZN14HardwareSerial5flushEv:
 	adiw r26,28
 	st X,r18
 	sbiw r26,28
-	.loc 3 184 0
+	.loc 3 188 0
 	adiw r26,22
 	ld r30,X+
 	ld r31,X
 	sbiw r26,22+1
 	st Z,r25
-	.loc 3 192 0
+	.loc 3 196 0
 	adiw r26,16
 	ld r30,X+
 	ld r31,X
 	sbiw r26,16+1
-	.loc 3 192 0
+	.loc 3 196 0
 	ld r25,Z
 .LVL40:
 	andi r25,lo8(3)
 	ori r25,lo8(64)
 	st Z,r25
-	.loc 3 197 0
+	.loc 3 201 0
 	adiw r26,27
 	ld r18,X
 	sbiw r26,27
@@ -576,12 +572,12 @@ _ZN14HardwareSerial5flushEv:
 	sbiw r26,28
 	cpse r18,r25
 	rjmp .L32
-	.loc 3 199 0
+	.loc 3 203 0
 	adiw r26,18
 	ld r30,X+
 	ld r31,X
 	sbiw r26,18+1
-	.loc 3 199 0
+	.loc 3 203 0
 	ld r25,Z
 	andi r25,lo8(-33)
 	st Z,r25
@@ -694,7 +690,7 @@ _ZN14HardwareSerial5beginEmh:
 	mov r11,r18
 	.loc 1 93 0
 	movw r16,r24
-	subi r16,99
+	subi r16,-61
 	sbci r17,-1
 	movw r30,r16
 	ld r24,Z
@@ -765,8 +761,7 @@ _ZN14HardwareSerial5beginEmh:
 	st Z,__zero_reg__
 	.loc 1 104 0
 	movw r30,r28
-	subi r30,99
-	sbci r31,-1
+	adiw r30,61
 	ld r24,Z
 	ldd r25,Z+1
 	ldd r26,Z+2
@@ -951,7 +946,7 @@ _ZTV14HardwareSerial:
 	.file 7 ".././Print.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.long	0xd8e
+	.long	0xd8d
 	.word	0x2
 	.long	.Ldebug_abbrev0
 	.byte	0x4
@@ -1050,7 +1045,7 @@ _ZTV14HardwareSerial:
 	.byte	0xc
 	.byte	0x6
 	.byte	0x31
-	.long	0x97f
+	.long	0x97e
 	.long	0x5d3
 	.uleb128 0x9
 	.long	.LASF127
@@ -1085,7 +1080,7 @@ _ZTV14HardwareSerial:
 	.uleb128 0x4
 	.byte	0
 	.uleb128 0xc
-	.long	0x97f
+	.long	0x97e
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0
@@ -1117,7 +1112,7 @@ _ZTV14HardwareSerial:
 	.long	0x14b
 	.long	0x158
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0xf
 	.long	0x3b
@@ -1132,10 +1127,10 @@ _ZTV14HardwareSerial:
 	.long	0x16c
 	.long	0x178
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
-	.long	0x9fa
+	.long	0x9f9
 	.byte	0
 	.uleb128 0xe
 	.byte	0x1
@@ -1146,10 +1141,10 @@ _ZTV14HardwareSerial:
 	.long	0x18c
 	.long	0x198
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
-	.long	0xa00
+	.long	0x9ff
 	.byte	0
 	.uleb128 0x11
 	.byte	0x1
@@ -1163,7 +1158,7 @@ _ZTV14HardwareSerial:
 	.long	0x1b2
 	.long	0x1b9
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.byte	0
 	.uleb128 0x11
@@ -1178,7 +1173,7 @@ _ZTV14HardwareSerial:
 	.long	0x1d3
 	.long	0x1da
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.byte	0
 	.uleb128 0x11
@@ -1193,12 +1188,12 @@ _ZTV14HardwareSerial:
 	.long	0x1f4
 	.long	0x205
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0xa5
 	.uleb128 0x10
-	.long	0x9c6
+	.long	0x9c5
 	.byte	0
 	.uleb128 0x12
 	.byte	0x1
@@ -1216,7 +1211,7 @@ _ZTV14HardwareSerial:
 	.long	0x226
 	.long	0x22d
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.byte	0
 	.uleb128 0x12
@@ -1235,7 +1230,7 @@ _ZTV14HardwareSerial:
 	.long	0x24e
 	.long	0x255
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.byte	0
 	.uleb128 0x12
@@ -1254,7 +1249,7 @@ _ZTV14HardwareSerial:
 	.long	0x276
 	.long	0x27d
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.byte	0
 	.uleb128 0x13
@@ -1267,7 +1262,7 @@ _ZTV14HardwareSerial:
 	.long	0x292
 	.long	0x299
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.byte	0
 	.uleb128 0x13
@@ -1280,7 +1275,7 @@ _ZTV14HardwareSerial:
 	.long	0x2ae
 	.long	0x2ba
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x78
@@ -1296,7 +1291,7 @@ _ZTV14HardwareSerial:
 	.long	0x2d3
 	.long	0x2da
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.byte	0
 	.uleb128 0x14
@@ -1305,12 +1300,12 @@ _ZTV14HardwareSerial:
 	.byte	0x6
 	.byte	0x46
 	.long	.LASF42
-	.long	0x9c6
+	.long	0x9c5
 	.byte	0x1
 	.long	0x2f3
 	.long	0x2ff
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x98
@@ -1321,15 +1316,15 @@ _ZTV14HardwareSerial:
 	.byte	0x6
 	.byte	0x47
 	.long	.LASF43
-	.long	0x9c6
+	.long	0x9c5
 	.byte	0x1
 	.long	0x318
 	.long	0x324
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
-	.long	0xa0b
+	.long	0xa0a
 	.byte	0
 	.uleb128 0x14
 	.byte	0x1
@@ -1337,12 +1332,12 @@ _ZTV14HardwareSerial:
 	.byte	0x6
 	.byte	0x4a
 	.long	.LASF44
-	.long	0x9c6
+	.long	0x9c5
 	.byte	0x1
 	.long	0x33d
 	.long	0x34e
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x98
@@ -1355,15 +1350,15 @@ _ZTV14HardwareSerial:
 	.byte	0x6
 	.byte	0x4b
 	.long	.LASF45
-	.long	0x9c6
+	.long	0x9c5
 	.byte	0x1
 	.long	0x367
 	.long	0x378
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
-	.long	0xa0b
+	.long	0xa0a
 	.uleb128 0x10
 	.long	0x29
 	.byte	0
@@ -1373,12 +1368,12 @@ _ZTV14HardwareSerial:
 	.byte	0x6
 	.byte	0x4e
 	.long	.LASF46
-	.long	0x9c6
+	.long	0x9c5
 	.byte	0x1
 	.long	0x391
 	.long	0x39d
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x9e
@@ -1389,12 +1384,12 @@ _ZTV14HardwareSerial:
 	.byte	0x6
 	.byte	0x50
 	.long	.LASF48
-	.long	0x9c6
+	.long	0x9c5
 	.byte	0x1
 	.long	0x3b6
 	.long	0x3c7
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x98
@@ -1407,15 +1402,15 @@ _ZTV14HardwareSerial:
 	.byte	0x6
 	.byte	0x51
 	.long	.LASF49
-	.long	0x9c6
+	.long	0x9c5
 	.byte	0x1
 	.long	0x3e0
 	.long	0x3f1
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
-	.long	0xa0b
+	.long	0xa0a
 	.uleb128 0x10
 	.long	0x98
 	.byte	0
@@ -1425,12 +1420,12 @@ _ZTV14HardwareSerial:
 	.byte	0x6
 	.byte	0x53
 	.long	.LASF50
-	.long	0x9c6
+	.long	0x9c5
 	.byte	0x1
 	.long	0x40a
 	.long	0x425
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x98
@@ -1447,15 +1442,15 @@ _ZTV14HardwareSerial:
 	.byte	0x6
 	.byte	0x54
 	.long	.LASF51
-	.long	0x9c6
+	.long	0x9c5
 	.byte	0x1
 	.long	0x43e
 	.long	0x459
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
-	.long	0xa0b
+	.long	0xa0a
 	.uleb128 0x10
 	.long	0x29
 	.uleb128 0x10
@@ -1474,7 +1469,7 @@ _ZTV14HardwareSerial:
 	.long	0x472
 	.long	0x483
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0xa5
@@ -1487,12 +1482,12 @@ _ZTV14HardwareSerial:
 	.byte	0x6
 	.byte	0x5d
 	.long	.LASF55
-	.long	0xa11
+	.long	0xa10
 	.byte	0x1
 	.long	0x49c
 	.long	0x4ad
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0xa5
@@ -1510,7 +1505,7 @@ _ZTV14HardwareSerial:
 	.long	0x4c6
 	.long	0x4d7
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x98
@@ -1528,10 +1523,10 @@ _ZTV14HardwareSerial:
 	.long	0x4f0
 	.long	0x501
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
-	.long	0xa0b
+	.long	0xa0a
 	.uleb128 0x10
 	.long	0x29
 	.byte	0
@@ -1546,7 +1541,7 @@ _ZTV14HardwareSerial:
 	.long	0x51a
 	.long	0x530
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x9e
@@ -1566,12 +1561,12 @@ _ZTV14HardwareSerial:
 	.long	0x549
 	.long	0x55f
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x9e
 	.uleb128 0x10
-	.long	0xa0b
+	.long	0xa0a
 	.uleb128 0x10
 	.long	0x29
 	.byte	0
@@ -1587,7 +1582,7 @@ _ZTV14HardwareSerial:
 	.long	0x579
 	.long	0x585
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x9e
@@ -1598,13 +1593,13 @@ _ZTV14HardwareSerial:
 	.byte	0x6
 	.byte	0x6d
 	.long	.LASF63
-	.long	0xa11
+	.long	0xa10
 	.byte	0x2
 	.byte	0x1
 	.long	0x59f
 	.long	0x5ab
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x9e
@@ -1620,10 +1615,10 @@ _ZTV14HardwareSerial:
 	.byte	0x1
 	.long	0x5c1
 	.uleb128 0xf
-	.long	0x9f4
+	.long	0x9f3
 	.byte	0x1
 	.uleb128 0x10
-	.long	0xa18
+	.long	0xa17
 	.uleb128 0x10
 	.long	0x3b
 	.byte	0
@@ -1636,24 +1631,24 @@ _ZTV14HardwareSerial:
 	.uleb128 0x2
 	.long	.LASF66
 	.byte	0x3
-	.byte	0x3c
+	.byte	0x40
 	.long	0x50
 	.uleb128 0x2
 	.long	.LASF67
 	.byte	0x3
-	.byte	0x41
+	.byte	0x45
 	.long	0x50
 	.uleb128 0x8
 	.long	.LASF68
-	.byte	0xa1
+	.byte	0x41
 	.byte	0x3
-	.byte	0x66
-	.long	0x97f
-	.long	0x97f
+	.byte	0x6a
+	.long	0x97e
+	.long	0x97e
 	.uleb128 0x17
 	.byte	0x3
-	.byte	0x66
-	.long	0x989
+	.byte	0x6a
+	.long	0x988
 	.uleb128 0xc
 	.long	0xc8
 	.byte	0x2
@@ -1663,8 +1658,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF69
 	.byte	0x3
-	.byte	0x69
-	.long	0x9c1
+	.byte	0x6d
+	.long	0x9c0
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0xc
@@ -1672,8 +1667,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF70
 	.byte	0x3
-	.byte	0x6a
-	.long	0x9c1
+	.byte	0x6e
+	.long	0x9c0
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0xe
@@ -1681,8 +1676,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF71
 	.byte	0x3
-	.byte	0x6b
-	.long	0x9c1
+	.byte	0x6f
+	.long	0x9c0
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0x10
@@ -1690,8 +1685,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF72
 	.byte	0x3
-	.byte	0x6c
-	.long	0x9c1
+	.byte	0x70
+	.long	0x9c0
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0x12
@@ -1699,8 +1694,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF73
 	.byte	0x3
-	.byte	0x6d
-	.long	0x9c1
+	.byte	0x71
+	.long	0x9c0
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0x14
@@ -1708,8 +1703,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF74
 	.byte	0x3
-	.byte	0x6e
-	.long	0x9c1
+	.byte	0x72
+	.long	0x9c0
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0x16
@@ -1717,8 +1712,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF75
 	.byte	0x3
-	.byte	0x70
-	.long	0x9c6
+	.byte	0x74
+	.long	0x9c5
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0x18
@@ -1726,8 +1721,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF76
 	.byte	0x3
-	.byte	0x72
-	.long	0x9cd
+	.byte	0x76
+	.long	0x9cc
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0x19
@@ -1735,8 +1730,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF77
 	.byte	0x3
-	.byte	0x73
-	.long	0x9cd
+	.byte	0x77
+	.long	0x9cc
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0x1a
@@ -1744,8 +1739,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF78
 	.byte	0x3
-	.byte	0x74
-	.long	0x9d2
+	.byte	0x78
+	.long	0x9d1
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0x1b
@@ -1753,8 +1748,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF79
 	.byte	0x3
-	.byte	0x75
-	.long	0x9d2
+	.byte	0x79
+	.long	0x9d1
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0x1c
@@ -1762,8 +1757,8 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF80
 	.byte	0x3
-	.byte	0x7a
-	.long	0x9d7
+	.byte	0x7e
+	.long	0x9d6
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0x1d
@@ -1771,57 +1766,57 @@ _ZTV14HardwareSerial:
 	.uleb128 0xd
 	.long	.LASF81
 	.byte	0x3
-	.byte	0x7b
-	.long	0x9d7
+	.byte	0x7f
+	.long	0x9d6
 	.byte	0x2
 	.byte	0x23
-	.uleb128 0x5d
+	.uleb128 0x2d
 	.byte	0x2
 	.uleb128 0xd
 	.long	.LASF82
 	.byte	0x3
-	.byte	0x7c
+	.byte	0x80
 	.long	0x8d
-	.byte	0x3
+	.byte	0x2
 	.byte	0x23
-	.uleb128 0x9d
+	.uleb128 0x3d
 	.byte	0x2
 	.uleb128 0x13
 	.byte	0x1
 	.long	.LASF68
 	.byte	0x3
-	.byte	0x7e
+	.byte	0x82
 	.long	.LASF83
 	.byte	0x1
-	.long	0x6fc
-	.long	0x721
+	.long	0x6fb
+	.long	0x720
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.uleb128 0x10
-	.long	0x9b6
+	.long	0x9b5
 	.uleb128 0x10
-	.long	0x9b6
+	.long	0x9b5
 	.uleb128 0x10
-	.long	0x9b6
+	.long	0x9b5
 	.uleb128 0x10
-	.long	0x9b6
+	.long	0x9b5
 	.uleb128 0x10
-	.long	0x9b6
+	.long	0x9b5
 	.uleb128 0x10
-	.long	0x9b6
+	.long	0x9b5
 	.byte	0
 	.uleb128 0x13
 	.byte	0x1
 	.long	.LASF84
 	.byte	0x3
-	.byte	0x89
+	.byte	0x8d
 	.long	.LASF85
 	.byte	0x1
-	.long	0x736
-	.long	0x742
+	.long	0x735
+	.long	0x741
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x8d
@@ -1830,13 +1825,13 @@ _ZTV14HardwareSerial:
 	.byte	0x1
 	.long	.LASF86
 	.byte	0x3
-	.byte	0x8d
+	.byte	0x91
 	.long	.LASF87
 	.byte	0x1
-	.long	0x757
-	.long	0x763
+	.long	0x756
+	.long	0x762
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x78
@@ -1848,10 +1843,10 @@ _ZTV14HardwareSerial:
 	.byte	0x5a
 	.long	.LASF88
 	.byte	0x1
-	.long	0x778
-	.long	0x789
+	.long	0x777
+	.long	0x788
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x78
@@ -1865,10 +1860,10 @@ _ZTV14HardwareSerial:
 	.byte	0x7d
 	.long	.LASF128
 	.byte	0x1
-	.long	0x79e
-	.long	0x7a5
+	.long	0x79d
+	.long	0x7a4
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.byte	0
 	.uleb128 0x12
@@ -1884,10 +1879,10 @@ _ZTV14HardwareSerial:
 	.uleb128 0x4
 	.long	0x5f4
 	.byte	0x1
-	.long	0x7c6
-	.long	0x7cd
+	.long	0x7c5
+	.long	0x7cc
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.byte	0
 	.uleb128 0x12
@@ -1903,10 +1898,10 @@ _ZTV14HardwareSerial:
 	.uleb128 0x6
 	.long	0x5f4
 	.byte	0x1
-	.long	0x7ee
-	.long	0x7f5
+	.long	0x7ed
+	.long	0x7f4
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.byte	0
 	.uleb128 0x12
@@ -1922,10 +1917,10 @@ _ZTV14HardwareSerial:
 	.uleb128 0x5
 	.long	0x5f4
 	.byte	0x1
-	.long	0x816
-	.long	0x81d
+	.long	0x815
+	.long	0x81c
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.byte	0
 	.uleb128 0x12
@@ -1941,10 +1936,10 @@ _ZTV14HardwareSerial:
 	.uleb128 0x2
 	.long	0x5f4
 	.byte	0x1
-	.long	0x83e
-	.long	0x845
+	.long	0x83d
+	.long	0x844
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.byte	0
 	.uleb128 0x19
@@ -1959,10 +1954,10 @@ _ZTV14HardwareSerial:
 	.uleb128 0x3
 	.long	0x5f4
 	.byte	0x1
-	.long	0x862
-	.long	0x869
+	.long	0x861
+	.long	0x868
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.byte	0
 	.uleb128 0x12
@@ -1978,10 +1973,10 @@ _ZTV14HardwareSerial:
 	.uleb128 0
 	.long	0x5f4
 	.byte	0x1
-	.long	0x88a
-	.long	0x896
+	.long	0x889
+	.long	0x895
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x50
@@ -1990,14 +1985,14 @@ _ZTV14HardwareSerial:
 	.byte	0x1
 	.long	.LASF94
 	.byte	0x3
-	.byte	0x96
+	.byte	0x9a
 	.long	.LASF96
 	.long	0x29
 	.byte	0x1
-	.long	0x8af
-	.long	0x8bb
+	.long	0x8ae
+	.long	0x8ba
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x78
@@ -2006,14 +2001,14 @@ _ZTV14HardwareSerial:
 	.byte	0x1
 	.long	.LASF94
 	.byte	0x3
-	.byte	0x97
+	.byte	0x9b
 	.long	.LASF97
 	.long	0x29
 	.byte	0x1
-	.long	0x8d4
-	.long	0x8e0
+	.long	0x8d3
+	.long	0x8df
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x42
@@ -2022,14 +2017,14 @@ _ZTV14HardwareSerial:
 	.byte	0x1
 	.long	.LASF94
 	.byte	0x3
-	.byte	0x98
+	.byte	0x9c
 	.long	.LASF98
 	.long	0x29
 	.byte	0x1
-	.long	0x8f9
-	.long	0x905
+	.long	0x8f8
+	.long	0x904
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x34
@@ -2038,14 +2033,14 @@ _ZTV14HardwareSerial:
 	.byte	0x1
 	.long	.LASF94
 	.byte	0x3
-	.byte	0x99
+	.byte	0x9d
 	.long	.LASF99
 	.long	0x29
 	.byte	0x1
-	.long	0x91e
-	.long	0x92a
+	.long	0x91d
+	.long	0x929
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x3b
@@ -2054,46 +2049,46 @@ _ZTV14HardwareSerial:
 	.byte	0x1
 	.long	.LASF100
 	.byte	0x3
-	.byte	0x9b
+	.byte	0x9f
 	.long	.LASF101
-	.long	0x9c6
+	.long	0x9c5
 	.byte	0x1
-	.long	0x943
-	.long	0x94a
+	.long	0x942
+	.long	0x949
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.byte	0
 	.uleb128 0x13
 	.byte	0x1
 	.long	.LASF102
 	.byte	0x3
-	.byte	0x9e
+	.byte	0xa2
 	.long	.LASF103
 	.byte	0x1
-	.long	0x95f
-	.long	0x966
+	.long	0x95e
+	.long	0x965
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.byte	0
 	.uleb128 0x1a
 	.byte	0x1
 	.long	.LASF104
 	.byte	0x3
-	.byte	0xb2
+	.byte	0xb6
 	.long	.LASF131
 	.byte	0x1
-	.long	0x977
+	.long	0x976
 	.uleb128 0xf
-	.long	0x9ee
+	.long	0x9ed
 	.byte	0x1
 	.byte	0
 	.byte	0
 	.uleb128 0x1b
 	.long	.LASF132
 	.byte	0x1
-	.long	0x9b0
+	.long	0x9af
 	.uleb128 0x1c
 	.byte	0x1
 	.long	.LASF94
@@ -2102,9 +2097,9 @@ _ZTV14HardwareSerial:
 	.long	.LASF105
 	.long	0x29
 	.byte	0x1
-	.long	0x99e
+	.long	0x99d
 	.uleb128 0xf
-	.long	0x9b0
+	.long	0x9af
 	.byte	0x1
 	.uleb128 0x10
 	.long	0x5d3
@@ -2114,14 +2109,14 @@ _ZTV14HardwareSerial:
 	.byte	0
 	.uleb128 0x5
 	.byte	0x2
-	.long	0x97f
+	.long	0x97e
 	.uleb128 0x5
 	.byte	0x2
-	.long	0x9bc
+	.long	0x9bb
 	.uleb128 0x1d
 	.long	0x50
 	.uleb128 0x16
-	.long	0x9b6
+	.long	0x9b5
 	.uleb128 0x3
 	.byte	0x1
 	.byte	0x2
@@ -2132,10 +2127,10 @@ _ZTV14HardwareSerial:
 	.long	0x5de
 	.uleb128 0x1e
 	.long	0x5b
-	.long	0x9e7
+	.long	0x9e6
 	.uleb128 0x1f
-	.long	0x9e7
-	.byte	0x3f
+	.long	0x9e6
+	.byte	0xf
 	.byte	0
 	.uleb128 0x3
 	.byte	0x2
@@ -2152,7 +2147,7 @@ _ZTV14HardwareSerial:
 	.long	0xc8
 	.uleb128 0x20
 	.byte	0x2
-	.long	0xa06
+	.long	0xa05
 	.uleb128 0x16
 	.long	0xc8
 	.uleb128 0x5
@@ -2176,68 +2171,68 @@ _ZTV14HardwareSerial:
 	.byte	0x2
 	.byte	0x44
 	.byte	0x3
-	.long	0xa42
+	.long	0xa41
 	.uleb128 0x23
 	.string	"__s"
 	.byte	0x2
 	.byte	0x44
-	.long	0xa42
+	.long	0xa41
 	.byte	0
 	.uleb128 0x5
 	.byte	0x2
-	.long	0xa48
+	.long	0xa47
 	.uleb128 0x16
 	.long	0x50
 	.uleb128 0x24
-	.long	0x7a5
+	.long	0x7a4
 	.long	.LFB48
 	.long	.LFE48
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
 	.sleb128 2
-	.long	0xa67
+	.long	0xa66
 	.byte	0x1
-	.long	0xa76
+	.long	0xa75
 	.uleb128 0x25
 	.long	.LASF109
-	.long	0xa76
+	.long	0xa75
 	.byte	0x1
 	.long	.LLST0
 	.byte	0
 	.uleb128 0x16
-	.long	0x9ee
+	.long	0x9ed
 	.uleb128 0x24
-	.long	0x7cd
+	.long	0x7cc
 	.long	.LFB49
 	.long	.LFE49
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
 	.sleb128 2
-	.long	0xa95
+	.long	0xa94
 	.byte	0x1
-	.long	0xaa4
+	.long	0xaa3
 	.uleb128 0x25
 	.long	.LASF109
-	.long	0xa76
+	.long	0xa75
 	.byte	0x1
 	.long	.LLST1
 	.byte	0
 	.uleb128 0x24
-	.long	0x7f5
+	.long	0x7f4
 	.long	.LFB50
 	.long	.LFE50
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
 	.sleb128 2
-	.long	0xabe
+	.long	0xabd
 	.byte	0x1
-	.long	0xae4
+	.long	0xae3
 	.uleb128 0x25
 	.long	.LASF109
-	.long	0xa76
+	.long	0xa75
 	.byte	0x1
 	.long	.LLST2
 	.uleb128 0x26
@@ -2252,19 +2247,19 @@ _ZTV14HardwareSerial:
 	.byte	0
 	.byte	0
 	.uleb128 0x24
-	.long	0x81d
+	.long	0x81c
 	.long	.LFB51
 	.long	.LFE51
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
 	.sleb128 2
-	.long	0xafe
+	.long	0xafd
 	.byte	0x1
-	.long	0xb27
+	.long	0xb26
 	.uleb128 0x25
 	.long	.LASF109
-	.long	0xa76
+	.long	0xa75
 	.byte	0x1
 	.long	.LLST4
 	.uleb128 0x28
@@ -2283,34 +2278,34 @@ _ZTV14HardwareSerial:
 	.byte	0x63
 	.byte	0
 	.uleb128 0x29
-	.long	0x966
+	.long	0x965
 	.byte	0x3
-	.long	0xb35
-	.long	0xb49
+	.long	0xb34
+	.long	0xb48
 	.uleb128 0x2a
 	.long	.LASF109
-	.long	0xa76
+	.long	0xa75
 	.byte	0x1
 	.uleb128 0x2b
 	.string	"c"
 	.byte	0x3
-	.byte	0xb5
+	.byte	0xb9
 	.long	0x5b
 	.byte	0
 	.uleb128 0x24
-	.long	0x869
+	.long	0x868
 	.long	.LFB53
 	.long	.LFE53
 	.byte	0x3
 	.byte	0x92
 	.uleb128 0x20
 	.sleb128 2
-	.long	0xb63
+	.long	0xb62
 	.byte	0x1
-	.long	0xc5a
+	.long	0xc59
 	.uleb128 0x25
 	.long	.LASF109
-	.long	0xa76
+	.long	0xa75
 	.byte	0x1
 	.long	.LLST5
 	.uleb128 0x2c
@@ -2328,7 +2323,7 @@ _ZTV14HardwareSerial:
 	.uleb128 0x2d
 	.long	.LBB32
 	.long	.LBE32
-	.long	0xbd9
+	.long	0xbd8
 	.uleb128 0x2e
 	.long	.LASF112
 	.byte	0x1
@@ -2342,37 +2337,37 @@ _ZTV14HardwareSerial:
 	.long	0x50
 	.long	.LLST7
 	.uleb128 0x2f
-	.long	0xa1e
+	.long	0xa1d
 	.long	.LBB33
 	.long	.LBE33
 	.byte	0x1
 	.byte	0xd6
 	.uleb128 0x30
-	.long	0xa2a
+	.long	0xa29
 	.long	.LBB35
 	.long	.LBE35
 	.byte	0x1
 	.byte	0xd6
 	.uleb128 0x31
-	.long	0xa36
+	.long	0xa35
 	.long	.LLST8
 	.byte	0
 	.byte	0
 	.uleb128 0x32
-	.long	0xb27
+	.long	0xb26
 	.long	.LBB37
 	.long	.LBE37
 	.byte	0x1
 	.byte	0xeb
-	.long	0xc09
+	.long	0xc08
 	.uleb128 0x31
-	.long	0xb35
+	.long	0xb34
 	.long	.LLST9
 	.uleb128 0x26
 	.long	.LBB38
 	.long	.LBE38
 	.uleb128 0x33
-	.long	0xb3f
+	.long	0xb3e
 	.long	.LLST10
 	.byte	0
 	.byte	0
@@ -2392,50 +2387,50 @@ _ZTV14HardwareSerial:
 	.long	0x50
 	.long	.LLST12
 	.uleb128 0x2f
-	.long	0xa1e
+	.long	0xa1d
 	.long	.LBB40
 	.long	.LBE40
 	.byte	0x1
 	.byte	0xf6
 	.uleb128 0x30
-	.long	0xa2a
+	.long	0xa29
 	.long	.LBB42
 	.long	.LBE42
 	.byte	0x1
 	.byte	0xf6
 	.uleb128 0x31
-	.long	0xa36
+	.long	0xa35
 	.long	.LLST13
 	.byte	0
 	.byte	0
 	.byte	0
 	.uleb128 0x34
-	.long	0x845
+	.long	0x844
 	.long	.LFB52
 	.long	.LFE52
 	.long	.LLST14
-	.long	0xc74
+	.long	0xc73
 	.byte	0x1
-	.long	0xcaf
+	.long	0xcae
 	.uleb128 0x25
 	.long	.LASF109
-	.long	0xa76
+	.long	0xa75
 	.byte	0x1
 	.long	.LLST15
 	.uleb128 0x30
-	.long	0xb27
+	.long	0xb26
 	.long	.LBB46
 	.long	.LBE46
 	.byte	0x1
 	.byte	0xc0
 	.uleb128 0x31
-	.long	0xb35
+	.long	0xb34
 	.long	.LLST16
 	.uleb128 0x26
 	.long	.LBB47
 	.long	.LBE47
 	.uleb128 0x33
-	.long	0xb3f
+	.long	0xb3e
 	.long	.LLST17
 	.byte	0
 	.byte	0
@@ -2453,25 +2448,25 @@ _ZTV14HardwareSerial:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0xcdf
+	.long	0xcde
 	.uleb128 0x36
 	.long	.LVL42
-	.long	0xd6f
+	.long	0xd6e
 	.uleb128 0x36
 	.long	.LVL43
-	.long	0xd80
+	.long	0xd7f
 	.byte	0
 	.uleb128 0x34
-	.long	0x763
+	.long	0x762
 	.long	.LFB46
 	.long	.LFE46
 	.long	.LLST18
-	.long	0xcf9
+	.long	0xcf8
 	.byte	0x1
-	.long	0xd35
+	.long	0xd34
 	.uleb128 0x25
 	.long	.LASF109
-	.long	0xa76
+	.long	0xa75
 	.byte	0x1
 	.long	.LLST19
 	.uleb128 0x37
@@ -2494,16 +2489,16 @@ _ZTV14HardwareSerial:
 	.long	.LLST22
 	.byte	0
 	.uleb128 0x34
-	.long	0x789
+	.long	0x788
 	.long	.LFB47
 	.long	.LFE47
 	.long	.LLST23
-	.long	0xd4f
+	.long	0xd4e
 	.byte	0x1
-	.long	0xd6f
+	.long	0xd6e
 	.uleb128 0x25
 	.long	.LASF109
-	.long	0xa76
+	.long	0xa75
 	.byte	0x1
 	.long	.LLST24
 	.uleb128 0x38
@@ -3567,7 +3562,7 @@ _ZTV14HardwareSerial:
 	.long	.LVL23
 	.word	0x6
 	.byte	0xf2
-	.long	.Ldebug_info0+2962
+	.long	.Ldebug_info0+2961
 	.sleb128 0
 	.long	0
 	.long	0
@@ -3618,7 +3613,7 @@ _ZTV14HardwareSerial:
 	.long	.LVL35
 	.word	0x6
 	.byte	0xf2
-	.long	.Ldebug_info0+3090
+	.long	.Ldebug_info0+3089
 	.sleb128 0
 	.long	0
 	.long	0
@@ -3767,9 +3762,9 @@ _ZTV14HardwareSerial:
 	.uleb128 0x1
 	.long	.LVL50
 	.long	.LVL51
-	.word	0x4
+	.word	0x3
 	.byte	0x80
-	.sleb128 -157
+	.sleb128 -61
 	.byte	0x9f
 	.long	.LVL51
 	.long	.LFE46

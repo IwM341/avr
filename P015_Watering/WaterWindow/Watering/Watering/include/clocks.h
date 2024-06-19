@@ -1,7 +1,7 @@
 #pragma once
-#include "stdint.h"
+#include <stdint.h>
 #include "data_time.h"
-#include <cstdlib>
+
 struct Clocks : public hh_mm_ss_dd{
     inline Clocks():hh_mm_ss_dd(0,0,0,0),
     _inday_counter(0),_tacts_per_count(1),_f_cpu(1){}
@@ -20,7 +20,7 @@ struct Clocks : public hh_mm_ss_dd{
     inline void _update_counts(){
         constexpr uint_least32_t min_sec = 60;
         constexpr uint_least64_t hour_sec = 60*60;
-        constexpr uint_least64_t day_sec = 60*60*24;
+        constexpr uint_least64_t day_sec = 60UL*60*24;
         _ss_counts = _f_cpu/_tacts_per_count;
         _mm_counts = (_f_cpu*min_sec)/_tacts_per_count;
         _hh_counts = (_f_cpu*hour_sec)/_tacts_per_count;
@@ -28,6 +28,11 @@ struct Clocks : public hh_mm_ss_dd{
     }
 
     public:
+	
+	hh_mm_ss_dd const & current()const{
+		return *this;
+	}	
+	
     inline void set_tacts_per_count(uint_least32_t new_tacts_per_count){
         _tacts_per_count = new_tacts_per_count; 
         _update_counts();
@@ -46,7 +51,7 @@ struct Clocks : public hh_mm_ss_dd{
         hh = n_hh;
         mm = n_mm;
         ss = n_ss;
-        uint_fast64_t m_secs = (uint_fast64_t)days*(24*60*60) + hh*3600+mm*60+ss;
+        uint_fast64_t m_secs = (uint_fast64_t)days*(24UL*60*60) + hh*3600+mm*60+ss;
         _inday_counter = (m_secs*_f_cpu)/_tacts_per_count;
         update();
     }
